@@ -1,0 +1,1007 @@
+[
+    {
+        "model": "GPT-4",
+        "tasks": {
+            "Alfworld": {
+                "easy": {
+                    "score": "100.0%",
+                    "accuracy": "100.0%"
+                },
+                "hard": {
+                    "score": "58.0%",
+                    "accuracy": "30.9%"
+                },
+                "gap": {
+                    "score": "42.0%",
+                    "accuracy": "69.1%"
+                }
+            },
+            "Scienceworld": {
+                "easy": {
+                    "score": "93.1%",
+                    "accuracy": "85.3%"
+                },
+                "hard": {
+                    "score": "70.0%",
+                    "accuracy": "32.1%"
+                },
+                "gap": {
+                    "score": "23.1%",
+                    "accuracy": "53.2%"
+                }
+            },
+            "Babyai": {
+                "easy": {
+                    "score": "78.7%",
+                    "accuracy": "69.8%"
+                },
+                "hard": {
+                    "score": "44.1%",
+                    "accuracy": "11.5%"
+                },
+                "gap": {
+                    "score": "34.6%",
+                    "accuracy": "58.3%"
+                }
+            },
+            "Embodied": {
+                "easy": {
+                    "score": "90.6%",
+                    "accuracy": "85.0%"
+                },
+                "hard": {
+                    "score": "57.4%",
+                    "accuracy": "24.9%"
+                },
+                "gap": {
+                    "score": "33.2%",
+                    "accuracy": "60.2%"
+                }
+            },
+            "pddl": {
+                "easy": {
+                    "score": "56.7%",
+                    "accuracy": "50.0%"
+                },
+                "hard": {
+                    "score": "48.2%",
+                    "accuracy": "20.0%"
+                },
+                "gap": {
+                    "score": "8.5%",
+                    "accuracy": "30.0%"
+                }
+            },
+            "Jericho": {
+                "easy": {
+                    "score": "83.9%",
+                    "accuracy": "58.3%"
+                },
+                "hard": {
+                    "score": "77.1%",
+                    "accuracy": "66.7%"
+                },
+                "gap": {
+                    "score": "6.8%",
+                    "accuracy": "-8.3%"
+                }
+            },
+            "Game": {
+                "easy": {
+                    "score": "70.3%",
+                    "accuracy": "64.1%"
+                },
+                "hard": {
+                    "score": "62.6%",
+                    "accuracy": "54.6%"
+                },
+                "gap": {
+                    "score": "7.6%",
+                    "accuracy": "9.5%"
+                }
+            },
+            "webshop": {
+                "easy": {
+                    "score": "77.9%",
+                    "accuracy": "41.8%"
+                },
+                "hard": {
+                    "score": "72.8%",
+                    "accuracy": "31.9%"
+                },
+                "gap": {
+                    "score": "5.2%",
+                    "accuracy": "9.9%"
+                }
+            },
+            "webarena": {
+                "easy": {
+                    "score": "43.6%",
+                    "accuracy": "22.7%"
+                },
+                "hard": {
+                    "score": "37.5%",
+                    "accuracy": "11.8%"
+                },
+                "gap": {
+                    "score": "6.1%",
+                    "accuracy": "10.9%"
+                }
+            },
+            "web": {
+                "easy": {
+                    "score": "60.8%",
+                    "accuracy": "36.0%"
+                },
+                "hard": {
+                    "score": "55.1%",
+                    "accuracy": "27.0%"
+                },
+                "gap": {
+                    "score": "5.6%",
+                    "accuracy": "9.0%"
+                }
+            },
+            "Tool-Query": {
+                "easy": {
+                    "score": "89.1%",
+                    "accuracy": "80.3%"
+                },
+                "hard": {
+                    "score": "83.4%",
+                    "accuracy": "60.6%"
+                },
+                "gap": {
+                    "score": "5.7%",
+                    "accuracy": "19.7%"
+                }
+            },
+            "Tool-Operation": {
+                "easy": {
+                    "score": "73.6%",
+                    "accuracy": "52.8%"
+                },
+                "hard": {
+                    "score": "63.2%",
+                    "accuracy": "34.4%"
+                },
+                "gap": {
+                    "score": "10.4%",
+                    "accuracy": "18.4%"
+                }
+            },
+            "tools": {
+                "easy": {
+                    "score": "81.3%",
+                    "accuracy": "68.9%"
+                },
+                "hard": {
+                    "score": "73.3%",
+                    "accuracy": "52.7%"
+                },
+                "gap": {
+                    "score": "8.1%",
+                    "accuracy": "16.1%"
+                }
+            },
+            "Avg": {
+                "easy": {
+                    "score": "67.5%",
+                    "accuracy": "51.7%"
+                },
+                "hard": {
+                    "score": "61.6%",
+                    "accuracy": "33.3%"
+                },
+                "gap": {
+                    "score": "5.9%",
+                    "accuracy": "18.3%"
+                }
+            }
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo",
+        "tasks": {
+            "Alfworld": {
+                "easy": {
+                    "score": "40.3%",
+                    "accuracy": "29.2%"
+                },
+                "hard": {
+                    "score": "34.5%",
+                    "accuracy": "14.5%"
+                },
+                "gap": {
+                    "score": "5.7%",
+                    "accuracy": "14.6%"
+                }
+            },
+            "Scienceworld": {
+                "easy": {
+                    "score": "50.0%",
+                    "accuracy": "44.1%"
+                },
+                "hard": {
+                    "score": "20.9%",
+                    "accuracy": "3.6%"
+                },
+                "gap": {
+                    "score": "29.1%",
+                    "accuracy": "40.5%"
+                }
+            },
+            "Babyai": {
+                "easy": {
+                    "score": "56.0%",
+                    "accuracy": "46.5%"
+                },
+                "hard": {
+                    "score": "28.2%",
+                    "accuracy": "7.7%"
+                },
+                "gap": {
+                    "score": "27.8%",
+                    "accuracy": "38.8%"
+                }
+            },
+            "Embodied": {
+                "easy": {
+                    "score": "48.8%",
+                    "accuracy": "39.9%"
+                },
+                "hard": {
+                    "score": "27.9%",
+                    "accuracy": "8.6%"
+                },
+                "gap": {
+                    "score": "20.9%",
+                    "accuracy": "31.3%"
+                }
+            },
+            "pddl": {
+                "easy": {
+                    "score": "25.8%",
+                    "accuracy": "10.0%"
+                },
+                "hard": {
+                    "score": "14.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "11.8%",
+                    "accuracy": "10.0%"
+                }
+            },
+            "Jericho": {
+                "easy": {
+                    "score": "37.0%",
+                    "accuracy": "8.3%"
+                },
+                "hard": {
+                    "score": "6.9%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "30.1%",
+                    "accuracy": "8.3%"
+                }
+            },
+            "Game": {
+                "easy": {
+                    "score": "31.4%",
+                    "accuracy": "18.4%"
+                },
+                "hard": {
+                    "score": "10.5%",
+                    "accuracy": "2.3%"
+                },
+                "gap": {
+                    "score": "20.9%",
+                    "accuracy": "16.1%"
+                }
+            },
+            "webshop": {
+                "easy": {
+                    "score": "77.2%",
+                    "accuracy": "37.9%"
+                },
+                "hard": {
+                    "score": "74.5%",
+                    "accuracy": "27.5%"
+                },
+                "gap": {
+                    "score": "2.6%",
+                    "accuracy": "10.4%"
+                }
+            },
+            "webarena": {
+                "easy": {
+                    "score": "22.3%",
+                    "accuracy": "12.0%"
+                },
+                "hard": {
+                    "score": "26.2%",
+                    "accuracy": "1.2%"
+                },
+                "gap": {
+                    "score": "-3.9%",
+                    "accuracy": "10.8%"
+                }
+            },
+            "web": {
+                "easy": {
+                    "score": "49.7%",
+                    "accuracy": "24.1%"
+                },
+                "hard": {
+                    "score": "50.4%",
+                    "accuracy": "18.3%"
+                },
+                "gap": {
+                    "score": "-0.6%",
+                    "accuracy": "5.8%"
+                }
+            },
+            "Tool-Query": {
+                "easy": {
+                    "score": "79.4%",
+                    "accuracy": "66.1%"
+                },
+                "hard": {
+                    "score": "58.9%",
+                    "accuracy": "22.8%"
+                },
+                "gap": {
+                    "score": "20.5%",
+                    "accuracy": "43.3%"
+                }
+            },
+            "Tool-Operation": {
+                "easy": {
+                    "score": "21.3%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "28.7%",
+                    "accuracy": "4.5%"
+                },
+                "gap": {
+                    "score": "-7.4%",
+                    "accuracy": "-4.5%"
+                }
+            },
+            "tools": {
+                "easy": {
+                    "score": "50.3%",
+                    "accuracy": "29.1%"
+                },
+                "hard": {
+                    "score": "43.8%",
+                    "accuracy": "18.7%"
+                },
+                "gap": {
+                    "score": "6.5%",
+                    "accuracy": "10.4%"
+                }
+            },
+            "Avg": {
+                "easy": {
+                    "score": "45.5%",
+                    "accuracy": "28.2%"
+                },
+                "hard": {
+                    "score": "32.5%",
+                    "accuracy": "9.1%"
+                },
+                "gap": {
+                    "score": "12.9%",
+                    "accuracy": "19.1%"
+                }
+            }
+        }
+    },
+    {
+        "model": "Llama2-70b",
+        "tasks": {
+            "Alfworld": {
+                "easy": {
+                    "score": "2.8%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "15.5%",
+                    "accuracy": "3.6%"
+                },
+                "gap": {
+                    "score": "-12.7%",
+                    "accuracy": "-3.6%"
+                }
+            },
+            "Scienceworld": {
+                "easy": {
+                    "score": "3.4%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "2.1%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "1.3%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Babyai": {
+                "easy": {
+                    "score": "34.5%",
+                    "accuracy": "25.6%"
+                },
+                "hard": {
+                    "score": "15.3%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "19.2%",
+                    "accuracy": "25.6%"
+                }
+            },
+            "Embodied": {
+                "easy": {
+                    "score": "13.6%",
+                    "accuracy": "8.5%"
+                },
+                "hard": {
+                    "score": "11.0%",
+                    "accuracy": "1.2%"
+                },
+                "gap": {
+                    "score": "2.6%",
+                    "accuracy": "7.3%"
+                }
+            },
+            "pddl": {
+                "easy": {
+                    "score": "13.3%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "2.3%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "11.0%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Jericho": {
+                "easy": {
+                    "score": "13.6%",
+                    "accuracy": "2.8%"
+                },
+                "hard": {
+                    "score": "0.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "13.6%",
+                    "accuracy": "2.8%"
+                }
+            },
+            "Game": {
+                "easy": {
+                    "score": "13.4%",
+                    "accuracy": "5.4%"
+                },
+                "hard": {
+                    "score": "1.2%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "12.3%",
+                    "accuracy": "5.4%"
+                }
+            },
+            "webshop": {
+                "easy": {
+                    "score": "55.9%",
+                    "accuracy": "15.4%"
+                },
+                "hard": {
+                    "score": "47.4%",
+                    "accuracy": "7.2%"
+                },
+                "gap": {
+                    "score": "8.6%",
+                    "accuracy": "8.1%"
+                }
+            },
+            "webarena": {
+                "easy": {
+                    "score": "20.9%",
+                    "accuracy": "9.3%"
+                },
+                "hard": {
+                    "score": "7.5%",
+                    "accuracy": "0.6%"
+                },
+                "gap": {
+                    "score": "13.4%",
+                    "accuracy": "8.7%"
+                }
+            },
+            "web": {
+                "easy": {
+                    "score": "38.4%",
+                    "accuracy": "15.2%"
+                },
+                "hard": {
+                    "score": "27.4%",
+                    "accuracy": "5.1%"
+                },
+                "gap": {
+                    "score": "11.0%",
+                    "accuracy": "10.1%"
+                }
+            },
+            "Tool-Query": {
+                "easy": {
+                    "score": "49.2%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "46.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "3.2%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Tool-Operation": {
+                "easy": {
+                    "score": "38.8%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "42.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "-3.1%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "tools": {
+                "easy": {
+                    "score": "44.0%",
+                    "accuracy": "12.9%"
+                },
+                "hard": {
+                    "score": "44.0%",
+                    "accuracy": "14.0%"
+                },
+                "gap": {
+                    "score": "0.0%",
+                    "accuracy": "-1.0%"
+                }
+            },
+            "Avg": {
+                "easy": {
+                    "score": "25.8%",
+                    "accuracy": "5.9%"
+                },
+                "hard": {
+                    "score": "19.8%",
+                    "accuracy": "1.3%"
+                },
+                "gap": {
+                    "score": "6.0%",
+                    "accuracy": "4.6%"
+                }
+            }
+        }
+    },
+    {
+        "model": "Codellama-34b",
+        "tasks": {
+            "Alfworld": {
+                "easy": {
+                    "score": "11.1%",
+                    "accuracy": "4.2%"
+                },
+                "hard": {
+                    "score": "11.4%",
+                    "accuracy": "2.7%"
+                },
+                "gap": {
+                    "score": "-0.3%",
+                    "accuracy": "1.4%"
+                }
+            },
+            "Scienceworld": {
+                "easy": {
+                    "score": "6.4%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "1.7%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "4.6%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Babyai": {
+                "easy": {
+                    "score": "23.8%",
+                    "accuracy": "17.4%"
+                },
+                "hard": {
+                    "score": "6.7%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "17.2%",
+                    "accuracy": "17.4%"
+                }
+            },
+            "Embodied": {
+                "easy": {
+                    "score": "13.8%",
+                    "accuracy": "7.2%"
+                },
+                "hard": {
+                    "score": "6.6%",
+                    "accuracy": "0.9%"
+                },
+                "gap": {
+                    "score": "7.2%",
+                    "accuracy": "6.3%"
+                }
+            },
+            "pddl": {
+                "easy": {
+                    "score": "0.0%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "0.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "0.0%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Jericho": {
+                "easy": {
+                    "score": "28.6%",
+                    "accuracy": "5.6%"
+                },
+                "hard": {
+                    "score": "3.5%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "25.1%",
+                    "accuracy": "5.6%"
+                }
+            },
+            "Game": {
+                "easy": {
+                    "score": "14.3%",
+                    "accuracy": "11.4%"
+                },
+                "hard": {
+                    "score": "1.7%",
+                    "accuracy": "1.2%"
+                },
+                "gap": {
+                    "score": "12.6%",
+                    "accuracy": "10.2%"
+                }
+            },
+            "webshop": {
+                "easy": {
+                    "score": "72.8%",
+                    "accuracy": "25.8%"
+                },
+                "hard": {
+                    "score": "68.9%",
+                    "accuracy": "17.4%"
+                },
+                "gap": {
+                    "score": "3.9%",
+                    "accuracy": "8.4%"
+                }
+            },
+            "webarena": {
+                "easy": {
+                    "score": "23.8%",
+                    "accuracy": "13.3%"
+                },
+                "hard": {
+                    "score": "20.1%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "3.7%",
+                    "accuracy": "13.3%"
+                }
+            },
+            "web": {
+                "easy": {
+                    "score": "48.3%",
+                    "accuracy": "21.0%"
+                },
+                "hard": {
+                    "score": "44.5%",
+                    "accuracy": "12.5%"
+                },
+                "gap": {
+                    "score": "3.8%",
+                    "accuracy": "8.5%"
+                }
+            },
+            "Tool-Query": {
+                "easy": {
+                    "score": "71.3%",
+                    "accuracy": "22.2%"
+                },
+                "hard": {
+                    "score": "45.9%",
+                    "accuracy": "3.0%"
+                },
+                "gap": {
+                    "score": "25.4%",
+                    "accuracy": "19.2%"
+                }
+            },
+            "Tool-Operation": {
+                "easy": {
+                    "score": "50.0%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "50.3%",
+                    "accuracy": "4.5%"
+                },
+                "gap": {
+                    "score": "-0.3%",
+                    "accuracy": "-4.5%"
+                }
+            },
+            "tools": {
+                "easy": {
+                    "score": "60.7%",
+                    "accuracy": "24.1%"
+                },
+                "hard": {
+                    "score": "48.1%",
+                    "accuracy": "19.3%"
+                },
+                "gap": {
+                    "score": "12.6%",
+                    "accuracy": "4.8%"
+                }
+            },
+            "Avg": {
+                "easy": {
+                    "score": "32.0%",
+                    "accuracy": "9.8%"
+                },
+                "hard": {
+                    "score": "23.2%",
+                    "accuracy": "3.1%"
+                },
+                "gap": {
+                    "score": "8.8%",
+                    "accuracy": "6.8%"
+                }
+            }
+        }
+    },
+    {
+        "model": "Lemur-70b",
+        "tasks": {
+            "Alfworld": {
+                "easy": {
+                    "score": "8.3%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "11.4%",
+                    "accuracy": "0.9%"
+                },
+                "gap": {
+                    "score": "-3.0%",
+                    "accuracy": "-0.9%"
+                }
+            },
+            "Scienceworld": {
+                "easy": {
+                    "score": "47.1%",
+                    "accuracy": "14.7%"
+                },
+                "hard": {
+                    "score": "25.1%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "22.0%",
+                    "accuracy": "14.7%"
+                }
+            },
+            "Babyai": {
+                "easy": {
+                    "score": "22.7%",
+                    "accuracy": "12.8%"
+                },
+                "hard": {
+                    "score": "8.7%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "14.0%",
+                    "accuracy": "12.8%"
+                }
+            },
+            "Embodied": {
+                "easy": {
+                    "score": "26.0%",
+                    "accuracy": "9.2%"
+                },
+                "hard": {
+                    "score": "14.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "12.0%",
+                    "accuracy": "9.2%"
+                }
+            },
+            "pddl": {
+                "easy": {
+                    "score": "4.3%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "4.3%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "0.0%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Jericho": {
+                "easy": {
+                    "score": "16.1%",
+                    "accuracy": "5.6%"
+                },
+                "hard": {
+                    "score": "0.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "16.1%",
+                    "accuracy": "5.6%"
+                }
+            },
+            "Game": {
+                "easy": {
+                    "score": "10.2%",
+                    "accuracy": "7.2%"
+                },
+                "hard": {
+                    "score": "2.1%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "8.0%",
+                    "accuracy": "7.2%"
+                }
+            },
+            "webshop": {
+                "easy": {
+                    "score": "72.7%",
+                    "accuracy": "12.1%"
+                },
+                "hard": {
+                    "score": "69.1%",
+                    "accuracy": "10.1%"
+                },
+                "gap": {
+                    "score": "3.6%",
+                    "accuracy": "1.9%"
+                }
+            },
+            "webarena": {
+                "easy": {
+                    "score": "7.4%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "5.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "2.4%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "web": {
+                "easy": {
+                    "score": "40.1%",
+                    "accuracy": "6.5%"
+                },
+                "hard": {
+                    "score": "37.1%",
+                    "accuracy": "5.1%"
+                },
+                "gap": {
+                    "score": "3.0%",
+                    "accuracy": "1.4%"
+                }
+            },
+            "Tool-Query": {
+                "easy": {
+                    "score": "77.0%",
+                    "accuracy": "36.1%"
+                },
+                "hard": {
+                    "score": "66.7%",
+                    "accuracy": "15.8%"
+                },
+                "gap": {
+                    "score": "10.3%",
+                    "accuracy": "20.3%"
+                }
+            },
+            "Tool-Operation": {
+                "easy": {
+                    "score": "45.6%",
+                    "accuracy": "16.7%"
+                },
+                "hard": {
+                    "score": "44.3%",
+                    "accuracy": "13.6%"
+                },
+                "gap": {
+                    "score": "1.3%",
+                    "accuracy": "3.0%"
+                }
+            },
+            "tools": {
+                "easy": {
+                    "score": "61.3%",
+                    "accuracy": "32.8%"
+                },
+                "hard": {
+                    "score": "55.5%",
+                    "accuracy": "24.6%"
+                },
+                "gap": {
+                    "score": "5.8%",
+                    "accuracy": "8.2%"
+                }
+            },
+            "Avg": {
+                "easy": {
+                    "score": "33.5%",
+                    "accuracy": "10.9%"
+                },
+                "hard": {
+                    "score": "25.7%",
+                    "accuracy": "4.4%"
+                },
+                "gap": {
+                    "score": "7.7%",
+                    "accuracy": "6.5%"
+                }
+            }
+        }
+    }
+]

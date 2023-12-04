@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* 一些用于整个网站的常量 */
+:root {
+    --nav-font: 'Noto Sans', sans-serif;
+    --nav-height: 6vh;
+    --SJTU-red: #cd002f;
+    --HKUST-blue: #003569;
+    --HKUST-yellow: #A26400;
+    --body-font: #212529;
+    --heading: #000;
+    --nav-darkblue: #05004a;
+    --nav-color: #212529;
+    --nav-color-light: #353c42;
+    --nav-darkblue: #05004a;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: var(--nav-font);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 17px;
+    line-height: 110%;
+    color: var(--body-font);
+    -webkit-font-smoothing: antialiased;
+}
+
+strong {
+    color: var(--body-font);
+}
+
+/* block: heading in the paragraph */
+h1 {
+    color: var(--heading);
+}
+
+/* element: paragraphs in the body text */
+p {
+    line-height: 150%;
+    font-size: 17px;
+}
+
+.important {
+    color: #cd002f;
+    font-weight: bold;
+}
+
+/* links */
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:focus,
+a:hover {
+    color: #005587;
+    text-decoration: underline;
+}
+
+a.hover {
+    text-decoration: none;
+}
+
+a.hover:hover {
+    text-decoration: underline;
+}
+
+
+/* element: divider line */
+hr {
+    width: 75%;
+    color: silver;
+    opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+}
+
+/* list */
+li {
+    margin-top: 12px;
+    font-size: 16px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* body of the page */
+.main-body {
+    width: 60vw;
+    margin: auto;
+}
+
+/* section */
+.section {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 4px;
+}
+/* section panel*/
+.section_panel
+{
+    width: 85vw;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+}
+
+/* anchor tag for nav button scrolling */
+.anchor {
+    position: relative;
+    display: block;
+    /* visibility: hidden; */
+    top: calc(-1 * var(--nav-height));
+    height: 1px;
+}
+
+.btn-container {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px; /* 设置右侧的距离为20px */
+    text-align: right; /* 将容器内的内容右对齐 */
+
+}
+
+.btn {
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; /* 去除边框 */
+    margin: 0; /* 去除外边距 */
+}
+
+.section_panel .btn {
+    padding: 5px 10px;
+    color: #6e6e6e;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0; /* 去除外边距 */
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+#title {
+    margin-top: var(--nav-height);
+    /*margin-bottom: -30px; !* 减小底部边距 *!*/
+    text-align: center; /* 水平居中所有文本 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 垂直排列子元素 */
+    align-items: center; /* 水平居中子元素 */
+    justify-content: center; /* 垂直居中子元素 */
+}
+
+#title-wrapper {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中图标和文字 */
+}
+
+#title-icon {
+    margin-right: 10px; /* 在图标和文本之间添加一些间隔 */
+    width: 30px; /* 图标大小 */
+    height: 30px;
+    vertical-align: middle; /* 垂直居中图标 */
+}
+
+#title-text {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 150%;
+    display: inline;
+}
+
+#title-padding-bottom {
+    font-size: 1.5em;
+}
+
+/* data example images */
+#example-img {
+    /* width: 15vw; */
+    width: 98%;
+    margin: auto;
+}
+
+.caption {
+    text-align: center;
+    font-size: 5px;
+}
+
+
+/* not very important. Tried to make the website responsive */
+@media only screen and (max-width: 1000px) {
+    .main-body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .section {
+        width: 98%;
+        padding: 2.5%;
+    }
+
+    #overview-content-wrapper {
+        flex-direction: column;
+    }
+
+    #overview-left,
+    #overview-right {
+        width: 100%;
+    }
+
+    table {
+        display: none;
+    }
+}
+
+.bibtax {
+    /* font-family: Arial; */
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.ext-link {
+    /* color: var(--UCLA-blue); */
+    color: #cd002f;
+    /* text-decoration: underline; */
+}
+
+#cc-img {
+    --width: 40%;
+    width: var(--width);
+    margin: 0 calc(calc(100% - var(--width)) / 2);
+}
+
+/* class: profile */
+.profile {
+    display: inline-block;
+    width: 170px;
+}
+
+/* class: profile image */
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+}

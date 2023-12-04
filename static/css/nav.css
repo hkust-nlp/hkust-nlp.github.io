@@ -1,0 +1,108 @@
+/* navigation bar styling */
+#nav {
+    width: 96%;
+    height: var(--nav-height);
+    /* background-color: var(--nav-darkblue); */
+    /*background-color: #020515;*/
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    opacity: 80%;
+    /* border-bottom: 1px solid blue; */
+}
+
+#icon {
+    font-size: 1.5em;
+    font-family: var(--nav-font);
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-nav {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    flex-wrap: wrap; /* 允许项在必要时换行 */
+    gap: 10px; /* 在项目之间添加一些空间 */
+}
+
+.nav-button-main {
+    margin-left: 20px; /* 左边距 */
+    margin-right: 20px; /* 右边距，以防止按钮完全靠右 */
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(23, 2, 54);
+    font-weight: bold; /* 加粗文字 */
+}
+
+.nav-button-main:hover {
+    text-decoration: none; /* 移除悬停时的下划线 */
+}
+
+.nav-button {
+    display: inline-flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中对齐图标和文本 */
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    color: rgb(23, 2, 54);
+    font-weight: bold;
+    padding: 10px; /* 按钮内边距 */
+    border: 1px solid #000; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    text-decoration: none; /* 去除链接下划线 */
+    background-color: #fff; /* 初始背景色 */
+    transition: background-color 0.2s, color 0.2s, border 0.2s; /* 平滑过渡效果 */
+}
+
+.nav-button img {
+    margin-right: 5px; /* 图标和文本之间的间隔 */
+    width: 20px; /* 图标大小 */
+    height: 20px;
+}
+
+.nav-button:hover {
+    background-color: #000; /* 悬停时背景变黑 */
+    color: #fff; /* 悬停时文字变白 */
+    text-decoration: none; /* 移除悬停时的下划线 */
+}
+
+.nav-button:hover img {
+    filter: brightness(0) invert(1); /* 悬停时图标变白 */
+}
+
+.nav-button:active {
+    border: 5px solid #ccc; /* 点击时边框加厚并变灰 */
+    text-decoration: none; /* 移除悬停时的下划线 */
+}
+
+.ignore {
+    color: var(--SJTU-red);
+}
+
+#nav-icon {
+    width: 1em;
+    margin: 5px;
+}
+
+/* footer style */
+#footer {
+    width: 100%;
+    height: var(--nav-height);
+    background-color: rgba(189, 179, 190, 0.29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    font-size: 0.7em;
+    color: grey;
+    margin-top: 40px;
+}

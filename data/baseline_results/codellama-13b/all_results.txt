@@ -1,0 +1,9 @@
+{"task_name": "pddl", "success_rate": 0.016666666666666666, "reward_score": 0.09263888888888888, "grounding_acc": 0.17833333333333332}
+{"task_name": "jericho", "success_rate": 0.0, "reward_score": 0.0, "grounding_acc": 0.9966666666666667}
+{"task_name": "babyai", "success_rate": 0.16964285714285715, "reward_score": 0.22172619047619044, "grounding_acc": 0.34634103641456593}
+{"task_name": "game24", "success_rate": 0.03, "reward_score": 0.08666666666666666, "grounding_acc": 0.2331785714285715}
+{"task_name": "tool-todo", "success_rate": 0.15, "reward_score": 0.4074999999999999, "grounding_acc": 0.8699999999999999}
+{"task_name": "alfworld", "success_rate": 0.022388059701492536, "reward_score": 0.13370646766169156, "grounding_acc": 0.158457711442786}
+{"task_name": "webshop", "success_rate": 0.2589641434262948, "reward_score": 0.6547521027003091, "grounding_acc": 0.7804733447163731}
+{"task_name": "webarena", "success_rate": 0.036885245901639344, "reward_score": 0.17685645979703363, "grounding_acc": 0.8213237061275086}
+{"task_name": "tool-query","success_rate": 0.25, "reward_score": 0.5254906204906206, "grounding_acc": 0.9050427350427351}
