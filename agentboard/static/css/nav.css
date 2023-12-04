@@ -1,9 +1,9 @@
-/* navigation bar styling */
+
 #nav {
     width: 96%;
     height: var(--nav-height);
-    /* background-color: var(--nav-darkblue); */
-    /*background-color: #020515;*/
+    
+    
     background-color: white;
     position: fixed;
     top: 0;
@@ -13,7 +13,7 @@
     align-items: center;
     padding: 0 2vw;
     opacity: 80%;
-    /* border-bottom: 1px solid blue; */
+    
 }
 
 #icon {
@@ -27,27 +27,27 @@
 }
 
 .centered-nav {
-    display: flex; /* 使用 Flexbox 布局 */
-    justify-content: center; /* 水平居中 */
-    flex-wrap: wrap; /* 允许项在必要时换行 */
-    gap: 10px; /* 在项目之间添加一些空间 */
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
 }
 
 .nav-button-main {
-    margin-left: 20px; /* 左边距 */
-    margin-right: 20px; /* 右边距，以防止按钮完全靠右 */
+    margin-left: 20px; 
+    margin-right: 20px; 
     font-family: 'Noto Sans', sans-serif;
     color: rgb(23, 2, 54);
-    font-weight: bold; /* 加粗文字 */
+    font-weight: bold; 
 }
 
 .nav-button-main:hover {
-    text-decoration: none; /* 移除悬停时的下划线 */
+    text-decoration: none; 
 }
 
 .nav-button {
-    display: inline-flex; /* 使用 Flex 布局 */
-    align-items: center; /* 垂直居中对齐图标和文本 */
+    display: inline-flex; 
+    align-items: center; 
     margin-left: 4px;
     margin-right: 4px;
     margin-top: 10px;
@@ -55,33 +55,33 @@
     font-family: var(--nav-font);
     color: rgb(23, 2, 54);
     font-weight: bold;
-    padding: 10px; /* 按钮内边距 */
-    border: 1px solid #000; /* 边框 */
-    border-radius: 5px; /* 圆角 */
-    text-decoration: none; /* 去除链接下划线 */
-    background-color: #fff; /* 初始背景色 */
-    transition: background-color 0.2s, color 0.2s, border 0.2s; /* 平滑过渡效果 */
+    padding: 10px; 
+    border: 1px solid #000; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    background-color: #fff; 
+    transition: background-color 0.2s, color 0.2s, border 0.2s; 
 }
 
 .nav-button img {
-    margin-right: 5px; /* 图标和文本之间的间隔 */
-    width: 20px; /* 图标大小 */
+    margin-right: 5px; 
+    width: 20px; 
     height: 20px;
 }
 
 .nav-button:hover {
-    background-color: #000; /* 悬停时背景变黑 */
-    color: #fff; /* 悬停时文字变白 */
-    text-decoration: none; /* 移除悬停时的下划线 */
+    background-color: #000; 
+    color: #fff; 
+    text-decoration: none; 
 }
 
 .nav-button:hover img {
-    filter: brightness(0) invert(1); /* 悬停时图标变白 */
+    filter: brightness(0) invert(1); 
 }
 
 .nav-button:active {
-    border: 5px solid #ccc; /* 点击时边框加厚并变灰 */
-    text-decoration: none; /* 移除悬停时的下划线 */
+    border: 5px solid #ccc; 
+    text-decoration: none; 
 }
 
 .ignore {
@@ -93,7 +93,7 @@
     margin: 5px;
 }
 
-/* footer style */
+
 #footer {
     width: 100%;
     height: var(--nav-height);

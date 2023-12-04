@@ -33,15 +33,10 @@ def extract_variables(line):
 
 def complete_score_state(score_state):
     complete_state = []
-    # 设置当前分数为0，这是步骤0的开始值
     current_score = 0
-    # 从0步开始检查并填补步骤，直到步骤30
     for step in range(31):
-        # 检查当前步骤是否在列表中
         if score_state and step == score_state[0][0]:
-            # 更新当前分数并将这一步骤添加到完成的列表中
             current_score = score_state.pop(0)[1]
-        # 添加步骤和当前分数到完成的列表中
         complete_state.append((step, current_score))
     return complete_state
 

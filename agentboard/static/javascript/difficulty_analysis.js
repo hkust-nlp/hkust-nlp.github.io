@@ -27,7 +27,7 @@ let cur_sortby_option = sortby_options.BY_REWARD_SCORE_EASY;
 
 // Load JSON data and initialize the chart
 function loadData() {
-    fetch('/data/To_Release/difficulty.json')
+    fetch('/agentboard/data/To_Release/difficulty.json')
         .then(response => response.json())
         .then(data => {
             rawData = data;
@@ -64,9 +64,9 @@ function prepareChartData(metricType) {
                 datalabels: {
                     align: (context) => {
                         const value = context.dataset.data[context.dataIndex];
-                        return value.x > 80 ? 'end' : 'end'; // 当值大于90%时，标签向左对齐
+                        return value.x > 80 ? 'end' : 'end';
                     },
-                    anchor: 'end', // 标签总是锚定在数据点的末端
+                    anchor: 'end',
                     offset: (context) => {
                         const value = context.dataset.data[context.dataIndex];
                         if (value.x > 95) {
@@ -80,8 +80,8 @@ function prepareChartData(metricType) {
                         }
                     },
                     font: {
-                        weight: 'bold', // 加粗字体
-                        family: "'Noto Sans', sans-serif" // 字体类型，您可以根据需要更改
+                        weight: 'bold',
+                        family: "'Noto Sans', sans-serif"
                     },
                     formatter: (value, context) => {
                         const modelData = rawData.find(d => d.model === context.chart.data.labels[context.dataIndex]);
@@ -98,7 +98,7 @@ function prepareChartData(metricType) {
                 datalabels: {
                     align: 'end',
                     anchor: 'end',
-                    formatter: () => '', // Hard Score的标签不显示
+                    formatter: () => '',
                 }
             }
         ]
@@ -123,7 +123,7 @@ function createScoreChart() {
                 y: {
                     ticks: {
                         font: {
-                            weight: 'bold', // 加粗 Y 轴刻度文字
+                            weight: 'bold',
                             size: 12,
                             family: "'Noto Sans', sans-serif"
                         },
@@ -133,7 +133,7 @@ function createScoreChart() {
                         text: 'Model',
                         font: {
                             size: 14,
-                            family: "'Noto Sans', sans-serif", // 字体类型，您可以根据需要更改
+                            family: "'Noto Sans', sans-serif",
                             weight: 'bold',
                         },
                     },
@@ -143,7 +143,7 @@ function createScoreChart() {
                 x: {
                     ticks: {
                         font: {
-                            weight: 'bold', // 加粗 Y 轴刻度文字
+                            weight: 'bold',
                             size: 12,
                             family: "'Noto Sans', sans-serif"
                         },
@@ -153,14 +153,14 @@ function createScoreChart() {
                         text: 'Progress Rate (%)',
                         font: {
                             size: 14,
-                            family: "'Noto Sans', sans-serif", // 字体类型，您可以根据需要更改
+                            family: "'Noto Sans', sans-serif",
                             weight: 'bold',
                         },
 
                     },
                     stacked: false,
                     min: 0,
-                    max: 100 // 设置x轴范围为0-100
+                    max: 100
                 }
             },
             plugins: {
@@ -204,7 +204,7 @@ function createAccChart() {
                 y: {
                     ticks: {
                         font: {
-                            weight: 'bold', // 加粗 Y 轴刻度文字
+                            weight: 'bold',
                             size: 12,
                             family: "'Noto Sans', sans-serif"
                         },
@@ -214,7 +214,7 @@ function createAccChart() {
                         text: 'Model',
                         font: {
                             size: 14,
-                            family: "'Noto Sans', sans-serif", // 字体类型，您可以根据需要更改
+                            family: "'Noto Sans', sans-serif",
                             weight: 'bold',
                         },
                     },
@@ -224,7 +224,7 @@ function createAccChart() {
                 x: {
                     ticks: {
                         font: {
-                            weight: 'bold', // 加粗 Y 轴刻度文字
+                            weight: 'bold',
                             size: 12,
                             family: "'Noto Sans', sans-serif"
                         },
@@ -234,13 +234,13 @@ function createAccChart() {
                         text: 'Success Rate (%)',
                         font: {
                             size: 14,
-                            family: "'Noto Sans', sans-serif", // 字体类型，您可以根据需要更改
+                            family: "'Noto Sans', sans-serif",
                             weight: 'bold',
                         },
                     },
                     stacked: false,
                     min: 0,
-                    max: 100 // 设置x轴范围为0-100
+                    max: 100
                 }
             },
             plugins: {
@@ -269,17 +269,14 @@ function createAccChart() {
 function highlightModelInChart(chart, modelName) {
     let indexToHighlight = -1;
 
-    // 查找需要高亮的模型的索引
     chart.data.labels.forEach((label, index) => {
         if (label.includes(modelName)) {
             indexToHighlight = index;
         }
     });
 
-    // 找到对应模型的数据
     let modelData = rawData.find(d => d.model.includes(modelName));
 
-    // 设置工具提示
     if (modelData) {
         chart.options.plugins.tooltip.callbacks = {
             title: () => modelName,
@@ -406,36 +403,29 @@ document.querySelectorAll('.btn-group.task-filter-selector-for-difficulty .btn')
     });
 });
 
-// 更新Accuracy图表的排序按钮组
 document.querySelectorAll('.right-chart-panel .sort-by-button .btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        // 移除Accuracy按钮组内所有按钮的active状态
+
         document.querySelectorAll('.right-chart-panel .sort-by-button .btn').forEach(button => {
             button.classList.remove('active');
         });
 
-        // 激活当前点击的按钮
         btn.classList.add('active');
 
-        // 更新排序选项并重新创建Accuracy图表
         cur_sortby_option = btn.id;
         sortData(cur_sortby_option);
         createAccChart();
     });
 });
 
-// 更新Score图表的排序按钮组
 document.querySelectorAll('.left-chart-panel .sort-by-button .btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        // 移除Score按钮组内所有按钮的active状态
         document.querySelectorAll('.left-chart-panel .sort-by-button .btn').forEach(button => {
             button.classList.remove('active');
         });
 
-        // 激活当前点击的按钮
         btn.classList.add('active');
 
-        // 更新排序选项并重新创建Score图表
         cur_sortby_option = btn.id;
         sortData(cur_sortby_option);
         createScoreChart();
@@ -446,10 +436,10 @@ document.querySelectorAll('.left-chart-panel .sort-by-button .btn').forEach(btn 
 // Page load event
 window.onload = function () {
     loadData();
-    // 设置默认选项并添加active类
+
     document.getElementById('sort-by-accuracy-score-easy').classList.add('active');
     document.getElementById('sort-by-reward-score-easy').classList.add('active');
-    // 默认排序并创建图表
+
     cur_sortby_option = sortby_options.BY_ACCURACY_SCORE_EASY;
     sortData(cur_sortby_option);
     createAccChart();
@@ -459,12 +449,11 @@ window.onload = function () {
 };
 
 function formatWithSign(num) {
-    // 确保num是一个数字
     const number = parseFloat(num);
     if (isNaN(number)) {
-        return num;  // 如果num不是数字，原样返回
+        return num;
     }
-    return (number > 0 ? "+" : "") + number.toFixed(2); // 格式化数字，保留两位小数并在正数前加上 '+'
+    return (number > 0 ? "+" : "") + number.toFixed(2);
 }
 
 function createTooltipFooter(gapType) {

@@ -1,33 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
-    loadTasks(); // 加载任务数据
-    initializeDividerArrows(); // 初始化分割线箭头
+    loadTasks();
+    initializeDividerArrows();
 });
 
-var taskData; // 用于存储任务数据的全局变量
+var taskData;
 
 function loadTasks() {
-    fetch('/data/To_Release/task_description.json')
+    fetch('/agentboard/data/To_Release/task_description.json')
         .then(response => response.json())
         .then(data => {
-            taskData = data; // 存储任务数据
-            initializeTabs(); // 在数据加载后初始化标签页
+            taskData = data;
+            initializeTabs();
         })
         .catch(error => console.error('Error loading the tasks:', error));
 }
 
 function initializeTabs() {
-    // 获取所有的 tab 按钮
     var tabs = document.querySelectorAll('.tabs input[type="radio"]');
 
-    // 为每个 tab 按钮添加点击事件监听
     tabs.forEach(tab => {
         tab.addEventListener('change', () => {
-            // 根据选中的tab加载对应的内容
             loadContentForTab(tab);
         });
     });
 
-    // 初始加载第一个tab的内容
     if (tabs.length > 0) {
         loadContentForTab(tabs[0]);
     }
@@ -40,8 +36,8 @@ function loadContentForTab(tab) {
     contentLeft.innerHTML = '';
     contentRight.innerHTML = '';
 
-    var targetClass = tab.getAttribute('data-target').slice(1); // 获取任务对应的类名
-    var taskKey = targetClass.split('-')[1]; // 从类名中提取任务关键字
+    var targetClass = tab.getAttribute('data-target').slice(1);
+    var taskKey = targetClass.split('-')[1];
 
     var task = taskData.find(t => t.Task.toLowerCase() === taskKey);
 
@@ -96,11 +92,10 @@ function loadContentForTab(tab) {
 }
 
 function initializeDividerArrows() {
-    // 获取左侧和右侧内容元素
     const contentLeft = document.querySelector('.content-left');
     const contentRight = document.querySelector('.content-right');
 
-    // 当鼠标悬停在左侧内容时，加粗左箭头
+    // load left hover
     contentLeft.addEventListener('mouseenter', () => {
         document.querySelector('.divider').classList.add('left-hover');
     });
@@ -108,7 +103,7 @@ function initializeDividerArrows() {
         document.querySelector('.divider').classList.remove('left-hover');
     });
 
-    // 当鼠标悬停在右侧内容时，加粗右箭头
+    // load right hover
     contentRight.addEventListener('mouseenter', () => {
         document.querySelector('.divider').classList.add('right-hover');
     });

@@ -48,7 +48,6 @@ def update_json_with_log(log_file_path, json_file_path):
 # Example usage:
 
 def update_all_logs_in_directory(log_dir, json_file):
-    # 遍历 log_dir 目录下的所有 .log 文件
     for filename in os.listdir(log_dir):
         if filename.endswith(".log"):
             log_path = os.path.join(log_dir, filename)

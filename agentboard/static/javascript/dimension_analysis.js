@@ -1,5 +1,5 @@
 async function fetchData() {
-    const response = await fetch('/data/To_Release/dimension_score_all.json');
+    const response = await fetch('/agentboard/data/To_Release/dimension_score_all.json');
     const models = await response.json();
     return models;
 }
@@ -33,7 +33,7 @@ function createRadarChart(models) {
             borderColor: colors[index],
             borderWidth: 2,
             borderDash: borderStyles[index],
-            // hidden: !defaultModelsToShow.includes(model.model) // 判断是否隐藏
+            // hidden: !defaultModelsToShow.includes(model.model)
         };
     });
 
@@ -50,14 +50,14 @@ function createRadarChart(models) {
                         font: {
                             size: 12,
                             family: "'Noto Sans', sans-serif",
-                            weight: 'bold' // 修改为 weight
+                            weight: 'bold'
                         }
                     },
                     ticks: {
                         font: {
                             size: 12,
                             family: "'Noto Sans', sans-serif",
-                            weight: 'bold' // 修改为 weight
+                            weight: 'bold'
                         }
                     }
                 }
@@ -68,7 +68,7 @@ function createRadarChart(models) {
                         font: {
                             size: 12,
                             family: "'Noto Sans', sans-serif",
-                            weight: 'bold' // 修改为 weight
+                            weight: 'bold'
                         }
                     }
                 },
@@ -76,13 +76,13 @@ function createRadarChart(models) {
                     bodyFont: {
                         size: 12,
                         family: "'Noto Sans', sans-serif",
-                        weight: 'bold' // 修改为 weight
+                        weight: 'bold'
                     }
                 }
             },
             elements: {
                 line: {
-                    tension: 0 // 禁用贝塞尔曲线
+                    tension: 0
                 }
             },
         }

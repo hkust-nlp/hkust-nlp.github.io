@@ -18,7 +18,7 @@ body {
 
 #body {
     width: 85vw;
-    /*margin-right: 5vw;*/
+    
     -webkit-font-smoothing: antialiased;
     margin-left: 8vw;
     line-height: 1.8;
@@ -51,11 +51,10 @@ a.inner-link:hover {
 }
 
 p {
-    width: 95%; /* 设置宽度为85% */
-    margin: 0 auto; /* 上下边距为0，左右边距自动，实现居中 */
+    width: 95%; 
+    margin: 0 auto; 
     line-height: 180%;
     font-size: 16px;
-    /*text-align: left;  !* 文字对齐设置为左对齐 *!*/
 }
 
 .section ul {
@@ -89,22 +88,22 @@ h3 {
 .btn-group {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap; /* 防止换行 */
+    flex-wrap: nowrap; 
 }
 
-/*.btn-switch {*/
-/*    border: 2px solid #000000; !* 设置边框样式 *!*/
-/*    border-radius: 5px;*/
-/*}*/
+
+
+
+
 
 .task-filter-selector {
-    border: 1px solid #000000; /* 设置边框样式 */
+    border: 1px solid #000000; 
     border-radius: 4px;
     margin-right: 50px;
 }
 
 .metric-filter-selector {
-    border: 1px solid #000000; /* 设置边框样式 */
+    border: 1px solid #000000; 
     border-radius: 4px;
     margin-left: 60px;
 }
@@ -125,13 +124,13 @@ h3 {
 
 .btn-container {
     padding: 8px 15px;
-    border: none; /* 移除边框 */
+    border: none; 
     border-radius: 2px;
-    background-color: #ffffff; /* 修改背景颜色为蓝色，可根据需要调整 */
-    color: #6e6e6e; /* 修改文字颜色为白色 */
+    background-color: #ffffff; 
+    color: #6e6e6e; 
     font-size: 14px;
     cursor: pointer;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .btn-container:disabled {
@@ -140,10 +139,10 @@ h3 {
     border: none;
     background-color: transparent;
     box-shadow: none;
-    transition: none; /* 禁用悬停时的过渡效果 */
+    transition: none; 
 }
 
-/* 去除按钮之间的间隔 */
+
 .btn-group .btn-container + .btn-container {
     margin-left: 0;
 }
@@ -176,43 +175,43 @@ h3 {
 }
 
 .radar-chart-container {
-    /*flex: 1; !* 使图表和分析区域平分空间 *!*/
-    /*padding: 20px; !* 或根据需要调整 *!*/
+    
+    
     width: 520px;
     height: auto;
 }
 
 .panel {
     margin-top: 2vh;
-    display: flex; /* 启用 Flexbox 布局 */
-    flex-direction: column; /* 子元素垂直排列 */
-    justify-content: center; /* 沿主轴（此处为垂直）居中子元素 */
-    align-items: center; /* 沿交叉轴（此处为水平）居中子元素 */
-    text-align: center; /* 文本居中，对非 flex 子元素有效 */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .top-menu {
-    width: 88%; /* 设置容器宽度 */
+    width: 88%; 
     margin-left: 15px;
-    display: flex; /* 启用 Flexbox 布局 */
-    justify-content: flex-start; /* 子元素从容器开始处排列 */
-    align-items: center; /* 子元素在交叉轴方向（此处为垂直）居中 */
-    position: relative; /* 设置相对定位，为绝对定位的子元素提供参考 */
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    position: relative; 
 }
 
 .bottom-panel {
-    width: 70%; /* 父元素的 55% */
+    width: 70%; 
     height: auto;
-    box-sizing: border-box; /* 边框和内边距包含在宽度内 */
-    /*padding: 0; !* 根据需要调整内边距 *!*/
+    box-sizing: border-box; 
+    
     padding: 0 1.4em 0 0;
-    margin: 0; /* 确保没有外边距影响布局 */
-    /* 其他样式 */
+    margin: 0; 
+    
 }
 
 .btn-sub-group {
     display: flex;
-    flex-wrap: nowrap; /* 防止换行 */
+    flex-wrap: nowrap; 
 }
 
 .task-filter-selector-for-rewards {
@@ -230,14 +229,14 @@ h3 {
 .top-menu .btn-group,
 .top-menu .btn-sub-group {
     justify-content: center;
-    padding-left: 0.6vh; /* 例如，设置15px的左内边距 */
+    padding-left: 0.6vh; 
 }
 
 #rewardChart {
     display: block;
-    box-sizing: border-box; /* 边框和内边距包含在宽度内 */
-    width: 100%; /* 填满父元素的宽度 */
-    height: auto; /* 高度自适应 */
+    box-sizing: border-box; 
+    width: 100%; 
+    height: auto; 
     margin-top: 2vh;
 }
 
@@ -246,39 +245,39 @@ h3 {
 }
 
 .top-menu-long {
-    width: 85%; /* 设置容器宽度 */
-    display: flex; /* 启用 Flexbox 布局 */
-    justify-content: flex-start; /* 子元素从容器开始处排列 */
-    align-items: center; /* 子元素在交叉轴方向（此处为垂直）居中 */
-    position: relative; /* 设置相对定位，为绝对定位的子元素提供参考 */
+    width: 85%; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    position: relative; 
 }
 
 .charts-panel {
-    display: flex; /* 使用Flexbox布局 */
+    display: flex; 
     width: 95%;
     height: 50vh;
-    justify-content: space-between; /* 在两个子元素之间留出等距空间 */
+    justify-content: space-between; 
     margin-bottom: 20vh;
 }
 
 .left-chart-panel, .right-chart-panel {
-    flex: 1; /* 让两个子元素占据相等的空间 */
-    padding: 6px; /* 添加一些内边距 */
+    flex: 1; 
+    padding: 6px; 
 }
 
 .left-chart-panel .canvas-container,
 .right-chart-panel .canvas-container {
-    height: 0; /* 初始高度设置为0 */
-    padding-bottom: 50%; /* 根据比例设置padding-bottom来控制高度 */
-    overflow: hidden; /* 隐藏溢出部分 */
+    height: 0; 
+    padding-bottom: 50%; 
+    overflow: hidden; 
 }
 
 .left-chart-panel canvas,
 .right-chart-panel canvas {
     top: 0;
     left: 0;
-    width: 100% !important; /* 宽度填满父容器 */
-    height: 80%; /* 高度填满父容器 */
+    width: 100% !important; 
+    height: 80%; 
 }
 
 .task-filter-selector-for-difficulty {
@@ -302,7 +301,7 @@ h3 {
 
 #sidebar {
     position: fixed;
-    /*left: -150px;*/
+    
     top: 50%;
     transform: translateY(-50%);
     background-color: #c1c6cb;
@@ -325,14 +324,14 @@ h3 {
 
 #sidebar-toggle {
     display: block;
-    position: fixed; /* 使用fixed而不是absolute，确保它相对于视口定位 */
-    left: 0; /* 或者其他合适的位置 */
+    position: fixed; 
+    left: 0; 
     top: 50%;
     transform: translateY(-50%);
-    background-color: #c1c6cb; /* 临时背景色，帮助识别元素位置 */
+    background-color: #c1c6cb; 
     padding: 5px 10px;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    z-index: 1001; /* 确保它在其他元素之上 */
+    z-index: 1001; 
 }
 

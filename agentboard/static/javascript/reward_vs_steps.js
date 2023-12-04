@@ -1,4 +1,4 @@
-// 颜色数组
+
 const colors = [
     'rgba(255, 99, 132, 1)',
     'rgba(54, 162, 235, 1)',
@@ -13,7 +13,7 @@ const colors = [
     'rgba(255, 99, 75, 1)'
 ];
 
-// 边框样式数组
+
 const borders = [
     {
         borderWidth: 2,
@@ -72,27 +72,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let currentTask = 'Avg';
     let currentSubTask = 'Avg';
-    let chart = null; // 初始图表为空
+    let chart = null;
 
     function updateSubtasks(task) {
         const subtasks = taskSubtaskMapping[task];
         const subtaskContainer = document.querySelector('.sub-task-filter-selector-for-rewards');
         const filterButton = subtaskContainer.querySelector('.btn-container');
 
-        // 清除旧的sub-task按钮
         while (filterButton.nextSibling) {
             subtaskContainer.removeChild(filterButton.nextSibling);
         }
 
-        // 添加新的sub-task按钮
         subtasks.forEach(subtask => {
             const btn = document.createElement('button');
             btn.type = 'button';
             btn.className = 'btn btn-container';
-            btn.textContent = subtask === 'Avg' ? 'Avg' : subtask; // 显示为 "Avg" 或其他子任务名称
+            btn.textContent = subtask === 'Avg' ? 'Avg' : subtask;
             if (subtask === 'Avg') {
                 btn.classList.add('active');
-                currentSubTask = task === 'Avg' ? 'Avg' : task; // 当为 "Avg" 时，子任务为主任务名称
+                currentSubTask = task === 'Avg' ? 'Avg' : task;
             }
             btn.addEventListener('click', () => {
                 currentSubTask = subtask === 'Avg' ? task : subtask;
@@ -110,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
     updateSubtasks(currentTask);
 
 
-    // 绑定task按钮的点击事件
     document.querySelectorAll('.btn-group.task-filter-selector-for-rewards .btn').forEach(btn => {
         btn.addEventListener('click', () => {
             currentTask = btn.id.replace('task-filter-', '');
@@ -124,9 +121,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-// 加载并绘制图表的函数
+
     function loadAndDrawChart(task, subTask) {
-        fetch('/data/To_Release/reward_vs_steps.json')
+        fetch('/agentboard/data/To_Release/reward_vs_steps.json')
             .then(response => response.json())
             .then(data => {
                 const subTaskKey = subTask === 'Avg' ? 'Avg' : subTask.toLowerCase();
@@ -148,13 +145,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 if (chart) {
-                    chart.destroy(); // 销毁旧图表
+                    chart.destroy();
                 }
 
                 chart = new Chart(document.getElementById('rewardChart'), {
                     type: 'line',
                     data: {
-                        labels: Array.from({length: 31}, (_, i) => i), // 生成0到29的标签
+                        labels: Array.from({length: 31}, (_, i) => i),
                         datasets: datasets
                     },
                     options: {
@@ -201,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 if (activeElements.length && activeElements[0].datasetIndex === i) {
                                     dataset.borderColor = 'black';
                                     dataset.borderWidth = 3;
-                                    dataset.borderDash = []; // 变实线
+                                    dataset.borderDash = [];
                                 } else {
                                     dataset.borderColor = colors[i % colors.length];
                                     dataset.borderWidth = borders[i % borders.length].borderWidth;

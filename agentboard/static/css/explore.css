@@ -30,9 +30,9 @@ label {
 }
 
 label img {
-    /*margin: auto; !* 水平居中图片 *!*/
+    
     max-width: 19px;
-    height: auto; /* 保持图片的原始比例 */
+    height: auto; 
     margin-right: 8px;
     font-weight: bold;
 }
@@ -56,8 +56,8 @@ label:hover, input[type="radio"]:checked + label {
     box-sizing: border-box;
     background-color: #ffffff;
     overflow: hidden;
-    /*border: 1px solid #000000;*/
-    /*box-shadow: 16px 16px 30px #2e364330;*/
+    
+    
     margin-top: 40px;
 }
 
@@ -157,16 +157,16 @@ label:hover, input[type="radio"]:checked + label {
     padding: 8px;
     width: 45%;
     overflow-y: auto;
-    /*border-right: 1px solid #000000; !* 右侧边框 *!*/
-    /*border-top: 1px solid #000000; !* 顶部边框 *!*/
+    
+    
 }
 
 .content-left-content {
-    /*padding: 8px;*/
+    
     width: 100%;
     overflow-y: auto;
-    /*border-left: 1px solid #000000; !* 左侧边框 *!*/
-    /*border-bottom: 1px solid #000000; !* 底部边框 *!*/
+    
+    
 }
 
 .content-left-links {
@@ -180,8 +180,8 @@ label:hover, input[type="radio"]:checked + label {
     padding: 8px;
     width: 55%;
     overflow-y: auto;
-    /*border-right: 1px solid #000000; !* 右侧边框 *!*/
-    /*border-top: 1px solid #000000; !* 顶部边框 *!*/
+    
+    
 }
 
 .tab-content {
@@ -189,26 +189,26 @@ label:hover, input[type="radio"]:checked + label {
     font-size: 16px;
     line-height: 150%;
     text-align: justify !important;
-    word-wrap: break-word; /* 确保长单词在行末可以正确换行 */
-    hyphens: auto; /* 自动使用连字符来改善换行的外观 */
+    word-wrap: break-word; 
+    hyphens: auto; 
     font-weight: 400;
     font-family: 'Noto Sans', sans-serif;
     margin: 5px;
 }
 
-/*.content_icon {*/
-/*    width: 95%;*/
-/*    height: auto;*/
-/*    display: block;*/
-/*    margin: 0 auto; !* 水平居中图片 *!*/
-/*}*/
+
+
+
+
+
+
 
 .tab-content img {
     width: 94%;
     height: auto;
-    /*max-height: 30vh;*/
+    
     display: block;
-    margin: 0 auto; /* 水平居中图片 */
+    margin: 0 auto; 
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid #d8d9da;
@@ -219,58 +219,58 @@ label:hover, input[type="radio"]:checked + label {
 }
 
 
-/*.content-alfworld {*/
-/*    display: block; !* 默认显示 *!*/
-/*}*/
 
-/*!* 根据选项卡的选择来显示对应的内容 *!*/
-/*#tab1:checked ~ .content .content-alfworld,*/
-/*#tab2:checked ~ .content .content-scienceworld,*/
-/*#tab3:checked ~ .content .content-babyai,*/
-/*#tab4:checked ~ .content .content-jericho,*/
-/*#tab5:checked ~ .content .content-pddl,*/
-/*#tab6:checked ~ .content .content-webshop,*/
-/*#tab7:checked ~ .content .content-webarena,*/
-/*#tab8:checked ~ .content .content-toolgraph,*/
-/*#tab9:checked ~ .content .content-toolmovie,*/
-/*#tab10:checked ~ .content .content-toolweather,*/
-/*#tab11:checked ~ .content .content-tooltodo,*/
-/*#tab12:checked ~ .content .content-toolsheet {*/
-/*    display: block;*/
-/*}*/
 
-/* 分割线样式 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .divider {
     position: relative;
-    flex: 0 0 2px; /* 使分割线占据一定宽度但不伸缩 */
-    background-color: #D3D3D3; /* 淡灰色分割线 */
-    margin: 0 5px; /* 在分割线两侧留出一些空间 */
+    flex: 0 0 2px; 
+    background-color: #D3D3D3; 
+    margin: 0 5px; 
     height: 86%;
-    align-self: center; /* 使分割线垂直拉伸以填满容器 */
+    align-self: center; 
 }
 
-/* 箭头默认样式 */
+
 .divider:before,
 .divider:after {
     content: '⇨';
     position: absolute;
-    color: #808080; /* 灰色 */
+    color: #808080; 
 }
 
-/* 左箭头位置 */
+
 .divider:before {
     left: -20px;
     top: 20%;
-    transform: rotate(180deg); /* 旋转箭头指向左侧 */
+    transform: rotate(180deg); 
 }
 
-/* 右箭头位置 */
+
 .divider:after {
     right: -20px;
     bottom: 20%;
 }
 
-/* 鼠标悬停在左侧内容时左箭头加粗并变黑色 */
+
 .divider.left-hover:before {
     color: #000000;
     font-weight: bold;
@@ -289,28 +289,28 @@ label:hover, input[type="radio"]:checked + label {
 .top-side {
     flex: 1;
     display: flex;
-    /*max-height: 20vh;*/
+    
 }
 
 .bottom-side {
     flex: 1;
     flex-direction: column;
-    /*max-height: 65vh;*/
+    
 }
 
 #instruction-top {
     width: 100%;
     font-size: 12px;
-    /*line-height: 140%;*/
+    
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid #c1c6cb;
     background-color: #ffffff;
-    max-height: 18vh; /* 最大高度为父容器高度的一半 */
-    overflow-y: auto; /* 垂直方向滚动 */
-    overflow-x: hidden; /* 隐藏水平方向的滚动条 */
+    max-height: 18vh; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
     margin-bottom: 8px;
-    padding: 5px; /* 添加内边距 */
+    padding: 5px; 
 }
 
 #trajectory-long:hover,
@@ -325,22 +325,22 @@ label:hover, input[type="radio"]:checked + label {
     border: 1px solid #c1c6cb;
     background-color: #ffffff;
     text-align: justify;
-    max-height: 55vh; /* 最大高度为父容器高度的一半 62vh */
-    overflow-y: auto; /* 垂直方向滚动 */
-    overflow-x: hidden; /* 隐藏水平方向的滚动条 */
+    max-height: 55vh; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
     font-size: 12px;
-    /*line-height: 140%;*/
-    padding: 5px; /* 添加内边距 */
+    
+    padding: 5px; 
 }
 
 #table-bottom {
-    max-height: 6vh; /* 最大高度为父容器高度的一半 */
-    /*width: auto;*/
-    /*max-height: 60vh; !* 最大高度为父容器高度的一半 *!*/
-    /*overflow-y: auto; !* 垂直方向滚动 *!*/
-    /*overflow-x: hidden; !* 隐藏水平方向的滚动条 *!*/
+    max-height: 6vh; 
+    
+    
+    
+    
     text-align: center;
-    /*justify-content: center;*/
+    
     display: block;
 }
 
@@ -361,8 +361,8 @@ label:hover, input[type="radio"]:checked + label {
     width: 20px;
     height: 20px;
     margin: 0 4px;
-    display: inline-block; /* 或者 inline，使图片与文本在同一行显示 */
-    vertical-align: middle; /* 根据需要可调整为 top, middle, bottom */
+    display: inline-block; 
+    vertical-align: middle; 
     border: none;
     border-radius: initial;
 }
@@ -374,6 +374,6 @@ table {
 
 @media (max-width: 768px) {
     .tabs, .content {
-        width: 100%; /* 在小屏幕上，选项卡和内容区域可能需要占满整个宽度 */
+        width: 100%; 
     }
 }

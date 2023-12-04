@@ -1,8 +1,8 @@
 // Global variables
 let rawData;
 let chart = null;
-let lineGraph = null; // 添加一个变量用于存储 LINE graph
-let taskScores_save = null; // 添加一个变量用于存储排序后的成绩
+let lineGraph = null;
+let taskScores_save = null;
 let currentTask = 'Avg';
 const sortby_options = {
     BY_REWARD_SCORE: "sort-by-reward-score",
@@ -11,7 +11,6 @@ const sortby_options = {
 };
 let cur_sortby_option = sortby_options.BY_REWARD_SCORE;
 
-// 构建任务与子任务的对应关系
 const taskSubtaskMapping = {
     'Avg': ['Alfworld', 'Scienceworld', 'Babyai', 'pddl', 'Jericho', 'webshop', 'webarena', 'Tool-Query', 'Tool-Operation'],
     'Embodied': ['Alfworld', 'Scienceworld', 'Babyai'],
@@ -19,7 +18,7 @@ const taskSubtaskMapping = {
     'web': ['webshop', 'webarena'],
     'tools': ['Tool-Query', 'Tool-Operation'],
 };
-// 简写
+
 const SubtaskNameMapping = {
     'Alfworld': 'ALF',
     'Scienceworld': 'SW',
@@ -32,11 +31,11 @@ const SubtaskNameMapping = {
     'Tool-Operation': 'T-O',
 };
 
-// 定义模型与颜色的映射
+
 const modelColors = {};
 const borderStyles = {};
 
-// 颜色数组
+
 const colors = [
     'rgba(255, 99, 132, 1)',
     'rgba(54, 162, 235, 1)',
@@ -51,7 +50,7 @@ const colors = [
     'rgba(255, 99, 75, 1)'
 ];
 
-// 边框样式数组
+
 const borders = [
     {
         borderWidth: 2,
@@ -100,7 +99,7 @@ const borders = [
 ];
 
 
-// 根据模型数量生成颜色和线框样式
+
 function generateModelColorsAndStyles(models) {
     for (let i = 0; i < models.length; i++) {
         const model = models[i];
@@ -127,11 +126,11 @@ function getScoresForTask(rawData, task) {
     }).filter(item => item !== null);
 }
 
-// 当前选定的模型索引
+
 let selectedModelIndexInBar = null;
 let selectedModelIndexInLine = null;
 
-// 创建 sub-task line graph
+
 function createMainResultChart() {
     const taskScores = getScoresForTask(rawData, currentTask);
 
@@ -163,7 +162,7 @@ function createMainResultChart() {
                 {
                     label: 'Score',
                     data: scores,
-                    backgroundColor: '#f398ae', // 使用模型对应的颜色
+                    backgroundColor: '#f398ae',
                 },
                 {
                     label: 'Accuracy',
@@ -426,11 +425,11 @@ function highlightModel(labels, index) {
 
     lineGraph.data.datasets.forEach((dataset, datasetIndex) => {
         if (dataset.label === modelName) {
-            dataset.borderColor = '#000000'; // 突出显示选中的模型
+            dataset.borderColor = '#000000';
             dataset.borderWidth = 4;
             highlightedDatasetIndex = datasetIndex
         } else {
-            dataset.borderColor = modelColors[dataset.label]; // 其他模型使用原始颜色
+            dataset.borderColor = modelColors[dataset.label];
             dataset.borderWidth = 2;
         }
     });
@@ -450,7 +449,6 @@ function removeHighlight() {
 }
 
 
-// 创建注释
 function createAnnotations(modelName) {
     return taskSubtaskMapping[currentTask].map(subtask => {
         const modelData = rawData.find(data => data.model === modelName);
@@ -510,7 +508,7 @@ function createAnnotations(modelName) {
             position: 'center',
             adjustScaleRange: true
         };
-    }).filter(annotation => annotation !== null); // 过滤掉 null 条目
+    }).filter(annotation => annotation !== null);
 }
 
 function updateLineGraphScale(labels, selectedIndex) {
@@ -526,7 +524,7 @@ function updateLineGraphScale(labels, selectedIndex) {
         buffer = 1.5;
     }
 
-    lineGraph.options.scales.y.min = Math.max(0, minValue - buffer); // 确保最小值不小于0
+    lineGraph.options.scales.y.min = Math.max(0, minValue - buffer);
     lineGraph.options.scales.y.max = maxValue + buffer;
     lineGraph.update();
 }
@@ -554,7 +552,7 @@ Object.values(sortby_options).forEach(sortby_option => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('/data/To_Release/main_data_new.json').then(response => response.json()).then((loadedData) => {
+    fetch('/agentboard/data/To_Release/main_data_new.json').then(response => response.json()).then((loadedData) => {
         rawData = loadedData;
         generateModelColorsAndStyles(rawData.map(data => data.model));
         createMainResultChart();
