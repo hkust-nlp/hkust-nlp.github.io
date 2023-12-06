@@ -20,7 +20,7 @@ label {
     opacity: .25;
     transition: opacity .4s ease-in-out;
     display: block;
-    width: calc(100% - 15px);
+    width: calc(100% - 10px);
     font-family: Garamond, serif;
     -webkit-font-smoothing: initial;
     text-align: left;
@@ -30,7 +30,6 @@ label {
 }
 
 label img {
-    
     max-width: 19px;
     height: auto; 
     margin-right: 8px;
@@ -56,8 +55,6 @@ label:hover, input[type="radio"]:checked + label {
     box-sizing: border-box;
     background-color: #ffffff;
     overflow: hidden;
-    
-    
     margin-top: 40px;
 }
 
@@ -94,58 +91,46 @@ label:hover, input[type="radio"]:checked + label {
 }
 
 .marker #bottom {
-    height: calc(50% - 60px);
+    height: calc(45.4%);
     border-radius: 0 32px 0 0;
 }
 
 #tab1:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 0));
 }
-
 #tab2:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 1));
 }
-
 #tab3:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 2));
 }
-
 #tab4:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 3));
 }
-
 #tab5:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 4));
 }
-
 #tab6:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 5));
 }
-
 #tab7:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 6));
 }
-
 #tab8:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 7));
 }
-
 #tab9:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 8));
 }
-
 #tab10:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 9));
 }
-
 #tab11:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 10));
 }
-
 #tab12:checked ~ .marker {
     transform: translateY(calc(calc(50% / 12) * 11));
 }
-
 
 .content {
     flex: 1;
@@ -157,16 +142,11 @@ label:hover, input[type="radio"]:checked + label {
     padding: 8px;
     width: 45%;
     overflow-y: auto;
-    
-    
 }
 
 .content-left-content {
-    
     width: 100%;
     overflow-y: auto;
-    
-    
 }
 
 .content-left-links {
@@ -180,8 +160,6 @@ label:hover, input[type="radio"]:checked + label {
     padding: 8px;
     width: 55%;
     overflow-y: auto;
-    
-    
 }
 
 .tab-content {
@@ -196,17 +174,9 @@ label:hover, input[type="radio"]:checked + label {
     margin: 5px;
 }
 
-
-
-
-
-
-
-
 .tab-content img {
     width: 94%;
     height: auto;
-    
     display: block;
     margin: 0 auto; 
     border-radius: 5px;
@@ -218,28 +188,6 @@ label:hover, input[type="radio"]:checked + label {
     border: 1px solid #000000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .divider {
     position: relative;
     flex: 0 0 2px; 
@@ -249,7 +197,6 @@ label:hover, input[type="radio"]:checked + label {
     align-self: center; 
 }
 
-
 .divider:before,
 .divider:after {
     content: '⇨';
@@ -257,19 +204,16 @@ label:hover, input[type="radio"]:checked + label {
     color: #808080; 
 }
 
-
 .divider:before {
     left: -20px;
     top: 20%;
     transform: rotate(180deg); 
 }
 
-
 .divider:after {
     right: -20px;
     bottom: 20%;
 }
-
 
 .divider.left-hover:before {
     color: #000000;
@@ -289,19 +233,16 @@ label:hover, input[type="radio"]:checked + label {
 .top-side {
     flex: 1;
     display: flex;
-    
 }
 
 .bottom-side {
     flex: 1;
     flex-direction: column;
-    
 }
 
 #instruction-top {
     width: 100%;
     font-size: 12px;
-    
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid #c1c6cb;
@@ -329,18 +270,12 @@ label:hover, input[type="radio"]:checked + label {
     overflow-y: auto; 
     overflow-x: hidden; 
     font-size: 12px;
-    
     padding: 5px; 
 }
 
 #table-bottom {
     max-height: 6vh; 
-    
-    
-    
-    
-    text-align: center;
-    
+    text-align: center;   
     display: block;
 }
 
