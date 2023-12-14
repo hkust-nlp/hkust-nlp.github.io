@@ -20,7 +20,7 @@ label {
     opacity: .25;
     transition: opacity .4s ease-in-out;
     display: block;
-    width: calc(100% - 15px);
+    width: calc(100% - 10px);
     font-family: Garamond, serif;
     -webkit-font-smoothing: initial;
     text-align: left;
@@ -56,8 +56,6 @@ label:hover, input[type="radio"]:checked + label {
     box-sizing: border-box;
     background-color: #ffffff;
     overflow: hidden;
-    
-    
     margin-top: 40px;
 }
 
@@ -94,7 +92,7 @@ label:hover, input[type="radio"]:checked + label {
 }
 
 .marker #bottom {
-    height: calc(50% - 60px);
+    height: calc(45.4%);
     border-radius: 0 32px 0 0;
 }
 
@@ -157,16 +155,11 @@ label:hover, input[type="radio"]:checked + label {
     padding: 8px;
     width: 45%;
     overflow-y: auto;
-    
-    
 }
 
 .content-left-content {
-    
     width: 100%;
     overflow-y: auto;
-    
-    
 }
 
 .content-left-links {
@@ -196,17 +189,9 @@ label:hover, input[type="radio"]:checked + label {
     margin: 5px;
 }
 
-
-
-
-
-
-
-
 .tab-content img {
     width: 94%;
     height: auto;
-    
     display: block;
     margin: 0 auto; 
     border-radius: 5px;
@@ -217,28 +202,6 @@ label:hover, input[type="radio"]:checked + label {
 .tab-content img:hover {
     border: 1px solid #000000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .divider {
     position: relative;
@@ -257,19 +220,16 @@ label:hover, input[type="radio"]:checked + label {
     color: #808080; 
 }
 
-
 .divider:before {
     left: -20px;
     top: 20%;
     transform: rotate(180deg); 
 }
 
-
 .divider:after {
     right: -20px;
     bottom: 20%;
 }
-
 
 .divider.left-hover:before {
     color: #000000;
@@ -289,19 +249,16 @@ label:hover, input[type="radio"]:checked + label {
 .top-side {
     flex: 1;
     display: flex;
-    
 }
 
 .bottom-side {
     flex: 1;
     flex-direction: column;
-    
 }
 
 #instruction-top {
     width: 100%;
     font-size: 12px;
-    
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid #c1c6cb;
@@ -329,18 +286,12 @@ label:hover, input[type="radio"]:checked + label {
     overflow-y: auto; 
     overflow-x: hidden; 
     font-size: 12px;
-    
     padding: 5px; 
 }
 
 #table-bottom {
-    max-height: 6vh; 
-    
-    
-    
-    
+    max-height: 6vh;
     text-align: center;
-    
     display: block;
 }
 
@@ -355,7 +306,6 @@ label:hover, input[type="radio"]:checked + label {
     border: initial;
 }
 
-
 #trajectory-long img,
 #instruction-top img {
     width: 20px;
@@ -366,7 +316,6 @@ label:hover, input[type="radio"]:checked + label {
     border: none;
     border-radius: initial;
 }
-
 
 table {
     width: 100%;

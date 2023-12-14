@@ -92,10 +92,6 @@ h3 {
 }
 
 
-
-
-
-
 .task-filter-selector {
     border: 1px solid #000000; 
     border-radius: 4px;
@@ -175,8 +171,6 @@ h3 {
 }
 
 .radar-chart-container {
-    
-    
     width: 520px;
     height: auto;
 }
@@ -255,7 +249,7 @@ h3 {
 .charts-panel {
     display: flex; 
     width: 95%;
-    height: 50vh;
+    height: 65vh;
     justify-content: space-between; 
     margin-bottom: 20vh;
 }

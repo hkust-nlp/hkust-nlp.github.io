@@ -3,7 +3,6 @@ let rawData;
 // let chart = null;
 let scoreChart = null;
 let accChart = null;
-
 const HardColors = {
     score: '#f398ae',
     accuracy: '#78b5f1',
@@ -27,12 +26,10 @@ let cur_sortby_option = sortby_options.BY_REWARD_SCORE_EASY;
 
 // Load JSON data and initialize the chart
 function loadData() {
-    fetch('/agentboard/data/To_Release/difficulty.json')
+    return fetch('/agentboard/data/To_Release/difficulty.json')
         .then(response => response.json())
         .then(data => {
             rawData = data;
-            createScoreChart();
-            createAccChart();
         });
 }
 
@@ -435,17 +432,18 @@ document.querySelectorAll('.left-chart-panel .sort-by-button .btn').forEach(btn 
 
 // Page load event
 window.onload = function () {
-    loadData();
+    loadData().then(() => {
 
-    document.getElementById('sort-by-accuracy-score-easy').classList.add('active');
-    document.getElementById('sort-by-reward-score-easy').classList.add('active');
+        document.getElementById('sort-by-accuracy-score-easy').classList.add('active');
+        document.getElementById('sort-by-reward-score-easy').classList.add('active');
 
-    cur_sortby_option = sortby_options.BY_ACCURACY_SCORE_EASY;
-    sortData(cur_sortby_option);
-    createAccChart();
-    cur_sortby_option = sortby_options.BY_REWARD_SCORE_EASY;
-    sortData(cur_sortby_option);
-    createScoreChart();
+        cur_sortby_option = sortby_options.BY_ACCURACY_SCORE_EASY;
+        sortData(cur_sortby_option);
+        createAccChart();
+        cur_sortby_option = sortby_options.BY_REWARD_SCORE_EASY;
+        sortData(cur_sortby_option);
+        createScoreChart();
+    });
 };
 
 function formatWithSign(num) {

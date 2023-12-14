@@ -17,11 +17,15 @@ function createRadarChart(models) {
         'rgba(83, 102, 255, 1)',
         'rgba(40, 159, 64, 1)',
         'rgba(143, 162, 235, 1)',
-        'rgba(255, 99, 75, 1)'
+        'rgba(255, 99, 75, 1)',
+        'rgba(71 ,150 ,87, 1)',
+        'rgba(210 ,102 ,95, 1)',
+        'rgba(51 ,47 ,180, 1)',
     ];
     const borderStyles = [
         [], [5, 5], [10, 5], [15, 10], [20, 5, 10, 5], [20, 15, 10, 5],
-        [25, 10], [30, 5], [35, 5, 20, 5], [40, 10], [45, 15, 10, 5]
+        [25, 10], [30, 5], [35, 5, 20, 5], [40, 10], [45, 15, 10, 5],
+        [5, 20, 10, 20], [60, 15, 5, 15], [50, 10]
     ];
     // const defaultModelsToShow = ['GPT4-8k', 'Claude2-100k', 'ChatGPT3.5-4k', 'llama2-70b-4k', 'codellama-34b-16k', 'lemur-70b-chat', 'codellama-13b-16k'];
     const datasets = models.map((model, index) => {
@@ -92,31 +96,36 @@ function createRadarChart(models) {
 fetchData().then(models => createRadarChart(models));
 
 
-// save chart
-// function saveChartAsPDF(chartId, pdfFilename, printWidth, printHeight) {
-//     const chartElement = document.getElementById(chartId);
+// save as PNG
+// function saveAsPNG(chartId, filename) {
+//     const canvas = document.getElementById(chartId);
 //
-//     html2canvas(chartElement).then(canvas => {
-//         const imgData = canvas.toDataURL('image/png');
-//         const pdf = new jspdf.jsPDF({
-//             orientation: 'landscape',
-//             unit: 'px',
-//             format: [printWidth, printHeight]
-//         });
+//     const multiplier = 3; // 3 * resolution
+//     const width = canvas.width;
+//     const height = canvas.height;
 //
-//         const scale = Math.min(printWidth / canvas.width, printHeight / canvas.height);
-//         const imgWidth = canvas.width * scale;
-//         const imgHeight = canvas.height * scale;
-//         const x = (printWidth - imgWidth) / 2;
-//         const y = (printHeight - imgHeight) / 2;
+//     var tempCanvas = document.createElement('canvas');
+//     var tempCtx = tempCanvas.getContext('2d');
+//     tempCanvas.width = width * multiplier;
+//     tempCanvas.height = height * multiplier;
 //
-//         pdf.addImage(imgData, 'PNG', x, y, imgWidth, imgHeight);
-//         pdf.save(pdfFilename);
-//     });
+//     tempCtx.drawImage(canvas, 0, 0, tempCanvas.width, tempCanvas.height);
+//
+//     tempCanvas.toBlob(function(blob) {
+//         const newImg = document.createElement('img');
+//         const url = URL.createObjectURL(blob);
+//
+//         var downloadLink = document.createElement("a");
+//         downloadLink.href = url;
+//         downloadLink.download = filename;
+//         document.body.appendChild(downloadLink);
+//         downloadLink.click();
+//         document.body.removeChild(downloadLink);
+//     }, 'image/png');
 // }
 //
-// document.getElementById('save-pdf-button').addEventListener('click', function () {
-//     const printWidth = 297; // A4 纸张宽度，单位毫米
-//     const printHeight = 210; // A4 纸张高度，单位毫米
-//     saveChartAsPDF('radarChart', 'chart.pdf', printWidth, printHeight);
+// document.getElementById('save-png-button').addEventListener('click', function () {
+//     saveAsPNG('radarChart', 'chart.png');
 // });
+
+

@@ -2,17 +2,17 @@
     {
         "model": "GPT-4",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.655",
                 "accuracy": "0.433",
                 "grounding": "0.826"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.788",
                 "accuracy": "0.522",
                 "grounding": "0.826"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.707",
                 "accuracy": "0.563",
                 "grounding": "0.826"
@@ -27,7 +27,7 @@
                 "accuracy": "0.350",
                 "grounding": "1.0"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.812",
                 "accuracy": "0.617",
                 "grounding": "0.93"
@@ -37,12 +37,12 @@
                 "accuracy": "0.484",
                 "grounding": "0.965"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.769",
                 "accuracy": "0.390",
                 "grounding": "0.983"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.394",
                 "accuracy": "0.151",
                 "grounding": "0.976"
@@ -58,18 +58,18 @@
                 "grounding": "0.975"
             },
             "Tool-Operation": {
-                "score": "0.805",
-                "accuracy": "0.425",
+                "score": "0.808",
+                "accuracy": "0.600",
                 "grounding": "0.985"
             },
             "tools": {
-                "score": "0.829",
-                "accuracy": "0.554",
+                "score": "0.830",
+                "accuracy": "0.642",
                 "grounding": "0.98"
             },
             "Avg": {
                 "score": "0.701",
-                "accuracy": "0.459",
+                "accuracy": "0.479",
                 "grounding": "0.925"
             }
         }
@@ -77,17 +77,17 @@
     {
         "model": "Claude2",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.341",
                 "accuracy": "0.246",
                 "grounding": "0.574"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.320",
                 "accuracy": "0.111",
                 "grounding": "0.112"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.375",
                 "accuracy": "0.481",
                 "grounding": "0.616"
@@ -102,7 +102,7 @@
                 "accuracy": "0.000",
                 "grounding": "0.982"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.614",
                 "accuracy": "0.400",
                 "grounding": "0.712"
@@ -112,12 +112,12 @@
                 "accuracy": "0.200",
                 "grounding": "0.847"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.746",
                 "accuracy": "0.378",
                 "grounding": "0.959"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.364",
                 "accuracy": "0.086",
                 "grounding": "0.839"
@@ -133,18 +133,18 @@
                 "grounding": "0.937"
             },
             "Tool-Operation": {
-                "score": "0.596",
-                "accuracy": "0.275",
+                "score": "0.614",
+                "accuracy": "0.300",
                 "grounding": "0.907"
             },
             "tools": {
-                "score": "0.666",
-                "accuracy": "0.379",
+                "score": "0.675",
+                "accuracy": "0.392",
                 "grounding": "0.922"
             },
             "Avg": {
-                "score": "0.477",
-                "accuracy": "0.273",
+                "score": "0.479",
+                "accuracy": "0.276",
                 "grounding": "0.738"
             }
         }
@@ -152,17 +152,17 @@
     {
         "model": "GPT-3.5-Turbo",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.356",
                 "accuracy": "0.172",
                 "grounding": "0.592"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.319",
                 "accuracy": "0.118",
                 "grounding": "0.187"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.517",
                 "accuracy": "0.393",
                 "grounding": "0.624"
@@ -177,7 +177,7 @@
                 "accuracy": "0.050",
                 "grounding": "0.998"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.250",
                 "accuracy": "0.050",
                 "grounding": "0.66"
@@ -187,12 +187,12 @@
                 "accuracy": "0.050",
                 "grounding": "0.829"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.764",
                 "accuracy": "0.351",
                 "grounding": "0.902"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.255",
                 "accuracy": "0.046",
                 "grounding": "0.913"
@@ -208,18 +208,18 @@
                 "grounding": "0.976"
             },
             "Tool-Operation": {
-                "score": "0.263",
-                "accuracy": "0.150",
+                "score": "0.372",
+                "accuracy": "0.075",
                 "grounding": "0.918"
             },
             "tools": {
-                "score": "0.479",
-                "accuracy": "0.300",
+                "score": "0.534",
+                "accuracy": "0.263",
                 "grounding": "0.947"
             },
             "Avg": {
-                "score": "0.402",
-                "accuracy": "0.198",
+                "score": "0.414",
+                "accuracy": "0.189",
                 "grounding": "0.752"
             }
         }
@@ -227,17 +227,17 @@
     {
         "model": "GPT-3.5-Turbo-16k",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.252",
                 "accuracy": "0.045",
                 "grounding": "0.574"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.022",
                 "accuracy": "0.000",
                 "grounding": "0.092"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.451",
                 "accuracy": "0.339",
                 "grounding": "0.733"
@@ -252,7 +252,7 @@
                 "accuracy": "0.000",
                 "grounding": "1.0"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.226",
                 "accuracy": "0.033",
                 "grounding": "0.776"
@@ -262,12 +262,12 @@
                 "accuracy": "0.017",
                 "grounding": "0.888"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.738",
                 "accuracy": "0.279",
                 "grounding": "0.966"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.237",
                 "accuracy": "0.061",
                 "grounding": "0.813"
@@ -283,18 +283,18 @@
                 "grounding": "0.979"
             },
             "Tool-Operation": {
-                "score": "0.225",
-                "accuracy": "0.100",
+                "score": "0.392",
+                "accuracy": "0.150",
                 "grounding": "0.922"
             },
             "tools": {
-                "score": "0.408",
-                "accuracy": "0.209",
+                "score": "0.492",
+                "accuracy": "0.234",
                 "grounding": "0.951"
             },
             "Avg": {
-                "score": "0.323",
-                "accuracy": "0.130",
+                "score": "0.341",
+                "accuracy": "0.136",
                 "grounding": "0.762"
             }
         }
@@ -302,17 +302,17 @@
     {
         "model": "Text-Davinci-003",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.188",
                 "accuracy": "0.090",
                 "grounding": "0.273"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.289",
                 "accuracy": "0.078",
                 "grounding": "0.172"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.175",
                 "accuracy": "0.143",
                 "grounding": "0.159"
@@ -327,7 +327,7 @@
                 "accuracy": "0.100",
                 "grounding": "0.979"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.317",
                 "accuracy": "0.117",
                 "grounding": "0.726"
@@ -337,12 +337,12 @@
                 "accuracy": "0.109",
                 "grounding": "0.853"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.723",
                 "accuracy": "0.295",
                 "grounding": "0.974"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.162",
                 "accuracy": "0.025",
                 "grounding": "0.237"
@@ -358,73 +358,73 @@
                 "grounding": "0.952"
             },
             "Tool-Operation": {
-                "score": "0.529",
-                "accuracy": "0.175",
+                "score": "0.562",
+                "accuracy": "0.225",
                 "grounding": "0.825"
             },
             "tools": {
-                "score": "0.590",
-                "accuracy": "0.279",
+                "score": "0.606",
+                "accuracy": "0.304",
                 "grounding": "0.889"
             },
             "Avg": {
-                "score": "0.369",
-                "accuracy": "0.156",
-                "grounding": "0.589"
+                "score": "0.372",
+                "accuracy": "0.162",
+                "grounding": "0.857"
             }
         }
     },
     {
         "model": "Llama2-13b",
         "tasks": {
-            "Alfworld": {
-                "score": "0.089",
-                "accuracy": "0.078",
+            "AlfWorld": {
+                "score": "0.071",
+                "accuracy": "0.000",
                 "grounding": "0.102"
             },
-            "Scienceworld": {
-                "score": "0.011",
+            "ScienceWorld": {
+                "score": "0.017",
                 "accuracy": "0.000",
                 "grounding": "0.041"
             },
-            "Babyai": {
-                "score": "0.181",
-                "accuracy": "0.062",
+            "BabyAI": {
+                "score": "0.300",
+                "accuracy": "0.134",
                 "grounding": "0.571"
             },
             "Embodied": {
-                "score": "0.094",
-                "accuracy": "0.047",
+                "score": "0.129",
+                "accuracy": "0.045",
                 "grounding": "0.238"
             },
             "Jericho": {
-                "score": "0.032",
+                "score": "0.090",
                 "accuracy": "0.000",
                 "grounding": "0.963"
             },
-            "pddl": {
-                "score": "0.041",
+            "PDDL": {
+                "score": "0.017",
                 "accuracy": "0.000",
                 "grounding": "0.319"
             },
             "Game": {
-                "score": "0.037",
+                "score": "0.053",
                 "accuracy": "0.000",
                 "grounding": "0.641"
             },
-            "webshop": {
-                "score": "0.299",
-                "accuracy": "0.000",
+            "WebShop": {
+                "score": "0.595",
+                "accuracy": "0.096",
                 "grounding": "0.682"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.079",
                 "accuracy": "0.020",
                 "grounding": "0.372"
             },
             "web": {
-                "score": "0.208",
-                "accuracy": "0.016",
+                "score": "0.356",
+                "accuracy": "0.064",
                 "grounding": "0.527"
             },
             "Tool-Query": {
@@ -433,36 +433,36 @@
                 "grounding": "0.87"
             },
             "Tool-Operation": {
-                "score": "0.263",
+                "score": "0.293",
                 "accuracy": "0.000",
-                "grounding": "0.449"
+                "grounding": "0.741"
             },
             "tools": {
-                "score": "0.316",
+                "score": "0.331",
                 "accuracy": "0.000",
-                "grounding": "0.66"
+                "grounding": "0.805"
             },
             "Avg": {
-                "score": "0.145",
-                "accuracy": "0.024",
-                "grounding": "0.485"
+                "score": "0.197",
+                "accuracy": "0.034",
+                "grounding": "0.518"
             }
         }
     },
     {
         "model": "Llama2-70b",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.132",
                 "accuracy": "0.030",
                 "grounding": "0.208"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.026",
                 "accuracy": "0.000",
                 "grounding": "0.03"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.300",
                 "accuracy": "0.196",
                 "grounding": "0.423"
@@ -477,7 +477,7 @@
                 "accuracy": "0.000",
                 "grounding": "0.967"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.081",
                 "accuracy": "0.017",
                 "grounding": "0.306"
@@ -487,12 +487,12 @@
                 "accuracy": "0.008",
                 "grounding": "0.636"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.536",
                 "accuracy": "0.131",
                 "grounding": "0.593"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.116",
                 "accuracy": "0.033",
                 "grounding": "0.936"
@@ -508,36 +508,36 @@
                 "grounding": "0.961"
             },
             "Tool-Operation": {
-                "score": "0.412",
+                "score": "0.380",
                 "accuracy": "0.000",
                 "grounding": "0.804"
             },
             "tools": {
-                "score": "0.448",
+                "score": "0.432",
                 "accuracy": "0.000",
                 "grounding": "0.883"
             },
             "Avg": {
-                "score": "0.241",
+                "score": "0.237",
                 "accuracy": "0.045",
                 "grounding": "0.581"
             }
         }
     },
     {
-        "model": "Codellama-13b",
+        "model": "CodeLlama-13b",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.134",
                 "accuracy": "0.022",
                 "grounding": "0.158"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.096",
                 "accuracy": "0.022",
                 "grounding": "0.086"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.170",
                 "accuracy": "0.222",
                 "grounding": "0.346"
@@ -552,7 +552,7 @@
                 "accuracy": "0.000",
                 "grounding": "0.997"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.093",
                 "accuracy": "0.017",
                 "grounding": "0.178"
@@ -562,12 +562,12 @@
                 "accuracy": "0.009",
                 "grounding": "0.588"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.655",
                 "accuracy": "0.259",
                 "grounding": "0.78"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.177",
                 "accuracy": "0.037",
                 "grounding": "0.821"
@@ -583,36 +583,36 @@
                 "grounding": "0.905"
             },
             "Tool-Operation": {
-                "score": "0.389",
-                "accuracy": "0.100",
-                "grounding": "0.684"
+                "score": "0.418",
+                "accuracy": "0.125",
+                "grounding": "0.792"
             },
             "tools": {
-                "score": "0.428",
-                "accuracy": "0.175",
-                "grounding": "0.795"
+                "score": "0.442",
+                "accuracy": "0.188",
+                "grounding": "0.849"
             },
             "Avg": {
-                "score": "0.242",
-                "accuracy": "0.103",
-                "grounding": "0.551"
+                "score": "0.245",
+                "accuracy": "0.106",
+                "grounding": "0.563"
             }
         }
     },
     {
-        "model": "Codellama-34b",
+        "model": "CodeLlama-34b",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.113",
                 "accuracy": "0.030",
                 "grounding": "0.084"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.035",
                 "accuracy": "0.000",
                 "grounding": "0.09"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.199",
                 "accuracy": "0.134",
                 "grounding": "0.28"
@@ -627,7 +627,7 @@
                 "accuracy": "0.000",
                 "grounding": "0.973"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.185",
                 "accuracy": "0.033",
                 "grounding": "0.436"
@@ -637,12 +637,12 @@
                 "accuracy": "0.017",
                 "grounding": "0.705"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.717",
                 "accuracy": "0.235",
                 "grounding": "0.983"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.212",
                 "accuracy": "0.041",
                 "grounding": "0.968"
@@ -658,18 +658,18 @@
                 "grounding": "0.975"
             },
             "Tool-Operation": {
-                "score": "0.504",
-                "accuracy": "0.025",
-                "grounding": "0.823"
+                "score": "0.488",
+                "accuracy": "0.075",
+                "grounding": "0.828"
             },
             "tools": {
-                "score": "0.552",
-                "accuracy": "0.079",
-                "grounding": "0.899"
+                "score": "0.544",
+                "accuracy": "0.104",
+                "grounding": "0.901"
             },
             "Avg": {
-                "score": "0.302",
-                "accuracy": "0.070",
+                "score": "0.300",
+                "accuracy": "0.076",
                 "grounding": "0.624"
             }
         }
@@ -677,17 +677,17 @@
     {
         "model": "Vicuna-13b-16k",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.110",
                 "accuracy": "0.014",
                 "grounding": "0.172"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.141",
                 "accuracy": "0.022",
                 "grounding": "0.241"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.143",
                 "accuracy": "0.054",
                 "grounding": "0.745"
@@ -702,7 +702,7 @@
                 "accuracy": "0.000",
                 "grounding": "1.0"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.073",
                 "accuracy": "0.017",
                 "grounding": "0.592"
@@ -712,12 +712,12 @@
                 "accuracy": "0.009",
                 "grounding": "0.796"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.733",
                 "accuracy": "0.219",
                 "grounding": "0.941"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.113",
                 "accuracy": "0.029",
                 "grounding": "0.587"
@@ -733,17 +733,17 @@
                 "grounding": "0.979"
             },
             "Tool-Operation": {
-                "score": "0.259",
+                "score": "0.269",
                 "accuracy": "0.000",
                 "grounding": "0.923"
             },
             "tools": {
-                "score": "0.301",
+                "score": "0.306",
                 "accuracy": "0.017",
                 "grounding": "0.951"
             },
             "Avg": {
-                "score": "0.230",
+                "score": "0.231",
                 "accuracy": "0.043",
                 "grounding": "0.687"
             }
@@ -752,17 +752,17 @@
     {
         "model": "Lemur-70b",
         "tasks": {
-            "Alfworld": {
+            "AlfWorld": {
                 "score": "0.108",
                 "accuracy": "0.007",
                 "grounding": "0.157"
             },
-            "Scienceworld": {
+            "ScienceWorld": {
                 "score": "0.340",
                 "accuracy": "0.056",
                 "grounding": "0.478"
             },
-            "Babyai": {
+            "BabyAI": {
                 "score": "0.194",
                 "accuracy": "0.098",
                 "grounding": "0.446"
@@ -777,7 +777,7 @@
                 "accuracy": "0.000",
                 "grounding": "0.977"
             },
-            "pddl": {
+            "PDDL": {
                 "score": "0.097",
                 "accuracy": "0.033",
                 "grounding": "0.31"
@@ -787,12 +787,12 @@
                 "accuracy": "0.017",
                 "grounding": "0.643"
             },
-            "webshop": {
+            "WebShop": {
                 "score": "0.718",
                 "accuracy": "0.116",
                 "grounding": "0.84"
             },
-            "webarena": {
+            "WebArena": {
                 "score": "0.058",
                 "accuracy": "0.000",
                 "grounding": "0.191"
@@ -808,19 +808,94 @@
                 "grounding": "0.965"
             },
             "Tool-Operation": {
-                "score": "0.452",
-                "accuracy": "0.150",
-                "grounding": "0.956"
+                "score": "0.359",
+                "accuracy": "0.075",
+                "grounding": "0.9"
             },
             "tools": {
-                "score": "0.586",
-                "accuracy": "0.217",
-                "grounding": "0.961"
+                "score": "0.540",
+                "accuracy": "0.179",
+                "grounding": "0.933"
             },
             "Avg": {
-                "score": "0.310",
-                "accuracy": "0.083",
-                "grounding": "0.591"
+                "score": "0.299",
+                "accuracy": "0.074",
+                "grounding": "0.585"
+            }
+        }
+    },
+    {
+        "model": "DeepSeek-67b",
+        "tasks": {
+            "AlfWorld": {
+                "score": "0.345",
+                "accuracy": "0.209",
+                "grounding": "0.436"
+            },
+            "ScienceWorld": {
+                "score": "0.361",
+                "accuracy": "0.100",
+                "grounding": "0.126"
+            },
+            "BabyAI": {
+                "score": "0.317",
+                "accuracy": "0.223",
+                "grounding": "0.654"
+            },
+            "Embodied": {
+                "score": "0.341",
+                "accuracy": "0.177",
+                "grounding": "0.405"
+            },
+            "Jericho": {
+                "score": "0.137",
+                "accuracy": "0.000",
+                "grounding": "0.998"
+            },
+            "PDDL": {
+                "score": "0.220",
+                "accuracy": "0.067",
+                "grounding": "0.627"
+            },
+            "Game": {
+                "score": "0.178",
+                "accuracy": "0.033",
+                "grounding": "0.813"
+            },
+            "WebShop": {
+                "score": "0.727",
+                "accuracy": "0.319",
+                "grounding": "0.954"
+            },
+            "WebArena": {
+                "score": "0.239",
+                "accuracy": "0.057",
+                "grounding": "0.931"
+            },
+            "web": {
+                "score": "0.483",
+                "accuracy": "0.188",
+                "grounding": "0.943"
+            },
+            "Tool-Query": {
+                "score": "0.714",
+                "accuracy": "0.400",
+                "grounding": "0.931"
+            },
+            "Tool-Operation": {
+                "score": "0.405",
+                "accuracy": "0.175",
+                "grounding": "0.805"
+            },
+            "tools": {
+                "score": "0.559",
+                "accuracy": "0.288",
+                "grounding": "0.868"
+            },
+            "Avg": {
+                "score": "0.385",
+                "accuracy": "0.172",
+                "grounding": "0.718"
             }
         }
     }

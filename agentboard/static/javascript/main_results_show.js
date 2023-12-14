@@ -12,21 +12,21 @@ const sortby_options = {
 let cur_sortby_option = sortby_options.BY_REWARD_SCORE;
 
 const taskSubtaskMapping = {
-    'Avg': ['Alfworld', 'Scienceworld', 'Babyai', 'pddl', 'Jericho', 'webshop', 'webarena', 'Tool-Query', 'Tool-Operation'],
-    'Embodied': ['Alfworld', 'Scienceworld', 'Babyai'],
-    'Game': ['pddl', 'Jericho'],
-    'web': ['webshop', 'webarena'],
+    'Avg': ['AlfWorld', 'ScienceWorld', 'BabyAI', 'PDDL', 'Jericho', 'WebShop', 'WebArena', 'Tool-Query', 'Tool-Operation'],
+    'Embodied': ['AlfWorld', 'ScienceWorld', 'BabyAI'],
+    'Game': ['PDDL', 'Jericho'],
+    'web': ['WebShop', 'WebArena'],
     'tools': ['Tool-Query', 'Tool-Operation'],
 };
 
 const SubtaskNameMapping = {
-    'Alfworld': 'ALF',
-    'Scienceworld': 'SW',
-    'Babyai': 'BA',
-    'pddl': 'PL',
+    'AlfWorld': 'ALF',
+    'ScienceWorld': 'SW',
+    'BabyAI': 'BA',
+    'PDDL': 'PL',
     'Jericho': 'JC',
-    'webshop': 'WS',
-    'webarena': 'WA',
+    'WebShop': 'WS',
+    'WebArena': 'WA',
     'Tool-Query': 'T-Q',
     'Tool-Operation': 'T-O',
 };
@@ -47,7 +47,10 @@ const colors = [
     'rgba(83, 102, 255, 1)',
     'rgba(40, 159, 64, 1)',
     'rgba(143, 162, 235, 1)',
-    'rgba(255, 99, 75, 1)'
+    'rgba(255, 99, 75, 1)',
+    'rgba(71 ,150 ,87, 1)',
+    'rgba(210 ,102 ,95, 1)',
+    'rgba(51 ,47 ,180, 1)',
 ];
 
 
@@ -90,14 +93,23 @@ const borders = [
     },
     {
         borderWidth: 2,
+        borderDash: [11, 4],
+    },
+    {
+        borderWidth: 2,
         borderDash: [10, 2],
     },
     {
         borderWidth: 2,
-        borderDash: [2, 10],
+        borderDash: [4, 8],
+    }, {
+        borderWidth: 2,
+        borderDash: [3, 5],
+    }, {
+        borderWidth: 2,
+        borderDash: [5, 3],
     },
 ];
-
 
 
 function generateModelColorsAndStyles(models) {
@@ -160,17 +172,17 @@ function createMainResultChart() {
             labels: labels,
             datasets: [
                 {
-                    label: 'Score',
+                    label: 'Progress Rate',
                     data: scores,
                     backgroundColor: '#f398ae',
                 },
                 {
-                    label: 'Accuracy',
+                    label: 'Success Rate',
                     data: accuracies,
                     backgroundColor: '#78b5f1',
                 },
                 {
-                    label: 'Grounding accuracy',
+                    label: 'Grounding Accuracy',
                     data: groundings,
                     backgroundColor: '#eee686',
                 }
@@ -290,7 +302,7 @@ function createMainResultChart() {
                 ...borderStyles[modelData.model]
             };
         });
-        yAxisTitle = 'Accuracy (%)';
+        yAxisTitle = 'Success Rate (%)';
     } else if (cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
         datasets = rawData.map(modelData => {
             return {
@@ -302,7 +314,7 @@ function createMainResultChart() {
                 ...borderStyles[modelData.model]
             };
         });
-        yAxisTitle = 'Score (%)';
+        yAxisTitle = 'Progress Rate (%)';
     } else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
         datasets = rawData.map(modelData => {
             return {
@@ -395,12 +407,12 @@ function createMainResultChart() {
                 if (selectedIndex !== selectedModelIndexInBar) {
                     selectedModelIndexInBar = selectedIndex;
                     selectedModelIndexInLine = highlightModel(taskScores_save.map(item => item.model), selectedModelIndexInBar);
-                    updateLineGraphScale(taskScores_save, selectedModelIndexInLine);
+                    // updateLineGraphScale(taskScores_save, selectedModelIndexInLine);
                 }
             } else {
                 selectedModelIndexInBar = null;
                 removeHighlight();
-                resetLineGraphScale();
+                // resetLineGraphScale();
             }
         });
     }
@@ -456,9 +468,9 @@ function createAnnotations(modelName) {
             return null;
         }
 
-        let content = `${modelData.model} (accuracy):\n`;
+        let content = `${modelData.model} (success rate):\n`;
         if (cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
-            content = `${modelData.model} (score):\n`
+            content = `${modelData.model} (progress rate):\n`
         } else if (cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
             content = `${modelData.model} (grounding acc):\n`
         }

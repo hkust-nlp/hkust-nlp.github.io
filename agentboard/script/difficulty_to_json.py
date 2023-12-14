@@ -1,56 +1,76 @@
-import csv
+import os
 import json
 
-def read_csv_and_convert_to_json(csv_file_path):
-    with open(csv_file_path, mode='r', encoding='utf-8') as file:
-        csv_reader = csv.reader(file)
-        data = list(csv_reader)
+model_map = ['GPT-4', 'Claude2', 'GPT-3.5-Turbo', 'GPT-3.5-Turbo-16k', 'Text-Davinci-003', 'Llama2-13b', 'Llama2-70b',
+             'CodeLlama-13b', 'CodeLlama-34b', 'Vicuna-13b-16k', 'Lemur-70b', 'DeepSeek-67b']
 
-    # Predefined task names
-    task_names = ['Alfworld', 'Scienceworld', 'Babyai', 'Embodied', 'pddl', 'Jericho', 'Game', 'webshop', 'webarena', 'web', 'Tool-Query', 'Tool-Operation', 'tools', 'Avg']
+task_map = {'alfworld': 'AlfWorld', 'scienceworld': 'ScienceWorld', 'babyai': 'BabyAI', 'jericho': 'Jericho', 'pddl': 'PDDL'
+            , 'webshop': 'WebShop', 'webarena': 'WebArena', 'tool-operation': 'Tool-Operation', 'tool-query': 'Tool-Query'}  # 填入其他任务映射
 
-    models_data = {}  # Use a dictionary to store data keyed by model name
-    current_section = ""
+def process_file(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            data = json.loads(line)
+            task_name = task_map.get(data['task_name'].lower(), data['task_name'])
+            easy_score = f"{round(data['success_rate_easy'] * 100, 1)}%"
+            hard_score = f"{round(data['success_rate_hard'] * 100, 1)}%"
+            easy_accuracy = f"{round(data['progress_rate_easy'] * 100, 1)}%"
+            hard_accuracy = f"{round(data['progress_rate_hard'] * 100, 1)}%"
+            gap_score = f"{round(float(easy_score[:-1]) - float(hard_score[:-1]), 1)}%"
+            gap_accuracy = f"{round(float(easy_accuracy[:-1]) - float(hard_accuracy[:-1]), 1)}%"
 
-    for row in data:
-        if not row or '#DIV/0!' in row or all(element == '' for element in row) or "Alfworld" in row or "score" in row:  # Skip invalid rows
-            continue
+            yield task_name, easy_score, hard_score, easy_accuracy, hard_accuracy, gap_score, gap_accuracy
 
-        if row[0].lower() in ["easy", "hard", "gap"]:  # Section headers
-            current_section = row[0].lower()
-            continue
+def compute_average(scores):
+    if not scores:
+        return {'score': '0%', 'accuracy': '0%'}
+    avg_score = f"{round(sum(float(s['score'][:-1]) for s in scores) / len(scores), 1)}%"
+    avg_accuracy = f"{round(sum(float(s['accuracy'][:-1]) for s in scores) / len(scores), 1)}%"
+    return {'score': avg_score, 'accuracy': avg_accuracy}
 
-        if current_section and row[0]:  # Model rows (assuming non-empty first cell)
-            model_name = row[0]
-            if model_name not in models_data:
-                models_data[model_name] = {"model": model_name, "tasks": {}}
-
-            # Process scores and accuracies
-            for i, task_name in enumerate(task_names):
-                score_index = 1 + i * 2  # Adjust index as per your CSV format
-                accuracy_index = 2 + i * 2  # Adjust index as per your CSV format
-                score = row[score_index] if score_index < len(row) else None
-                accuracy = row[accuracy_index] if accuracy_index < len(row) else None
-
-                if task_name not in models_data[model_name]["tasks"]:
-                    models_data[model_name]["tasks"][task_name] = {}
-                models_data[model_name]["tasks"][task_name][current_section] = {
-                    "score": score,
-                    "accuracy": accuracy
+def process_folder(folder_path):
+    results = []
+    for model in model_map:
+        model_path = os.path.join(folder_path, model)
+        if os.path.isdir(model_path):
+            model_results = {}
+            easy_scores = []
+            hard_scores = []
+            gap_scores = []
+            file_path = os.path.join(model_path, 'all_results.txt')
+            for task, easy_s, hard_s, easy_a, hard_a, gap_s, gap_a in process_file(file_path):
+                easy = {'score': easy_s, 'accuracy': easy_a}
+                hard = {'score': hard_s, 'accuracy': hard_a}
+                gap = {'score': gap_s, 'accuracy': gap_a}
+                model_results[task] = {
+                    'easy': easy,
+                    'hard': hard,
+                    'gap': gap,
                 }
+                easy_scores.append(easy)
+                hard_scores.append(hard)
+                gap_scores.append(gap)
 
-    # Convert the models dictionary to a list
-    json_data = list(models_data.values())
+            avg_easy = compute_average(easy_scores)
+            avg_hard = compute_average(hard_scores)
+            avg_gap = compute_average(gap_scores)
 
-    return json_data
+            # 将平均值作为一个特殊的任务添加到结果中
+            model_results['Avg'] = {
+                'easy': avg_easy,
+                'hard': avg_hard,
+                'gap': avg_gap
+            }
 
-# Define file paths
-csv_file_path = '../data/original_data/Evaluation - easy_hard results.csv'
-json_file_path = '../data/To_Release/difficulty.json'
+            results.append({
+                'model': model,
+                'tasks': model_results
+            })
 
-# Convert CSV to JSON
-json_output = read_csv_and_convert_to_json(csv_file_path)
+    return results
 
-# Write JSON to file
-with open(json_file_path, 'w', encoding='utf-8') as json_file:
-    json.dump(json_output, json_file, indent=4)
+folder_path = '../data/baseline_results'
+final_results = process_folder(folder_path)
+
+with open('../data/To_Release/difficulty.json', 'w') as outfile:
+    json.dump(final_results, outfile, indent=4)
