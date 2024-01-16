@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
 
 <div id="nav">
     <div id="icon">
-        <img src="img/icon/logo.png" id="nav-icon">
+        <img src="img/icon/logo.png" id="nav-icon" alt="AgentBoard">
         <a class="nav-button-main" href="../index.html#home"
            style="margin-left: 2px; font-size: 22px">AgentBoard
         </a>
@@ -46,30 +46,38 @@
 
 <div id="body">
     <br><br>
-<!--    <button id="save-png-button">save image</button>-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>-->
+    <!--    <button id="save-png-button">save image</button>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>-->
     <div class="section">
         <h1>Leaderboard</h1>
         <p style="font-size: 17px">
             We conduct a comprehensive, multi-turn LLM agent evaluation of popular large language models, including both
-            API-based closed-source models and open-source models and analyze the performance through
+            API-based proprietary models and open-weight models. This analytical evaluation is designed to deeply
+            analyze
+            the performance through
             <span class="important">main results</span>, <span class="important">dimension score</span>,
-            <span class="important">reward-step score</span>, and <span class="important">scores at various levels of difficulty</span>.
+            <span class="important">long-range interaction</span>, and <span class="important">performance at easy/hard levels</span>.
         </p>
         <h2 id="main-performance">Main Performance</h2>
         <p>
             <strong>Dataset Statistics:</strong> We categorize the nine tasks into four distinct categories: <span
                 class="important">Embodied AI</span>, <span class="important">Games</span>, <span
                 class="important">Web</span>, and <span class="important">Tools</span>.
-            Under Embodied AI, we include Alfworld, ScienceWorld, and BabyAI; in the Game category, we
-            have Jericho and PDDL; the Web category encompasses WebShop and WebArena; and finally, for
-            Tools, we include Query-Tool and Operation-Tool.<br>
+            Under Embodied AI, we include <span class="important">Alfworld</span>, <span class="important">ScienceWorld
+            </span>, and <span class="important">BabyAI</span>; the Game category contains
+            <span class="important">Jericho</span> and <span class="important">PDDL</span>;
+            the Web category encompasses <span class="important">WebShop</span> and <span
+                class="important">WebArena</span>;
+            for Tools, we include <span class="important">Tool-Query</span>
+            and <span class="important">Tool-Operation</span>.<br>
             <strong>Evaluation metrics:</strong> We introduce two primary metrics for evaluation: <span
-                class="important">success rate</span>and <span class="important">progress rate</span>. The success rate
-            measures the proportion of instances in which the goal of an environment is achieved. The progress rate
-            reflects the proportion of completed sub-goals.
-            <span class="important">grounding score</span>
+                class="important">success rate</span> and <span class="important">progress rate</span>. The
+            <span class="important">success rate</span> measures the proportion of instances in which the goal of an
+            environment is achieved. The <span class="important">progress rate</span> reflects the proportion of
+            completed sub-goals. In addition to these, we incorporate <span class="important">grounding accuracy</span>
+            as a fundamental metric in assessing agent performance, which quantifies the percentage of valid actions
+            taken in each task.
         </p>
         <!--        <h3>API-based Commercial LLMs</h3>-->
         <div class="text-center btn-group">
@@ -111,49 +119,32 @@
                 <canvas id="line-graph" width="500" height="520"></canvas>
             </div>
         </div>
-
-        <!--        <h3>API-based Commercial LLMs</h3>-->
-        <!--        <div class="text-center">-->
-        <!--            <div class="btn-group btn-switch text-center feedback-provider-sort-by-selector"-->
-        <!--                 data-toggle="buttons">-->
-        <!--                <button type="button" class="btn btn-container" disabled>Sort-->
-        <!--                    by:-->
-        <!--                </button>-->
-        <!--                <button type="button" class="btn btn-container active"-->
-        <!--                        id="sort-by-success-rate-1">-->
-        <!--                    Success Rate-->
-        <!--                </button>-->
-
-        <!--                <button type="button" class="btn btn-container"-->
-        <!--                        id="sort-by-reward-score-1">-->
-        <!--                    Reward Score-->
-        <!--                </button>-->
-        <!--            </div>-->
-        <!--        </div>-->
-
-        <!--        <div class="chart-container" id="chart-feedback-p-1" style="display:block;margin:0 auto;">-->
-        <!--            <canvas id="chart-success-reward-rate-1" width="948" height="790"-->
-        <!--                    style="display: block; box-sizing: border-box; height: 395px; width: 474px;">-->
-        <!--            </canvas>-->
-        <!--        </div>-->
         <h2 id="dimensional-analysis">Dimensional Analysis</h2>
         <!--        默认显示6个模型，怕太杂乱了-->
         <p class="leaderboard_p">Our dimension scoring framework evaluates a model's capability
-            across six dimensions: <strong>memory</strong>, <strong>planning</strong>, <strong>world modeling</strong>,
-            <strong>retrospection</strong>,
-            <strong>grounding</strong>, and <strong>spatial navigation</strong>.
+            across six dimensions: <span class="important">memory</span>, <span class="important">planning</span>, <span
+                    class="important">world modeling</span>,
+            <span class="important">retrospection</span>,
+            <span class="important">grounding</span>, and <span class="important">spatial navigation</span>.
             <br>
+            <span class="important">Memory</span> measures incorporating long-range information in context, <span
+                    class="important">planning</span> assesses decomposing complex goals into
+            manageable sub-goals, <span class="important">world modeling</span> tests knowledge necessary for task
+            completion, <span class="important">retrospection</span> captures the ability to use environmental feedback,
+            <span class="important">grounding</span> focuses on competency in generating valid actions, and <span
+                    class="important">spatial navigation</span> represents efficiency in moving to a
+            target location).
         <div class="left-right-panel">
             <div id="content-left">
                 <ul>
-                    <li><span class="important">GPT-4</span> exhibits superior performance across all dimensions,
+                    <li><strong>GPT-4</strong> exhibits superior performance across all dimensions,
                         significantly surpassing other LLMs.
                     </li>
-                    <li>Generally, <span class="important">closed-source LLMs</span> outperform <span class="important">open-source
-                models</span> comprehensively and exhibit balanced abilities.
+                    <li>Generally, <strong>proprietary LLMs</strong> outperform <strong>open-weight
+                        models</strong> comprehensively and exhibit balanced abilities.
                     </li>
-                    <li><span class="important">Open-sourced LLMs</span> exhibit weaknesses in <span class="important">self-reflection</span>,
-                        <span class="important">world modeling</span>, and <span class="important">planning</span>.
+                    <li><strong>Open-weight LLMs</strong> exhibit weaknesses in <strong>self-reflection</strong>,
+                        <strong>world modeling</strong>, and <strong>planning</strong>.
                     </li>
                 </ul>
             </div>
@@ -169,19 +160,25 @@
 
         <h2 id="reward-step-analysis">Step Analysis</h2>
         <p>
-            Here shows how the model's <span class="important">progress rate changes with the number of steps</span>.
-            We observe that closed-sourced models (i.e. GPT-4, Claude2 and GPT-3.5-Turbo) <strong>continue to gain
-            rewards across 30 steps</strong> in tasks of Alfworld and PDDL. In contrast, in Webshop and Tool,
+            Here shows how the models <span class="important">proceed across long-range interactions</span>.
+            Specifically, we calculate the progress rate relative to the number of interaction steps.<br>
+            We observe that <strong>proprietary models</strong>(i.e. GPT-4, Claude2 and GPT-3.5-Turbo) <strong>continue
+            to gain
+            rewards across 30 steps</strong> in tasks of <strong>Alfworld</strong> and <strong>PDDL</strong>. In
+            contrast, in <strong>Webshop</strong> and <strong>Tool</strong>,
             they rapidly reach a peak reward value and then cease to gain further rewards. This trend may be due to the
-            fact that tasks in Embodied AI and Games generally require more steps to complete. However, for categories
-            like Web and Tools, the tasks require fewer steps to complete, leading to a quicker encounter with
-            subgoals that these models are unable to solve.<br>
-
-            For open-sourced models, they quickly reach their peak progress rate. As the number of steps increases, they
-            fail to continue gaining rewards in all tasks. This may indicate their <strong>limited ability to handle
+            fact that tasks in Embodied AI and Games generally <strong>require more steps to complete</strong>. However,
+            for categories
+            like <strong>Web</strong> and <strong>Tools</strong>, the tasks require fewer steps to complete, leading to
+            a quicker encounter with
+            sub-goals that these models are unable to solve.<br>
+            For <strong>open-weight models</strong>, they quickly reach their peak progress rate. As the number of steps
+            increases, they
+            fail to continue gaining rewards in all tasks and most of them stop making progresses after around 6 steps.
+            This may indicate their<strong> limited ability to handle
             long-range interactions</strong>. This suggests that these models struggle with longer steps due to the
             corresponding
-            increase in context length, hindering their ability to effectively complete subgoals.
+            increase in context length, hindering their ability to effectively complete sub-goals.
 
         </p>
         <script src="javascript/main_results_show.js" type="module"></script>
@@ -213,11 +210,11 @@
             For each of the task, we divide the environments into <span class="important">"easy"</span> and <span
                 class="important">"hard"</span> two categories. These environments are divided according to the <span
                 class="important">task
-            types</span> or the <span class="important">number of subgoals</span>.
+            types</span> or the <span class="important">number of sub-goals</span>.
             <br>Notably, even with a minor difference in task complexity (for some tasks,
-            easy samples consisting of fewer than 3 subgoals, and hard samples predominantly comprising 4-6 subgoals),
-            all models record a considerable performance decline, with <strong>GPT4 success rate experiencing an
-            average drop of 28.4%</strong>, which indicated that even the most robust Language Learning Models (LLM)
+            easy samples consisting of fewer than 3 sub-goals, and hard samples predominantly comprising 4-6 sub-goals).
+            all models suffer from significant average performance drop on hard examples, with <strong>GPT4 success rate experiencing an
+            average drop of 31.2%</strong>, which indicated that even the most robust Language Learning Models (LLM)
             such as GPT-4 are <strong>limited in terms of task compositionality</strong>.
         </p>
         <div class="panel">
@@ -272,10 +269,12 @@
                     <div class="text-center btn-sub-group">
                         <div class="btn-group btn-switch sort-by-button" data-toggle="buttons">
                             <button type="button" class="btn btn-container" disabled>Sort by:</button>
-                            <button type="button" class="btn btn-container" id="sort-by-accuracy-score-easy">Success Rate
+                            <button type="button" class="btn btn-container" id="sort-by-accuracy-score-easy">Success
+                                Rate
                                 (Easy)
                             </button>
-                            <button type="button" class="btn btn-container" id="sort-by-accuracy-score-hard">Success Rate
+                            <button type="button" class="btn btn-container" id="sort-by-accuracy-score-hard">Success
+                                Rate
                                 (Hard)
                             </button>
                             <button type="button" class="btn btn-container" id="sort-by-accuracy-score-gap">Success Rate
