@@ -1,61 +1,81 @@
+import os
+
 import pandas as pd
 import json
 
-def create_nested_json_new(data_frame):
-    nested_json = []
+tasks_type = {
+    "Embodied": ["alfworld", "scienceworld", "babyai"],
+    "Game": ["jericho", "pddl"],
+    "Web": ["webshop", "webarena"],
+    "Tools": ["tool-query", "tool-operation"],
+    "Avg": ["alfworld", "scienceworld", "babyai", "jericho", "pddl", "webshop", "webarena", "tool-query", "tool-operation"]
+}
 
-    for _, row in data_frame.iloc[1:].iterrows():
-        model_data = {"model": row['Models']}
-        tasks_data = {}
+model_map = ['GPT-4', 'Claude2', 'GPT-3.5-Turbo', 'GPT-3.5-Turbo-16k', 'Text-Davinci-003', 'Llama2-13b', 'Llama2-70b',
+             'CodeLlama-13b', 'CodeLlama-34b', 'Vicuna-13b-16k', 'Lemur-70b', 'DeepSeek-67b', 'Mistral-7b']
 
-        for i in range(1, len(data_frame.columns), 2):
-            main_task = data_frame.columns[i].split(' ')[0]
-            sub_task_score = data_frame.columns[i]
-            sub_task_accuracy = data_frame.columns[i+1]
+task_map = {'alfworld': 'AlfWorld', 'scienceworld': 'ScienceWorld', 'babyai': 'BabyAI', 'jericho': 'Jericho', 'pddl': 'PDDL'
+            , 'webshop': 'WebShop', 'webarena': 'WebArena', 'tool-operation': 'Tool-Operation', 'tool-query': 'Tool-Query'}  # 填入其他任务映射
 
-            task_data = {
-                "score": row[sub_task_score],
-                "accuracy": row[sub_task_accuracy]
+def process_file(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            data = json.loads(line)
+            task_name = task_map.get(data['task_name'].lower(), data['task_name'])
+            success_rate = f"{round(data['success_rate'] * 100, 1)}%"
+            progress_rate = f"{round(data['progress_rate'] * 100, 1)}%"
+            grounding_acc = f"{round(data['grounding_acc'] * 100, 1)}%"
+            yield task_name, success_rate, progress_rate, grounding_acc
+
+def compute_average(scores):
+    if not scores:
+        return {'score': '0%', 'accuracy': '0%', 'grounding': '0%'}
+    avg_score = f"{round(sum(float(s['score'][:-1]) for s in scores) / len(scores), 1)}%"
+    avg_accuracy = f"{round(sum(float(s['accuracy'][:-1]) for s in scores) / len(scores), 1)}%"
+    avg_grounding = f"{round(sum(float(s['grounding'][:-1]) for s in scores) / len(scores), 1)}%"
+    return {'score': avg_score, 'accuracy': avg_accuracy, 'grounding': avg_grounding}
+
+def process_folder(folder_path):
+    results = []
+    model_results = {}
+    average_values = {
+        "Embodied": [],
+        "Game": [],
+        "Web": [],
+        "Tools": [],
+        "Avg": []
+    }
+    for model in model_map:
+        model_results = {}
+        model_path = os.path.join(folder_path, ("").join(model.lower().split('.')))
+        if os.path.isdir(model_path):
+            file_path = os.path.join(model_path, 'all_results.txt')
+            for task, success_rate, progress_rate, grounding_acc in process_file(file_path):
+                model_results[task] = {
+                    "score": progress_rate,
+                    "accuracy": success_rate,
+                    "grounding": grounding_acc,
+                }
+                for category, tasks in tasks_type.items():
+                    if task.lower() in tasks:
+                        average_values[category].append(model_results[task])
+
+        for category, tasks in tasks_type.items():
+            avg_score = compute_average(average_values[category])
+            model_results[category] = {
+                'score': avg_score['score'],
+                'accuracy': avg_score['accuracy'],
+                'grounding': avg_score['grounding']
             }
-            tasks_data[main_task] = task_data
+        results.append({
+            'model': model,
+            'tasks': model_results
+        })
 
-        model_data["tasks"] = tasks_data
-        nested_json.append(model_data)
+    return results
 
-    return nested_json
+folder_path = '../data/original_data/baseline_results'
+final_results = process_folder(folder_path)
 
-file_path_main_new = '../data/original_data/Evaluation - Main Results（new）.csv'
-data_main_new = pd.read_csv(file_path_main_new)
-
-nested_json_data_new = create_nested_json_new(data_main_new)
-
-def create_nested_json_grounding(data_frame):
-    grounding_data = {}
-
-    for _, row in data_frame.iterrows():
-        model = row.iloc[0]
-        grounding_data[model] = {task: row[task] for task in data_frame.columns[1:]}
-
-    return grounding_data
-
-def percentage_to_float(percent_str):
-    return str(round(float(percent_str.strip('%')) / 100, 3))
-
-file_path_grounding = '../data/original_data/Evaluation - grounding.csv'
-data_grounding = pd.read_csv(file_path_grounding)
-
-grounding_data = create_nested_json_grounding(data_grounding)
-
-# Integrate grounding data into nested_json_data_new, converting percentage to float
-for model_data in nested_json_data_new:
-    model_name = model_data["model"]
-    if model_name in grounding_data:
-        for task in model_data["tasks"]:
-            if task in grounding_data[model_name]:
-                grounding_percentage = grounding_data[model_name][task]
-                model_data["tasks"][task]["grounding"] = percentage_to_float(grounding_percentage)
-
-json_file_path_main_new = '../data/To_Release/main_data_new.json'
-
-with open(json_file_path_main_new, 'w') as file:
-    json.dump(nested_json_data_new, file, indent=4)
+with open('../data/To_Release/main_data_new.json', 'w') as outfile:
+    json.dump(final_results, outfile, indent=4)

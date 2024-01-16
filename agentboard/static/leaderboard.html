@@ -22,7 +22,7 @@
 <div id="sidebar">
     <a href="#main-performance">Main Performance</a>
     <a href="#dimensional-analysis">Dimensional Analysis</a>
-    <a href="#reward-step-analysis">Reward-step Analysis</a>
+    <a href="#reward-step-analysis">Step Analysis</a>
     <a href="#difficulty-analysis">Difficulty Analysis</a>
 </div>
 
@@ -78,8 +78,8 @@
                 <button type="button" class="btn btn-container active" id="filter-by-Avg">Avg</button>
                 <button type="button" class="btn btn-container" id="filter-by-Embodied">Embodied AI</button>
                 <button type="button" class="btn btn-container" id="filter-by-Game">Game</button>
-                <button type="button" class="btn btn-container" id="filter-by-web">web</button>
-                <button type="button" class="btn btn-container" id="filter-by-tools">tools</button>
+                <button type="button" class="btn btn-container" id="filter-by-Web">Web</button>
+                <button type="button" class="btn btn-container" id="filter-by-Tools">Tools</button>
             </div>
             <div class="btn-group btn-switch metric-filter-selector" data-toggle="buttons">
                 <button type="button" class="btn btn-container" disabled>Sort
@@ -167,9 +167,9 @@
         </p>
 
 
-        <h2 id="reward-step-analysis">Reward-step Analysis</h2>
+        <h2 id="reward-step-analysis">Step Analysis</h2>
         <p>
-            Here shows how the model's <span class="important">reward score changes with the number of steps</span>.
+            Here shows how the model's <span class="important">progress rate changes with the number of steps</span>.
             We observe that closed-sourced models (i.e. GPT-4, Claude2 and GPT-3.5-Turbo) <strong>continue to gain
             rewards across 30 steps</strong> in tasks of Alfworld and PDDL. In contrast, in Webshop and Tool,
             they rapidly reach a peak reward value and then cease to gain further rewards. This trend may be due to the
@@ -177,7 +177,7 @@
             like Web and Tools, the tasks require fewer steps to complete, leading to a quicker encounter with
             subgoals that these models are unable to solve.<br>
 
-            For open-sourced models, they quickly reach their peak reward score. As the number of steps increases, they
+            For open-sourced models, they quickly reach their peak progress rate. As the number of steps increases, they
             fail to continue gaining rewards in all tasks. This may indicate their <strong>limited ability to handle
             long-range interactions</strong>. This suggests that these models struggle with longer steps due to the
             corresponding
@@ -194,8 +194,8 @@
                         <button type="button" class="btn btn-container active" id="task-filter-Avg">Avg</button>
                         <button type="button" class="btn btn-container" id="task-filter-Embodied">Embodied</button>
                         <button type="button" class="btn btn-container" id="task-filter-Game">Game</button>
-                        <button type="button" class="btn btn-container" id="task-filter-web">web</button>
-                        <button type="button" class="btn btn-container" id="task-filter-tools">tools</button>
+                        <button type="button" class="btn btn-container" id="task-filter-Web">Web</button>
+                        <button type="button" class="btn btn-container" id="task-filter-Tools">Tools</button>
                     </div>
                 </div>
                 <div class="text-center btn-sub-group">

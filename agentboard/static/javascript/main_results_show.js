@@ -15,8 +15,8 @@ const taskSubtaskMapping = {
     'Avg': ['AlfWorld', 'ScienceWorld', 'BabyAI', 'PDDL', 'Jericho', 'WebShop', 'WebArena', 'Tool-Query', 'Tool-Operation'],
     'Embodied': ['AlfWorld', 'ScienceWorld', 'BabyAI'],
     'Game': ['PDDL', 'Jericho'],
-    'web': ['WebShop', 'WebArena'],
-    'tools': ['Tool-Query', 'Tool-Operation'],
+    'Web': ['WebShop', 'WebArena'],
+    'Tools': ['Tool-Query', 'Tool-Operation'],
 };
 
 const SubtaskNameMapping = {
@@ -127,9 +127,9 @@ function getScoresForTask(rawData, task) {
         if (model.tasks[task]) {
             return {
                 model: model.model,
-                score: parseFloat(model.tasks[task].score) * 100,
-                accuracy: parseFloat(model.tasks[task].accuracy) * 100,
-                grounding: parseFloat(model.tasks[task].grounding) * 100
+                score: parseFloat(model.tasks[task].score),
+                accuracy: parseFloat(model.tasks[task].accuracy),
+                grounding: parseFloat(model.tasks[task].grounding)
             };
         } else {
             console.error("Task not found:", task);
@@ -184,7 +184,7 @@ function createMainResultChart() {
                 {
                     label: 'Grounding Accuracy',
                     data: groundings,
-                    backgroundColor: '#eee686',
+                    backgroundColor: '#f3e276',
                 }
 
             ]
@@ -296,7 +296,7 @@ function createMainResultChart() {
             return {
                 label: modelData.model,
                 data: subTaskLabels.map(subtask => modelData.tasks[subtask] ?
-                    parseFloat(modelData.tasks[subtask].accuracy) * 100 : null),
+                    parseFloat(modelData.tasks[subtask].accuracy) : null),
                 borderColor: modelColors[modelData.model] || '#4CAF50',
                 fill: false,
                 ...borderStyles[modelData.model]
@@ -308,7 +308,7 @@ function createMainResultChart() {
             return {
                 label: modelData.model,
                 data: subTaskLabels.map(subtask => modelData.tasks[subtask] ?
-                    parseFloat(modelData.tasks[subtask].score) * 100 : null),
+                    parseFloat(modelData.tasks[subtask].score) : null),
                 borderColor: modelColors[modelData.model] || '#4CAF50',
                 fill: false,
                 ...borderStyles[modelData.model]
@@ -320,7 +320,7 @@ function createMainResultChart() {
             return {
                 label: modelData.model,
                 data: subTaskLabels.map(subtask => modelData.tasks[subtask] ?
-                    parseFloat(modelData.tasks[subtask].grounding) * 100 : null),
+                    parseFloat(modelData.tasks[subtask].grounding) : null),
                 borderColor: modelColors[modelData.model] || '#4CAF50',
                 fill: false,
                 ...borderStyles[modelData.model]
@@ -480,11 +480,11 @@ function createAnnotations(modelName) {
         let maxYValue = 0;
         taskSubtaskMapping[currentTask].forEach(subtask => {
             if (modelData.tasks && modelData.tasks[subtask] && cur_sortby_option === sortby_options.BY_SUCCESS_RATE) {
-                focus_score = parseFloat(modelData.tasks[subtask].accuracy) * 100;
+                focus_score = parseFloat(modelData.tasks[subtask].accuracy);
             } else if (modelData.tasks && modelData.tasks[subtask] && cur_sortby_option === sortby_options.BY_REWARD_SCORE) {
-                focus_score = parseFloat(modelData.tasks[subtask].score) * 100;
+                focus_score = parseFloat(modelData.tasks[subtask].score);
             } else if (modelData.tasks && modelData.tasks[subtask] && cur_sortby_option === sortby_options.BY_GROUNDING_ACC) {
-                focus_score = parseFloat(modelData.tasks[subtask].grounding) * 100;
+                focus_score = parseFloat(modelData.tasks[subtask].grounding);
             }
             minYValue = Math.min(minYValue, focus_score);
             maxYValue = Math.max(maxYValue, focus_score);

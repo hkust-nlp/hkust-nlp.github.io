@@ -33,7 +33,6 @@ function loadData() {
         });
 }
 
-
 function prepareChartData(metricType) {
     const labels = rawData.map(d => d.model);
 
@@ -267,12 +266,17 @@ function highlightModelInChart(chart, modelName) {
     let indexToHighlight = -1;
 
     chart.data.labels.forEach((label, index) => {
-        if (label.includes(modelName)) {
+        const regex = new RegExp(`^${modelName}$`, 'i');
+        if (regex.test(label)) {
             indexToHighlight = index;
         }
     });
 
-    let modelData = rawData.find(d => d.model.includes(modelName));
+    let modelData = rawData.find(d => {
+        const regex = new RegExp(`^${modelName}$`, 'i');
+        return regex.test(d.model);
+    });
+
 
     if (modelData) {
         chart.options.plugins.tooltip.callbacks = {

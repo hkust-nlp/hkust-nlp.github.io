@@ -10,7 +10,10 @@ const colors = [
     'rgba(83, 102, 255, 1)',
     'rgba(40, 159, 64, 1)',
     'rgba(143, 162, 235, 1)',
-    'rgba(255, 99, 75, 1)'
+    'rgba(255, 99, 75, 1)',
+    'rgba(63, 185, 63, 1)',
+    'rgba(220, 42, 107, 1)',
+    'rgba(12, 126, 101, 1)'
 ];
 
 
@@ -59,6 +62,18 @@ const borders = [
         borderWidth: 2,
         borderDash: [2, 10],
     },
+    {
+        borderWidth: 2,
+        borderDash: [5, 3],
+    },
+    {
+        borderWidth: 2,
+        borderDash: [3, 5],
+    },
+    {
+        borderWidth: 2,
+        borderDash: [2, 4],
+    },
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -66,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
         'Avg': ['Avg'],
         'Embodied': ['Avg', 'Alfworld', 'Scienceworld', 'Babyai'],
         'Game': ['Avg', 'pddl', 'Jericho'],
-        'web': ['Avg', 'webshop', 'webarena'],
-        'tools': ['Avg', 'Tool-Query', 'Tool-Operation'],
+        'Web': ['Avg', 'webshop', 'webarena'],
+        'Tools': ['Avg', 'Tool-Query', 'Tool-Operation'],
     };
 
     let currentTask = 'Avg';
@@ -184,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 },
                                 title: {
                                     display: true,
-                                    text: 'Reward Score (%)',
+                                    text: 'Progress Rate (%)',
                                     font: {
                                         size: 14,
                                         fontFamily: "'Noto Sans', sans-serif",

@@ -8,11 +8,11 @@ PROJECT_PATH = "../data"
 
 
 def extract_variables(line):
-    pattern = r"\[EXP\] (\d+): \[sr\]: (.*), \[score\]: (.*), \[grounding_acc\]: (.*), \[score_state\]: (.*)"
+    pattern = r"\[EXP\] (\d+): \[success_rate\]: (.*), \[progress_rate\]: (.*), \[grounding_acc\]: (.*), \[score_state\]: (.*)"
     match = re.match(pattern, line)
     if match:
         i = int(match.group(1))
-        sr = float(match.group(2))
+        sr = float(1.0 if match.group(2) else 0.0)
         score = float(match.group(3))
         grounding_acc = float(match.group(4))
         score_state_str = match.group(5)
@@ -75,18 +75,20 @@ def extract_reward_score_4_model(model, datasets):
         "Codellama-34b": "codellama-34b",
         "Vicuna-13b-16k": "vicuna-13b-16k",
         "Lemur-70b": "lemur-70b",
+        # "DeepSeek-67b": "deepseek-67b",
+        "Mistral-7b": "mistral-7b",
     }
 
     if cal_category:
         for dataset in datasets:
-            f = open(f"{PROJECT_PATH}/baseline_results/{model_dict[model]}/{dataset}.txt", "r")
+            f = open(f"{PROJECT_PATH}/original_data/baseline_results/{model_dict[model]}/{dataset}.txt", "r")
             for line in f:
                 result = extract_variables(line)
                 result['score_state'] = complete_score_state(result['score_state'])
                 results.append(result)
             f.close()
     else:
-        f = open(f"{PROJECT_PATH}/baseline_results/{model_dict[model]}/{datasets}.txt", "r")
+        f = open(f"{PROJECT_PATH}/original_data/baseline_results/{model_dict[model]}/{datasets}.txt", "r")
         for line in f:
             result = extract_variables(line)
             result['score_state'] = complete_score_state(result['score_state'])
@@ -131,6 +133,8 @@ model_list = [
     "Codellama-34b",
     "Vicuna-13b-16k",
     "Lemur-70b",
+    # "DeepSeek-67b",
+    "Mistral-7b",
 ]
 
 results_list = []

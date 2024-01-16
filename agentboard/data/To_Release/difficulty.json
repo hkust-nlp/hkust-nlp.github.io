@@ -4,30 +4,30 @@
         "tasks": {
             "Tool-Operation": {
                 "easy": {
-                    "score": "80.0%",
-                    "accuracy": "88.7%"
+                    "score": "88.7%",
+                    "accuracy": "80.0%"
                 },
                 "hard": {
-                    "score": "48.0%",
-                    "accuracy": "76.1%"
+                    "score": "76.1%",
+                    "accuracy": "48.0%"
                 },
                 "gap": {
-                    "score": "32.0%",
-                    "accuracy": "12.6%"
+                    "score": "12.6%",
+                    "accuracy": "32.0%"
                 }
             },
             "PDDL": {
                 "easy": {
-                    "score": "58.3%",
-                    "accuracy": "83.9%"
+                    "score": "83.9%",
+                    "accuracy": "58.3%"
                 },
                 "hard": {
-                    "score": "66.7%",
-                    "accuracy": "77.1%"
+                    "score": "77.1%",
+                    "accuracy": "66.7%"
                 },
                 "gap": {
-                    "score": "-8.4%",
-                    "accuracy": "6.8%"
+                    "score": "6.8%",
+                    "accuracy": "-8.4%"
                 }
             },
             "AlfWorld": {
@@ -36,110 +36,110 @@
                     "accuracy": "100.0%"
                 },
                 "hard": {
-                    "score": "30.9%",
-                    "accuracy": "58.0%"
+                    "score": "58.0%",
+                    "accuracy": "30.9%"
                 },
                 "gap": {
-                    "score": "69.1%",
-                    "accuracy": "42.0%"
+                    "score": "42.0%",
+                    "accuracy": "69.1%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "69.8%",
-                    "accuracy": "78.7%"
+                    "score": "78.7%",
+                    "accuracy": "69.8%"
                 },
                 "hard": {
-                    "score": "11.5%",
-                    "accuracy": "44.1%"
+                    "score": "44.1%",
+                    "accuracy": "11.5%"
                 },
                 "gap": {
-                    "score": "58.3%",
-                    "accuracy": "34.6%"
+                    "score": "34.6%",
+                    "accuracy": "58.3%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "22.7%",
-                    "accuracy": "43.6%"
+                    "score": "43.6%",
+                    "accuracy": "22.7%"
                 },
                 "hard": {
-                    "score": "11.8%",
-                    "accuracy": "37.5%"
+                    "score": "37.5%",
+                    "accuracy": "11.8%"
                 },
                 "gap": {
-                    "score": "10.9%",
-                    "accuracy": "6.1%"
+                    "score": "6.1%",
+                    "accuracy": "10.9%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "50.0%",
-                    "accuracy": "56.7%"
+                    "score": "56.7%",
+                    "accuracy": "50.0%"
                 },
                 "hard": {
-                    "score": "20.0%",
-                    "accuracy": "48.2%"
+                    "score": "48.2%",
+                    "accuracy": "20.0%"
                 },
                 "gap": {
-                    "score": "30.0%",
-                    "accuracy": "8.5%"
+                    "score": "8.5%",
+                    "accuracy": "30.0%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "82.1%",
-                    "accuracy": "89.9%"
+                    "score": "89.9%",
+                    "accuracy": "82.1%"
                 },
                 "hard": {
-                    "score": "56.2%",
-                    "accuracy": "81.0%"
+                    "score": "81.0%",
+                    "accuracy": "56.2%"
                 },
                 "gap": {
-                    "score": "25.9%",
-                    "accuracy": "8.9%"
+                    "score": "8.9%",
+                    "accuracy": "25.9%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "41.8%",
-                    "accuracy": "77.9%"
+                    "score": "77.9%",
+                    "accuracy": "41.8%"
                 },
                 "hard": {
-                    "score": "31.9%",
-                    "accuracy": "72.8%"
+                    "score": "72.8%",
+                    "accuracy": "31.9%"
                 },
                 "gap": {
-                    "score": "9.9%",
-                    "accuracy": "5.1%"
+                    "score": "5.1%",
+                    "accuracy": "9.9%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "85.3%",
-                    "accuracy": "93.1%"
+                    "score": "93.1%",
+                    "accuracy": "85.3%"
                 },
                 "hard": {
-                    "score": "32.1%",
-                    "accuracy": "70.0%"
+                    "score": "70.0%",
+                    "accuracy": "32.1%"
                 },
                 "gap": {
-                    "score": "53.2%",
-                    "accuracy": "23.1%"
+                    "score": "23.1%",
+                    "accuracy": "53.2%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "65.6%",
-                    "accuracy": "79.2%"
+                    "score": "79.2%",
+                    "accuracy": "65.6%"
                 },
                 "hard": {
-                    "score": "34.3%",
-                    "accuracy": "62.8%"
+                    "score": "62.8%",
+                    "accuracy": "34.3%"
                 },
                 "gap": {
-                    "score": "31.2%",
-                    "accuracy": "16.4%"
+                    "score": "16.4%",
+                    "accuracy": "31.2%"
                 }
             }
         }
@@ -149,16 +149,16 @@
         "tasks": {
             "PDDL": {
                 "easy": {
-                    "score": "38.9%",
-                    "accuracy": "68.9%"
+                    "score": "68.9%",
+                    "accuracy": "38.9%"
                 },
                 "hard": {
-                    "score": "41.7%",
-                    "accuracy": "50.0%"
+                    "score": "50.0%",
+                    "accuracy": "41.7%"
                 },
                 "gap": {
-                    "score": "-2.8%",
-                    "accuracy": "18.9%"
+                    "score": "18.9%",
+                    "accuracy": "-2.8%"
                 }
             },
             "AlfWorld": {
@@ -167,110 +167,414 @@
                     "accuracy": "54.2%"
                 },
                 "hard": {
-                    "score": "18.2%",
-                    "accuracy": "29.8%"
+                    "score": "29.8%",
+                    "accuracy": "18.2%"
                 },
                 "gap": {
-                    "score": "36.0%",
-                    "accuracy": "24.4%"
+                    "score": "24.4%",
+                    "accuracy": "36.0%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "43.0%",
-                    "accuracy": "52.9%"
+                    "score": "52.9%",
+                    "accuracy": "43.0%"
                 },
                 "hard": {
-                    "score": "19.2%",
-                    "accuracy": "32.0%"
+                    "score": "32.0%",
+                    "accuracy": "19.2%"
                 },
                 "gap": {
-                    "score": "23.8%",
-                    "accuracy": "20.9%"
+                    "score": "20.9%",
+                    "accuracy": "23.8%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "20.0%",
-                    "accuracy": "46.5%"
+                    "score": "46.5%",
+                    "accuracy": "20.0%"
                 },
                 "hard": {
-                    "score": "3.5%",
-                    "accuracy": "31.9%"
+                    "score": "31.9%",
+                    "accuracy": "3.5%"
                 },
                 "gap": {
-                    "score": "16.5%",
-                    "accuracy": "14.6%"
+                    "score": "14.6%",
+                    "accuracy": "16.5%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "24.2%"
+                    "score": "24.2%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "16.6%"
+                    "score": "16.6%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "7.6%"
+                    "score": "7.6%",
+                    "accuracy": "0.0%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "67.9%",
-                    "accuracy": "83.2%"
+                    "score": "83.2%",
+                    "accuracy": "67.9%"
                 },
                 "hard": {
-                    "score": "31.2%",
-                    "accuracy": "65.0%"
+                    "score": "65.0%",
+                    "accuracy": "31.2%"
                 },
                 "gap": {
-                    "score": "36.7%",
-                    "accuracy": "18.2%"
+                    "score": "18.2%",
+                    "accuracy": "36.7%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "40.7%",
-                    "accuracy": "75.5%"
+                    "score": "75.5%",
+                    "accuracy": "40.7%"
                 },
                 "hard": {
-                    "score": "30.4%",
-                    "accuracy": "72.1%"
+                    "score": "72.1%",
+                    "accuracy": "30.4%"
                 },
                 "gap": {
-                    "score": "10.3%",
-                    "accuracy": "3.4%"
+                    "score": "3.4%",
+                    "accuracy": "10.3%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "11.8%",
-                    "accuracy": "20.1%"
+                    "score": "20.1%",
+                    "accuracy": "11.8%"
                 },
                 "hard": {
-                    "score": "10.7%",
-                    "accuracy": "39.1%"
+                    "score": "39.1%",
+                    "accuracy": "10.7%"
                 },
                 "gap": {
-                    "score": "1.1%",
-                    "accuracy": "-19.0%"
+                    "score": "-19.0%",
+                    "accuracy": "1.1%"
+                }
+            },
+            "Tool-Operation": {
+                "easy": {
+                    "score": "72.0%",
+                    "accuracy": "46.7%"
+                },
+                "hard": {
+                    "score": "52.2%",
+                    "accuracy": "16.0%"
+                },
+                "gap": {
+                    "score": "19.8%",
+                    "accuracy": "30.7%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "34.6%",
-                    "accuracy": "53.2%"
+                    "score": "55.3%",
+                    "accuracy": "35.9%"
                 },
                 "hard": {
-                    "score": "19.4%",
-                    "accuracy": "42.1%"
+                    "score": "43.2%",
+                    "accuracy": "19.0%"
                 },
                 "gap": {
-                    "score": "15.2%",
-                    "accuracy": "11.1%"
+                    "score": "12.1%",
+                    "accuracy": "16.9%"
+                }
+            }
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo",
+        "tasks": {
+            "Tool-Operation": {
+                "easy": {
+                    "score": "35.7%",
+                    "accuracy": "13.3%"
+                },
+                "hard": {
+                    "score": "38.0%",
+                    "accuracy": "4.0%"
+                },
+                "gap": {
+                    "score": "-2.3%",
+                    "accuracy": "9.3%"
+                }
+            },
+            "PDDL": {
+                "easy": {
+                    "score": "37.0%",
+                    "accuracy": "8.3%"
+                },
+                "hard": {
+                    "score": "6.9%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "30.1%",
+                    "accuracy": "8.3%"
+                }
+            },
+            "AlfWorld": {
+                "easy": {
+                    "score": "40.3%",
+                    "accuracy": "29.2%"
+                },
+                "hard": {
+                    "score": "34.5%",
+                    "accuracy": "14.5%"
+                },
+                "gap": {
+                    "score": "5.8%",
+                    "accuracy": "14.7%"
+                }
+            },
+            "BabyAI": {
+                "easy": {
+                    "score": "56.0%",
+                    "accuracy": "46.5%"
+                },
+                "hard": {
+                    "score": "37.5%",
+                    "accuracy": "15.4%"
+                },
+                "gap": {
+                    "score": "18.5%",
+                    "accuracy": "31.1%"
+                }
+            },
+            "WebArena": {
+                "easy": {
+                    "score": "22.3%",
+                    "accuracy": "12.0%"
+                },
+                "hard": {
+                    "score": "26.2%",
+                    "accuracy": "1.2%"
+                },
+                "gap": {
+                    "score": "-3.9%",
+                    "accuracy": "10.8%"
+                }
+            },
+            "Jericho": {
+                "easy": {
+                    "score": "25.8%",
+                    "accuracy": "10.0%"
+                },
+                "hard": {
+                    "score": "14.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "11.8%",
+                    "accuracy": "10.0%"
+                }
+            },
+            "Tool-Query": {
+                "easy": {
+                    "score": "80.8%",
+                    "accuracy": "67.9%"
+                },
+                "hard": {
+                    "score": "59.5%",
+                    "accuracy": "25.0%"
+                },
+                "gap": {
+                    "score": "21.3%",
+                    "accuracy": "42.9%"
+                }
+            },
+            "WebShop": {
+                "easy": {
+                    "score": "77.2%",
+                    "accuracy": "37.9%"
+                },
+                "hard": {
+                    "score": "74.5%",
+                    "accuracy": "27.5%"
+                },
+                "gap": {
+                    "score": "2.7%",
+                    "accuracy": "10.4%"
+                }
+            },
+            "ScienceWorld": {
+                "easy": {
+                    "score": "50.0%",
+                    "accuracy": "44.1%"
+                },
+                "hard": {
+                    "score": "20.9%",
+                    "accuracy": "3.6%"
+                },
+                "gap": {
+                    "score": "29.1%",
+                    "accuracy": "40.5%"
+                }
+            },
+            "Avg": {
+                "easy": {
+                    "score": "47.2%",
+                    "accuracy": "29.9%"
+                },
+                "hard": {
+                    "score": "34.7%",
+                    "accuracy": "10.1%"
+                },
+                "gap": {
+                    "score": "12.6%",
+                    "accuracy": "19.8%"
+                }
+            }
+        }
+    },
+    {
+        "model": "GPT-3.5-Turbo-16k",
+        "tasks": {
+            "Tool-Operation": {
+                "easy": {
+                    "score": "50.7%",
+                    "accuracy": "33.3%"
+                },
+                "hard": {
+                    "score": "32.9%",
+                    "accuracy": "4.0%"
+                },
+                "gap": {
+                    "score": "17.8%",
+                    "accuracy": "29.3%"
+                }
+            },
+            "PDDL": {
+                "easy": {
+                    "score": "37.7%",
+                    "accuracy": "5.6%"
+                },
+                "hard": {
+                    "score": "0.0%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "37.7%",
+                    "accuracy": "5.6%"
+                }
+            },
+            "AlfWorld": {
+                "easy": {
+                    "score": "22.2%",
+                    "accuracy": "12.5%"
+                },
+                "hard": {
+                    "score": "25.9%",
+                    "accuracy": "2.7%"
+                },
+                "gap": {
+                    "score": "-3.7%",
+                    "accuracy": "9.8%"
+                }
+            },
+            "BabyAI": {
+                "easy": {
+                    "score": "50.2%",
+                    "accuracy": "41.9%"
+                },
+                "hard": {
+                    "score": "28.2%",
+                    "accuracy": "7.7%"
+                },
+                "gap": {
+                    "score": "22.0%",
+                    "accuracy": "34.2%"
+                }
+            },
+            "WebArena": {
+                "easy": {
+                    "score": "31.5%",
+                    "accuracy": "18.7%"
+                },
+                "hard": {
+                    "score": "20.2%",
+                    "accuracy": "0.6%"
+                },
+                "gap": {
+                    "score": "11.3%",
+                    "accuracy": "18.1%"
+                }
+            },
+            "Jericho": {
+                "easy": {
+                    "score": "18.3%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "13.8%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "4.5%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Tool-Query": {
+                "easy": {
+                    "score": "71.2%",
+                    "accuracy": "46.4%"
+                },
+                "hard": {
+                    "score": "48.5%",
+                    "accuracy": "18.8%"
+                },
+                "gap": {
+                    "score": "22.7%",
+                    "accuracy": "27.6%"
+                }
+            },
+            "WebShop": {
+                "easy": {
+                    "score": "75.1%",
+                    "accuracy": "30.2%"
+                },
+                "hard": {
+                    "score": "70.2%",
+                    "accuracy": "21.7%"
+                },
+                "gap": {
+                    "score": "4.9%",
+                    "accuracy": "8.5%"
+                }
+            },
+            "ScienceWorld": {
+                "easy": {
+                    "score": "1.0%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "2.9%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "-1.9%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Avg": {
+                "easy": {
+                    "score": "39.8%",
+                    "accuracy": "21.0%"
+                },
+                "hard": {
+                    "score": "27.0%",
+                    "accuracy": "6.2%"
+                },
+                "gap": {
+                    "score": "12.8%",
+                    "accuracy": "14.8%"
                 }
             }
         }
@@ -280,138 +584,138 @@
         "tasks": {
             "Tool-Operation": {
                 "easy": {
-                    "score": "40.0%",
-                    "accuracy": "70.2%"
+                    "score": "70.2%",
+                    "accuracy": "40.0%"
                 },
                 "hard": {
-                    "score": "12.0%",
-                    "accuracy": "47.8%"
+                    "score": "47.8%",
+                    "accuracy": "12.0%"
                 },
                 "gap": {
-                    "score": "28.0%",
-                    "accuracy": "22.4%"
+                    "score": "22.4%",
+                    "accuracy": "28.0%"
                 }
             },
             "PDDL": {
                 "easy": {
-                    "score": "11.1%",
-                    "accuracy": "36.7%"
+                    "score": "36.7%",
+                    "accuracy": "11.1%"
                 },
                 "hard": {
-                    "score": "12.5%",
-                    "accuracy": "24.3%"
+                    "score": "24.3%",
+                    "accuracy": "12.5%"
                 },
                 "gap": {
-                    "score": "-1.4%",
-                    "accuracy": "12.4%"
+                    "score": "12.4%",
+                    "accuracy": "-1.4%"
                 }
             },
             "AlfWorld": {
                 "easy": {
-                    "score": "12.5%",
-                    "accuracy": "16.7%"
+                    "score": "16.7%",
+                    "accuracy": "12.5%"
                 },
                 "hard": {
-                    "score": "8.2%",
-                    "accuracy": "19.3%"
+                    "score": "19.3%",
+                    "accuracy": "8.2%"
                 },
                 "gap": {
-                    "score": "4.3%",
-                    "accuracy": "-2.6%"
+                    "score": "-2.6%",
+                    "accuracy": "4.3%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "18.6%",
-                    "accuracy": "21.7%"
+                    "score": "21.7%",
+                    "accuracy": "18.6%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "3.7%"
+                    "score": "3.7%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "18.6%",
-                    "accuracy": "18.0%"
+                    "score": "18.0%",
+                    "accuracy": "18.6%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "6.7%",
-                    "accuracy": "27.9%"
+                    "score": "27.9%",
+                    "accuracy": "6.7%"
                 },
                 "hard": {
-                    "score": "2.4%",
-                    "accuracy": "15.6%"
+                    "score": "15.6%",
+                    "accuracy": "2.4%"
                 },
                 "gap": {
-                    "score": "4.3%",
-                    "accuracy": "12.3%"
+                    "score": "12.3%",
+                    "accuracy": "4.3%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "10.0%",
-                    "accuracy": "40.8%"
+                    "score": "40.8%",
+                    "accuracy": "10.0%"
                 },
                 "hard": {
-                    "score": "10.0%",
-                    "accuracy": "16.4%"
+                    "score": "16.4%",
+                    "accuracy": "10.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "24.4%"
+                    "score": "24.4%",
+                    "accuracy": "0.0%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "57.1%",
-                    "accuracy": "75.8%"
+                    "score": "75.8%",
+                    "accuracy": "57.1%"
                 },
                 "hard": {
-                    "score": "21.9%",
-                    "accuracy": "55.5%"
+                    "score": "55.5%",
+                    "accuracy": "21.9%"
                 },
                 "gap": {
-                    "score": "35.2%",
-                    "accuracy": "20.3%"
+                    "score": "20.3%",
+                    "accuracy": "35.2%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "30.2%",
-                    "accuracy": "73.4%"
+                    "score": "73.4%",
+                    "accuracy": "30.2%"
                 },
                 "hard": {
-                    "score": "27.5%",
-                    "accuracy": "69.6%"
+                    "score": "69.6%",
+                    "accuracy": "27.5%"
                 },
                 "gap": {
-                    "score": "2.7%",
-                    "accuracy": "3.8%"
+                    "score": "3.8%",
+                    "accuracy": "2.7%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "14.7%",
-                    "accuracy": "23.5%"
+                    "score": "23.5%",
+                    "accuracy": "14.7%"
                 },
                 "hard": {
-                    "score": "3.6%",
-                    "accuracy": "32.2%"
+                    "score": "32.2%",
+                    "accuracy": "3.6%"
                 },
                 "gap": {
-                    "score": "11.1%",
-                    "accuracy": "-8.7%"
+                    "score": "-8.7%",
+                    "accuracy": "11.1%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "22.3%",
-                    "accuracy": "43.0%"
+                    "score": "43.0%",
+                    "accuracy": "22.3%"
                 },
                 "hard": {
-                    "score": "10.9%",
-                    "accuracy": "31.6%"
+                    "score": "31.6%",
+                    "accuracy": "10.9%"
                 },
                 "gap": {
                     "score": "11.4%",
@@ -425,142 +729,142 @@
         "tasks": {
             "PDDL": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "6.0%"
+                    "score": "6.0%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "1.4%"
+                    "score": "1.4%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "4.6%"
+                    "score": "4.6%",
+                    "accuracy": "0.0%"
                 }
             },
             "AlfWorld": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "4.2%"
+                    "score": "4.2%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "8.6%"
+                    "score": "8.6%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "-4.4%"
+                    "score": "-4.4%",
+                    "accuracy": "0.0%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "8.1%",
-                    "accuracy": "19.2%"
+                    "score": "19.2%",
+                    "accuracy": "8.1%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "14.4%"
+                    "score": "14.4%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "8.1%",
-                    "accuracy": "4.8%"
+                    "score": "4.8%",
+                    "accuracy": "8.1%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "6.7%",
-                    "accuracy": "14.8%"
+                    "score": "14.8%",
+                    "accuracy": "6.7%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "4.9%"
+                    "score": "4.9%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "6.7%",
-                    "accuracy": "9.9%"
+                    "score": "9.9%",
+                    "accuracy": "6.7%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "5.0%"
+                    "score": "5.0%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "1.4%"
+                    "score": "1.4%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "3.6%"
-                }
-            },
-            "WebShop": {
-                "easy": {
-                    "score": "0.0%",
-                    "accuracy": "30.5%"
-                },
-                "hard": {
-                    "score": "0.0%",
-                    "accuracy": "28.1%"
-                },
-                "gap": {
-                    "score": "0.0%",
-                    "accuracy": "2.4%"
+                    "score": "3.6%",
+                    "accuracy": "0.0%"
                 }
             },
             "Tool-Operation": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "32.7%"
+                    "score": "32.7%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "27.2%"
+                    "score": "27.2%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "5.5%"
+                    "score": "5.5%",
+                    "accuracy": "0.0%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "39.6%"
+                    "score": "39.6%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "31.1%"
+                    "score": "31.1%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "8.5%"
+                    "score": "8.5%",
+                    "accuracy": "0.0%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "2.0%"
+                    "score": "2.0%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "0.6%"
+                    "score": "0.6%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "1.4%"
+                    "score": "1.4%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "WebShop": {
+                "easy": {
+                    "score": "62.9%",
+                    "accuracy": "9.3%"
+                },
+                "hard": {
+                    "score": "65.0%",
+                    "accuracy": "14.5%"
+                },
+                "gap": {
+                    "score": "-2.1%",
+                    "accuracy": "-5.2%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "1.6%",
-                    "accuracy": "17.1%"
+                    "score": "20.7%",
+                    "accuracy": "2.7%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "13.1%"
+                    "score": "17.2%",
+                    "accuracy": "1.6%"
                 },
                 "gap": {
-                    "score": "1.6%",
-                    "accuracy": "4.0%"
+                    "score": "3.5%",
+                    "accuracy": "1.1%"
                 }
             }
         }
@@ -570,128 +874,142 @@
         "tasks": {
             "PDDL": {
                 "easy": {
-                    "score": "2.8%",
-                    "accuracy": "13.6%"
+                    "score": "13.6%",
+                    "accuracy": "2.8%"
                 },
                 "hard": {
                     "score": "0.0%",
                     "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "2.8%",
-                    "accuracy": "13.6%"
+                    "score": "13.6%",
+                    "accuracy": "2.8%"
                 }
             },
             "AlfWorld": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "2.8%"
+                    "score": "2.8%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "3.6%",
-                    "accuracy": "15.5%"
+                    "score": "15.5%",
+                    "accuracy": "3.6%"
                 },
                 "gap": {
-                    "score": "-3.6%",
-                    "accuracy": "-12.7%"
+                    "score": "-12.7%",
+                    "accuracy": "-3.6%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "25.6%",
-                    "accuracy": "34.5%"
+                    "score": "34.5%",
+                    "accuracy": "25.6%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "15.3%"
+                    "score": "15.3%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "25.6%",
-                    "accuracy": "19.2%"
+                    "score": "19.2%",
+                    "accuracy": "25.6%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "9.3%",
-                    "accuracy": "20.9%"
+                    "score": "20.9%",
+                    "accuracy": "9.3%"
                 },
                 "hard": {
-                    "score": "0.6%",
-                    "accuracy": "7.5%"
+                    "score": "7.5%",
+                    "accuracy": "0.6%"
                 },
                 "gap": {
-                    "score": "8.7%",
-                    "accuracy": "13.4%"
+                    "score": "13.4%",
+                    "accuracy": "8.7%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "13.3%"
+                    "score": "13.3%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "2.3%"
+                    "score": "2.3%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "11.0%"
+                    "score": "11.0%",
+                    "accuracy": "0.0%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "49.6%"
+                    "score": "49.6%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "47.2%"
+                    "score": "47.2%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "2.4%"
+                    "score": "2.4%",
+                    "accuracy": "0.0%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "15.4%",
-                    "accuracy": "55.9%"
+                    "score": "55.9%",
+                    "accuracy": "15.4%"
                 },
                 "hard": {
-                    "score": "7.2%",
-                    "accuracy": "47.4%"
+                    "score": "47.4%",
+                    "accuracy": "7.2%"
                 },
                 "gap": {
-                    "score": "8.2%",
-                    "accuracy": "8.5%"
+                    "score": "8.5%",
+                    "accuracy": "8.2%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "3.4%"
+                    "score": "3.4%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "2.1%"
+                    "score": "2.1%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "1.3%"
+                    "score": "1.3%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Tool-Operation": {
+                "easy": {
+                    "score": "42.2%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "36.5%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "5.7%",
+                    "accuracy": "0.0%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "6.6%",
-                    "accuracy": "24.2%"
+                    "score": "26.2%",
+                    "accuracy": "5.9%"
                 },
                 "hard": {
-                    "score": "1.4%",
-                    "accuracy": "17.2%"
+                    "score": "19.3%",
+                    "accuracy": "1.3%"
                 },
                 "gap": {
-                    "score": "5.2%",
-                    "accuracy": "7.1%"
+                    "score": "6.9%",
+                    "accuracy": "4.6%"
                 }
             }
         }
@@ -701,58 +1019,58 @@
         "tasks": {
             "PDDL": {
                 "easy": {
-                    "score": "2.8%",
-                    "accuracy": "15.4%"
+                    "score": "15.4%",
+                    "accuracy": "2.8%"
                 },
                 "hard": {
                     "score": "0.0%",
                     "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "2.8%",
-                    "accuracy": "15.4%"
+                    "score": "15.4%",
+                    "accuracy": "2.8%"
                 }
             },
             "AlfWorld": {
                 "easy": {
-                    "score": "12.5%",
-                    "accuracy": "15.3%"
+                    "score": "15.3%",
+                    "accuracy": "12.5%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "13.0%"
+                    "score": "13.0%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "12.5%",
-                    "accuracy": "2.3%"
+                    "score": "2.3%",
+                    "accuracy": "12.5%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "20.9%",
-                    "accuracy": "25.4%"
+                    "score": "25.4%",
+                    "accuracy": "20.9%"
                 },
                 "hard": {
-                    "score": "3.8%",
-                    "accuracy": "11.5%"
+                    "score": "11.5%",
+                    "accuracy": "3.8%"
                 },
                 "gap": {
-                    "score": "17.1%",
-                    "accuracy": "13.9%"
+                    "score": "13.9%",
+                    "accuracy": "17.1%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "6.7%",
-                    "accuracy": "21.7%"
+                    "score": "21.7%",
+                    "accuracy": "6.7%"
                 },
                 "hard": {
-                    "score": "0.6%",
-                    "accuracy": "11.7%"
+                    "score": "11.7%",
+                    "accuracy": "0.6%"
                 },
                 "gap": {
-                    "score": "6.1%",
-                    "accuracy": "10.0%"
+                    "score": "10.0%",
+                    "accuracy": "6.1%"
                 }
             },
             "Jericho": {
@@ -771,72 +1089,72 @@
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "35.7%",
-                    "accuracy": "57.6%"
+                    "score": "57.6%",
+                    "accuracy": "35.7%"
                 },
                 "hard": {
-                    "score": "15.6%",
-                    "accuracy": "48.2%"
+                    "score": "48.2%",
+                    "accuracy": "15.6%"
                 },
                 "gap": {
-                    "score": "20.1%",
-                    "accuracy": "9.4%"
+                    "score": "9.4%",
+                    "accuracy": "20.1%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "28.0%",
-                    "accuracy": "67.8%"
+                    "score": "67.8%",
+                    "accuracy": "28.0%"
                 },
                 "hard": {
-                    "score": "20.3%",
-                    "accuracy": "59.3%"
+                    "score": "59.3%",
+                    "accuracy": "20.3%"
                 },
                 "gap": {
-                    "score": "7.7%",
-                    "accuracy": "8.5%"
+                    "score": "8.5%",
+                    "accuracy": "7.7%"
                 }
             },
             "Tool-Operation": {
                 "easy": {
-                    "score": "13.3%",
-                    "accuracy": "44.4%"
+                    "score": "44.4%",
+                    "accuracy": "13.3%"
                 },
                 "hard": {
-                    "score": "12.0%",
-                    "accuracy": "40.3%"
+                    "score": "40.3%",
+                    "accuracy": "12.0%"
                 },
                 "gap": {
-                    "score": "1.3%",
-                    "accuracy": "4.1%"
+                    "score": "4.1%",
+                    "accuracy": "1.3%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "5.9%",
-                    "accuracy": "14.7%"
+                    "score": "14.7%",
+                    "accuracy": "5.9%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "6.5%"
+                    "score": "6.5%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "5.9%",
-                    "accuracy": "8.2%"
+                    "score": "8.2%",
+                    "accuracy": "5.9%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "14.0%",
-                    "accuracy": "29.1%"
+                    "score": "29.1%",
+                    "accuracy": "14.0%"
                 },
                 "hard": {
-                    "score": "5.8%",
-                    "accuracy": "21.2%"
+                    "score": "21.2%",
+                    "accuracy": "5.8%"
                 },
                 "gap": {
-                    "score": "8.2%",
-                    "accuracy": "8.0%"
+                    "score": "8.0%",
+                    "accuracy": "8.2%"
                 }
             }
         }
@@ -846,142 +1164,142 @@
         "tasks": {
             "PDDL": {
                 "easy": {
-                    "score": "5.6%",
-                    "accuracy": "28.6%"
+                    "score": "28.6%",
+                    "accuracy": "5.6%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "3.5%"
+                    "score": "3.5%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "5.6%",
-                    "accuracy": "25.1%"
+                    "score": "25.1%",
+                    "accuracy": "5.6%"
                 }
             },
             "AlfWorld": {
                 "easy": {
-                    "score": "4.2%",
-                    "accuracy": "11.1%"
+                    "score": "11.1%",
+                    "accuracy": "4.2%"
                 },
                 "hard": {
-                    "score": "2.7%",
-                    "accuracy": "11.4%"
+                    "score": "11.4%",
+                    "accuracy": "2.7%"
                 },
                 "gap": {
-                    "score": "1.5%",
-                    "accuracy": "-0.3%"
+                    "score": "-0.3%",
+                    "accuracy": "1.5%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "17.4%",
-                    "accuracy": "23.8%"
+                    "score": "23.8%",
+                    "accuracy": "17.4%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "6.7%"
+                    "score": "6.7%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "17.4%",
-                    "accuracy": "17.1%"
+                    "score": "17.1%",
+                    "accuracy": "17.4%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "13.3%",
-                    "accuracy": "23.8%"
+                    "score": "23.8%",
+                    "accuracy": "13.3%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "20.1%"
+                    "score": "20.1%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "13.3%",
-                    "accuracy": "3.7%"
+                    "score": "3.7%",
+                    "accuracy": "13.3%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "27.5%"
+                    "score": "27.5%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "3.6%"
+                    "score": "3.6%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "23.9%"
+                    "score": "23.9%",
+                    "accuracy": "0.0%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "25.0%",
-                    "accuracy": "71.9%"
+                    "score": "71.9%",
+                    "accuracy": "25.0%"
                 },
                 "hard": {
-                    "score": "3.1%",
-                    "accuracy": "49.5%"
+                    "score": "49.5%",
+                    "accuracy": "3.1%"
                 },
                 "gap": {
-                    "score": "21.9%",
-                    "accuracy": "22.4%"
+                    "score": "22.4%",
+                    "accuracy": "21.9%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "25.8%",
-                    "accuracy": "72.8%"
+                    "score": "72.8%",
+                    "accuracy": "25.8%"
                 },
                 "hard": {
-                    "score": "17.4%",
-                    "accuracy": "68.9%"
+                    "score": "68.9%",
+                    "accuracy": "17.4%"
                 },
                 "gap": {
-                    "score": "8.4%",
-                    "accuracy": "3.9%"
+                    "score": "3.9%",
+                    "accuracy": "8.4%"
                 }
             },
             "Tool-Operation": {
                 "easy": {
-                    "score": "13.3%",
-                    "accuracy": "60.4%"
+                    "score": "60.4%",
+                    "accuracy": "13.3%"
                 },
                 "hard": {
-                    "score": "4.0%",
-                    "accuracy": "41.8%"
+                    "score": "41.8%",
+                    "accuracy": "4.0%"
                 },
                 "gap": {
-                    "score": "9.3%",
-                    "accuracy": "18.6%"
+                    "score": "18.6%",
+                    "accuracy": "9.3%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "6.4%"
+                    "score": "6.4%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "1.7%"
+                    "score": "1.7%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "4.7%"
+                    "score": "4.7%",
+                    "accuracy": "0.0%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "11.6%",
-                    "accuracy": "36.3%"
+                    "score": "36.3%",
+                    "accuracy": "11.6%"
                 },
                 "hard": {
-                    "score": "3.0%",
-                    "accuracy": "23.0%"
+                    "score": "23.0%",
+                    "accuracy": "3.0%"
                 },
                 "gap": {
-                    "score": "8.6%",
-                    "accuracy": "13.2%"
+                    "score": "13.2%",
+                    "accuracy": "8.6%"
                 }
             }
         }
@@ -991,16 +1309,16 @@
         "tasks": {
             "PDDL": {
                 "easy": {
-                    "score": "2.8%",
-                    "accuracy": "12.1%"
+                    "score": "12.1%",
+                    "accuracy": "2.8%"
                 },
                 "hard": {
                     "score": "0.0%",
                     "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "2.8%",
-                    "accuracy": "12.1%"
+                    "score": "12.1%",
+                    "accuracy": "2.8%"
                 }
             },
             "AlfWorld": {
@@ -1009,124 +1327,124 @@
                     "accuracy": "8.3%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "11.6%"
+                    "score": "11.6%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "8.3%",
-                    "accuracy": "-3.3%"
+                    "score": "-3.3%",
+                    "accuracy": "8.3%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "7.0%",
-                    "accuracy": "15.5%"
+                    "score": "15.5%",
+                    "accuracy": "7.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "10.4%"
+                    "score": "10.4%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "7.0%",
-                    "accuracy": "5.1%"
+                    "score": "5.1%",
+                    "accuracy": "7.0%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "8.0%",
-                    "accuracy": "19.4%"
+                    "score": "19.4%",
+                    "accuracy": "8.0%"
                 },
                 "hard": {
-                    "score": "0.6%",
-                    "accuracy": "7.7%"
+                    "score": "7.7%",
+                    "accuracy": "0.6%"
                 },
                 "gap": {
-                    "score": "7.4%",
-                    "accuracy": "11.7%"
+                    "score": "11.7%",
+                    "accuracy": "7.4%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "25.8%"
+                    "score": "25.8%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "4.5%"
+                    "score": "4.5%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "21.3%"
+                    "score": "21.3%",
+                    "accuracy": "0.0%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "7.1%",
-                    "accuracy": "39.6%"
+                    "score": "39.6%",
+                    "accuracy": "7.1%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "29.6%"
+                    "score": "29.6%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "7.1%",
-                    "accuracy": "10.0%"
+                    "score": "10.0%",
+                    "accuracy": "7.1%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "22.5%",
-                    "accuracy": "73.4%"
+                    "score": "73.4%",
+                    "accuracy": "22.5%"
                 },
                 "hard": {
-                    "score": "20.3%",
-                    "accuracy": "73.0%"
+                    "score": "73.0%",
+                    "accuracy": "20.3%"
                 },
                 "gap": {
-                    "score": "2.2%",
-                    "accuracy": "0.4%"
+                    "score": "0.4%",
+                    "accuracy": "2.2%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "5.9%",
-                    "accuracy": "18.1%"
+                    "score": "18.1%",
+                    "accuracy": "5.9%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "11.6%"
+                    "score": "11.6%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "5.9%",
-                    "accuracy": "6.5%"
+                    "score": "6.5%",
+                    "accuracy": "5.9%"
                 }
             },
             "Tool-Operation": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "31.0%"
+                    "score": "31.0%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "24.4%"
+                    "score": "24.4%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "6.6%"
+                    "score": "6.6%",
+                    "accuracy": "0.0%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "6.8%",
-                    "accuracy": "27.0%"
+                    "score": "27.0%",
+                    "accuracy": "6.8%"
                 },
                 "hard": {
-                    "score": "2.3%",
-                    "accuracy": "19.2%"
+                    "score": "19.2%",
+                    "accuracy": "2.3%"
                 },
                 "gap": {
-                    "score": "4.5%",
-                    "accuracy": "7.8%"
+                    "score": "7.8%",
+                    "accuracy": "4.5%"
                 }
             }
         }
@@ -1136,142 +1454,142 @@
         "tasks": {
             "PDDL": {
                 "easy": {
-                    "score": "5.6%",
-                    "accuracy": "16.1%"
+                    "score": "16.1%",
+                    "accuracy": "5.6%"
                 },
                 "hard": {
                     "score": "0.0%",
                     "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "5.6%",
-                    "accuracy": "16.1%"
+                    "score": "16.1%",
+                    "accuracy": "5.6%"
                 }
             },
             "AlfWorld": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "8.3%"
+                    "score": "8.3%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.9%",
-                    "accuracy": "11.4%"
+                    "score": "11.4%",
+                    "accuracy": "0.9%"
                 },
                 "gap": {
-                    "score": "-0.9%",
-                    "accuracy": "-3.1%"
+                    "score": "-3.1%",
+                    "accuracy": "-0.9%"
                 }
             },
             "BabyAI": {
                 "easy": {
-                    "score": "12.8%",
-                    "accuracy": "22.7%"
+                    "score": "22.7%",
+                    "accuracy": "12.8%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "8.7%"
+                    "score": "8.7%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "12.8%",
-                    "accuracy": "14.0%"
+                    "score": "14.0%",
+                    "accuracy": "12.8%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "7.4%"
+                    "score": "19.4%",
+                    "accuracy": "9.3%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "5.0%"
+                    "score": "9.1%",
+                    "accuracy": "4.1%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "2.4%"
+                    "score": "10.3%",
+                    "accuracy": "5.2%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "15.8%"
+                    "score": "15.8%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "4.3%"
+                    "score": "4.3%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "0.0%",
-                    "accuracy": "11.5%"
+                    "score": "11.5%",
+                    "accuracy": "0.0%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "42.9%",
-                    "accuracy": "79.3%"
+                    "score": "79.3%",
+                    "accuracy": "42.9%"
                 },
                 "hard": {
-                    "score": "15.6%",
-                    "accuracy": "65.5%"
+                    "score": "65.5%",
+                    "accuracy": "15.6%"
                 },
                 "gap": {
-                    "score": "27.3%",
-                    "accuracy": "13.8%"
+                    "score": "13.8%",
+                    "accuracy": "27.3%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "12.1%",
-                    "accuracy": "72.7%"
+                    "score": "72.7%",
+                    "accuracy": "12.1%"
                 },
                 "hard": {
-                    "score": "10.1%",
-                    "accuracy": "69.1%"
+                    "score": "69.1%",
+                    "accuracy": "10.1%"
                 },
                 "gap": {
-                    "score": "2.0%",
-                    "accuracy": "3.6%"
+                    "score": "3.6%",
+                    "accuracy": "2.0%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "14.7%",
-                    "accuracy": "47.1%"
+                    "score": "47.1%",
+                    "accuracy": "14.7%"
                 },
                 "hard": {
-                    "score": "0.0%",
-                    "accuracy": "25.1%"
+                    "score": "25.1%",
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "14.7%",
-                    "accuracy": "22.0%"
+                    "score": "22.0%",
+                    "accuracy": "14.7%"
                 }
             },
             "Tool-Operation": {
                 "easy": {
-                    "score": "6.7%",
-                    "accuracy": "39.1%"
+                    "score": "39.7%",
+                    "accuracy": "20.0%"
                 },
                 "hard": {
-                    "score": "8.0%",
-                    "accuracy": "33.9%"
+                    "score": "36.6%",
+                    "accuracy": "8.0%"
                 },
                 "gap": {
-                    "score": "-1.3%",
-                    "accuracy": "5.2%"
+                    "score": "3.1%",
+                    "accuracy": "12.0%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "10.5%",
-                    "accuracy": "34.3%"
+                    "score": "35.7%",
+                    "accuracy": "13.0%"
                 },
                 "hard": {
-                    "score": "3.8%",
-                    "accuracy": "24.8%"
+                    "score": "25.5%",
+                    "accuracy": "4.3%"
                 },
                 "gap": {
-                    "score": "6.7%",
-                    "accuracy": "9.5%"
+                    "score": "10.1%",
+                    "accuracy": "8.7%"
                 }
             }
         }
@@ -1281,142 +1599,287 @@
         "tasks": {
             "BabyAI": {
                 "easy": {
-                    "score": "27.9%",
-                    "accuracy": "35.1%"
+                    "score": "35.1%",
+                    "accuracy": "27.9%"
                 },
                 "hard": {
                     "score": "20.5%",
-                    "accuracy": "20.5%"
+                    "accuracy": "3.8%"
                 },
                 "gap": {
-                    "score": "7.4%",
-                    "accuracy": "14.6%"
+                    "score": "14.6%",
+                    "accuracy": "24.1%"
                 }
             },
             "ScienceWorld": {
                 "easy": {
-                    "score": "26.5%",
-                    "accuracy": "44.6%"
+                    "score": "44.6%",
+                    "accuracy": "26.5%"
                 },
                 "hard": {
                     "score": "30.9%",
-                    "accuracy": "30.9%"
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "-4.4%",
-                    "accuracy": "13.7%"
+                    "score": "13.7%",
+                    "accuracy": "26.5%"
                 }
             },
             "AlfWorld": {
                 "easy": {
-                    "score": "25.0%",
-                    "accuracy": "27.8%"
+                    "score": "27.8%",
+                    "accuracy": "25.0%"
                 },
                 "hard": {
                     "score": "35.9%",
-                    "accuracy": "35.9%"
+                    "accuracy": "20.0%"
                 },
                 "gap": {
-                    "score": "-10.9%",
-                    "accuracy": "-8.1%"
+                    "score": "-8.1%",
+                    "accuracy": "5.0%"
                 }
             },
             "Jericho": {
                 "easy": {
-                    "score": "0.0%",
-                    "accuracy": "23.3%"
+                    "score": "23.3%",
+                    "accuracy": "0.0%"
                 },
                 "hard": {
                     "score": "4.1%",
                     "accuracy": "4.1%"
                 },
                 "gap": {
-                    "score": "-4.1%",
-                    "accuracy": "19.2%"
+                    "score": "19.2%",
+                    "accuracy": "-4.1%"
                 }
             },
             "PDDL": {
                 "easy": {
-                    "score": "11.1%",
-                    "accuracy": "34.3%"
+                    "score": "34.3%",
+                    "accuracy": "11.1%"
                 },
                 "hard": {
                     "score": "3.5%",
-                    "accuracy": "3.5%"
+                    "accuracy": "0.0%"
                 },
                 "gap": {
-                    "score": "7.6%",
-                    "accuracy": "30.8%"
+                    "score": "30.8%",
+                    "accuracy": "11.1%"
                 }
             },
             "WebShop": {
                 "easy": {
-                    "score": "34.1%",
-                    "accuracy": "73.9%"
+                    "score": "73.9%",
+                    "accuracy": "34.1%"
                 },
                 "hard": {
                     "score": "69.5%",
-                    "accuracy": "69.5%"
+                    "accuracy": "26.1%"
                 },
                 "gap": {
-                    "score": "-35.4%",
-                    "accuracy": "4.4%"
+                    "score": "4.4%",
+                    "accuracy": "8.0%"
                 }
             },
             "WebArena": {
                 "easy": {
-                    "score": "10.0%",
-                    "accuracy": "26.7%"
+                    "score": "26.7%",
+                    "accuracy": "10.0%"
                 },
                 "hard": {
                     "score": "21.5%",
-                    "accuracy": "21.5%"
+                    "accuracy": "7.1%"
                 },
                 "gap": {
-                    "score": "-11.5%",
-                    "accuracy": "5.2%"
+                    "score": "5.2%",
+                    "accuracy": "2.9%"
                 }
             },
             "Tool-Query": {
                 "easy": {
-                    "score": "53.6%",
-                    "accuracy": "76.4%"
+                    "score": "76.4%",
+                    "accuracy": "53.6%"
                 },
                 "hard": {
                     "score": "66.9%",
-                    "accuracy": "66.9%"
+                    "accuracy": "28.1%"
                 },
                 "gap": {
-                    "score": "-13.3%",
-                    "accuracy": "9.5%"
+                    "score": "9.5%",
+                    "accuracy": "25.5%"
                 }
             },
             "Tool-Operation": {
                 "easy": {
-                    "score": "26.7%",
-                    "accuracy": "45.7%"
+                    "score": "45.7%",
+                    "accuracy": "26.7%"
                 },
                 "hard": {
                     "score": "37.3%",
-                    "accuracy": "37.3%"
+                    "accuracy": "12.0%"
                 },
                 "gap": {
-                    "score": "-10.6%",
-                    "accuracy": "8.4%"
+                    "score": "8.4%",
+                    "accuracy": "14.7%"
                 }
             },
             "Avg": {
                 "easy": {
-                    "score": "23.9%",
-                    "accuracy": "43.1%"
+                    "score": "43.1%",
+                    "accuracy": "23.9%"
                 },
                 "hard": {
                     "score": "32.2%",
-                    "accuracy": "32.2%"
+                    "accuracy": "11.2%"
                 },
                 "gap": {
-                    "score": "-8.4%",
-                    "accuracy": "10.9%"
+                    "score": "10.9%",
+                    "accuracy": "12.6%"
+                }
+            }
+        }
+    },
+    {
+        "model": "Mistral-7b",
+        "tasks": {
+            "PDDL": {
+                "easy": {
+                    "score": "6.8%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "1.4%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "5.4%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "BabyAI": {
+                "easy": {
+                    "score": "23.3%",
+                    "accuracy": "18.6%"
+                },
+                "hard": {
+                    "score": "9.9%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "13.4%",
+                    "accuracy": "18.6%"
+                }
+            },
+            "ScienceWorld": {
+                "easy": {
+                    "score": "15.7%",
+                    "accuracy": "2.9%"
+                },
+                "hard": {
+                    "score": "15.8%",
+                    "accuracy": "1.8%"
+                },
+                "gap": {
+                    "score": "-0.1%",
+                    "accuracy": "1.1%"
+                }
+            },
+            "AlfWorld": {
+                "easy": {
+                    "score": "1.4%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "11.6%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "-10.2%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "WebShop": {
+                "easy": {
+                    "score": "68.0%",
+                    "accuracy": "14.8%"
+                },
+                "hard": {
+                    "score": "68.7%",
+                    "accuracy": "11.6%"
+                },
+                "gap": {
+                    "score": "-0.7%",
+                    "accuracy": "3.2%"
+                }
+            },
+            "WebArena": {
+                "easy": {
+                    "score": "9.4%",
+                    "accuracy": "1.3%"
+                },
+                "hard": {
+                    "score": "14.9%",
+                    "accuracy": "0.6%"
+                },
+                "gap": {
+                    "score": "-5.5%",
+                    "accuracy": "0.7%"
+                }
+            },
+            "Tool-Query": {
+                "easy": {
+                    "score": "54.9%",
+                    "accuracy": "3.6%"
+                },
+                "hard": {
+                    "score": "47.7%",
+                    "accuracy": "3.1%"
+                },
+                "gap": {
+                    "score": "7.2%",
+                    "accuracy": "0.5%"
+                }
+            },
+            "Tool-Operation": {
+                "easy": {
+                    "score": "29.5%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "25.9%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "3.6%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Jericho": {
+                "easy": {
+                    "score": "15.8%",
+                    "accuracy": "0.0%"
+                },
+                "hard": {
+                    "score": "6.2%",
+                    "accuracy": "0.0%"
+                },
+                "gap": {
+                    "score": "9.6%",
+                    "accuracy": "0.0%"
+                }
+            },
+            "Avg": {
+                "easy": {
+                    "score": "25.0%",
+                    "accuracy": "4.6%"
+                },
+                "hard": {
+                    "score": "22.5%",
+                    "accuracy": "1.9%"
+                },
+                "gap": {
+                    "score": "2.5%",
+                    "accuracy": "2.7%"
                 }
             }
         }

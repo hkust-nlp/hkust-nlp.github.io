@@ -7,7 +7,7 @@ async function fetchData() {
 function createRadarChart(models) {
     const ctx = document.getElementById('radarChart').getContext('2d');
     const colors = [
-        'rgba(255, 99, 132, 1)',
+        'rgba(173, 107, 24, 1)',
         'rgba(54, 162, 235, 1)',
         'rgba(255, 206, 86, 1)',
         'rgba(75, 192, 192, 1)',
@@ -17,7 +17,7 @@ function createRadarChart(models) {
         'rgba(83, 102, 255, 1)',
         'rgba(40, 159, 64, 1)',
         'rgba(143, 162, 235, 1)',
-        'rgba(255, 99, 75, 1)',
+        'rgba(255, 99, 132, 1)',
         'rgba(71 ,150 ,87, 1)',
         'rgba(210 ,102 ,95, 1)',
         'rgba(51 ,47 ,180, 1)',
@@ -32,7 +32,7 @@ function createRadarChart(models) {
         const backColor = colors[index].replace(/[\d\.]+\)$/g, '0.15)');
         return {
             label: model.model,
-            data: Object.values(model.dimensions).map(value => parseFloat(value) * 100),
+            data: Object.values(model.dimensions).map(value => parseFloat(value)),
             backgroundColor: backColor,
             borderColor: colors[index],
             borderWidth: 2,
