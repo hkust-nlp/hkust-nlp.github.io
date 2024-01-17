@@ -15,7 +15,7 @@ model_map = ['GPT-4', 'Claude2', 'GPT-3.5-Turbo', 'GPT-3.5-Turbo-16k', 'Text-Dav
              'CodeLlama-13b', 'CodeLlama-34b', 'Vicuna-13b-16k', 'Lemur-70b', 'DeepSeek-67b', 'Mistral-7b']
 
 task_map = {'alfworld': 'AlfWorld', 'scienceworld': 'ScienceWorld', 'babyai': 'BabyAI', 'jericho': 'Jericho', 'pddl': 'PDDL'
-            , 'webshop': 'WebShop', 'webarena': 'WebArena', 'tool-operation': 'Tool-Operation', 'tool-query': 'Tool-Query'}  # 填入其他任务映射
+            , 'webshop': 'WebShop', 'webarena': 'WebArena', 'tool-operation': 'Tool-Operation', 'tool-query': 'Tool-Query'}
 
 def process_file(file_path):
     with open(file_path, 'r') as file:
@@ -37,16 +37,15 @@ def compute_average(scores):
 
 def process_folder(folder_path):
     results = []
-    model_results = {}
-    average_values = {
-        "Embodied": [],
-        "Game": [],
-        "Web": [],
-        "Tools": [],
-        "Avg": []
-    }
     for model in model_map:
         model_results = {}
+        average_values = {
+            "Embodied": [],
+            "Game": [],
+            "Web": [],
+            "Tools": [],
+            "Avg": []
+        }
         model_path = os.path.join(folder_path, ("").join(model.lower().split('.')))
         if os.path.isdir(model_path):
             file_path = os.path.join(model_path, 'all_results.txt')

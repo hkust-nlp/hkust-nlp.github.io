@@ -123,29 +123,29 @@
                 "grounding": "92.3%"
             },
             "Embodied": {
-                "score": "54.9%",
-                "accuracy": "37.5%",
-                "grounding": "52.6%"
+                "score": "38.1%",
+                "accuracy": "24.4%",
+                "grounding": "43.4%"
             },
             "Game": {
-                "score": "53.9%",
-                "accuracy": "34.2%",
-                "grounding": "90.6%"
+                "score": "40.9%",
+                "accuracy": "20.0%",
+                "grounding": "84.7%"
             },
             "Web": {
-                "score": "56.7%",
-                "accuracy": "25.1%",
-                "grounding": "93.9%"
+                "score": "55.5%",
+                "accuracy": "23.2%",
+                "grounding": "89.9%"
             },
             "Tools": {
-                "score": "74.8%",
-                "accuracy": "51.0%",
-                "grounding": "95.5%"
+                "score": "66.5%",
+                "accuracy": "37.9%",
+                "grounding": "93.0%"
             },
             "Avg": {
-                "score": "59.5%",
-                "accuracy": "37.0%",
-                "grounding": "79.8%"
+                "score": "48.9%",
+                "accuracy": "26.2%",
+                "grounding": "73.9%"
             }
         }
     },
@@ -198,29 +198,29 @@
                 "grounding": "18.7%"
             },
             "Embodied": {
-                "score": "49.8%",
-                "accuracy": "33.4%",
-                "grounding": "50.7%"
+                "score": "39.7%",
+                "accuracy": "25.1%",
+                "grounding": "46.8%"
             },
             "Game": {
-                "score": "43.4%",
-                "accuracy": "24.4%",
-                "grounding": "88.0%"
+                "score": "22.4%",
+                "accuracy": "5.0%",
+                "grounding": "82.9%"
             },
             "Web": {
-                "score": "54.8%",
-                "accuracy": "23.4%",
-                "grounding": "92.9%"
+                "score": "51.0%",
+                "accuracy": "19.9%",
+                "grounding": "90.8%"
             },
             "Tools": {
-                "score": "67.6%",
-                "accuracy": "42.8%",
-                "grounding": "95.2%"
+                "score": "53.3%",
+                "accuracy": "26.2%",
+                "grounding": "94.8%"
             },
             "Avg": {
-                "score": "53.4%",
-                "accuracy": "31.3%",
-                "grounding": "78.3%"
+                "score": "41.4%",
+                "accuracy": "19.7%",
+                "grounding": "75.2%"
             }
         }
     },
@@ -273,29 +273,29 @@
                 "grounding": "9.2%"
             },
             "Embodied": {
-                "score": "43.4%",
-                "accuracy": "28.2%",
-                "grounding": "49.7%"
+                "score": "24.2%",
+                "accuracy": "12.8%",
+                "grounding": "46.6%"
             },
             "Game": {
-                "score": "37.4%",
-                "accuracy": "18.8%",
-                "grounding": "88.2%"
+                "score": "19.4%",
+                "accuracy": "1.6%",
+                "grounding": "88.8%"
             },
             "Web": {
-                "score": "53.3%",
-                "accuracy": "21.8%",
-                "grounding": "91.9%"
+                "score": "48.8%",
+                "accuracy": "17.0%",
+                "grounding": "88.9%"
             },
             "Tools": {
-                "score": "63.0%",
-                "accuracy": "37.9%",
-                "grounding": "95.2%"
+                "score": "49.4%",
+                "accuracy": "23.4%",
+                "grounding": "95.1%"
             },
             "Avg": {
-                "score": "48.6%",
-                "accuracy": "26.8%",
-                "grounding": "77.7%"
+                "score": "34.2%",
+                "accuracy": "13.6%",
+                "grounding": "76.2%"
             }
         }
     },
@@ -348,29 +348,29 @@
                 "grounding": "17.2%"
             },
             "Embodied": {
-                "score": "39.1%",
-                "accuracy": "24.7%",
-                "grounding": "43.8%"
+                "score": "21.7%",
+                "accuracy": "10.4%",
+                "grounding": "20.1%"
             },
             "Game": {
-                "score": "35.9%",
-                "accuracy": "17.2%",
-                "grounding": "87.6%"
+                "score": "30.1%",
+                "accuracy": "10.8%",
+                "grounding": "85.2%"
             },
             "Web": {
-                "score": "51.5%",
-                "accuracy": "20.6%",
-                "grounding": "85.6%"
+                "score": "44.2%",
+                "accuracy": "16.0%",
+                "grounding": "60.6%"
             },
             "Tools": {
-                "score": "62.6%",
-                "accuracy": "36.4%",
-                "grounding": "93.9%"
+                "score": "60.6%",
+                "accuracy": "30.4%",
+                "grounding": "88.8%"
             },
             "Avg": {
-                "score": "46.3%",
-                "accuracy": "24.7%",
-                "grounding": "74.0%"
+                "score": "37.2%",
+                "accuracy": "16.2%",
+                "grounding": "58.9%"
             }
         }
     },
@@ -423,29 +423,29 @@
                 "grounding": "73.5%"
             },
             "Embodied": {
-                "score": "34.1%",
-                "accuracy": "20.9%",
-                "grounding": "39.5%"
+                "score": "9.0%",
+                "accuracy": "2.1%",
+                "grounding": "18.3%"
             },
             "Game": {
-                "score": "30.6%",
-                "accuracy": "14.3%",
-                "grounding": "86.0%"
+                "score": "3.6%",
+                "accuracy": "0.0%",
+                "grounding": "78.1%"
             },
             "Web": {
-                "score": "48.8%",
-                "accuracy": "18.2%",
-                "grounding": "84.1%"
+                "score": "35.7%",
+                "accuracy": "6.4%",
+                "grounding": "76.3%"
             },
             "Tools": {
-                "score": "57.5%",
-                "accuracy": "30.3%",
-                "grounding": "91.7%"
+                "score": "32.2%",
+                "accuracy": "0.0%",
+                "grounding": "80.5%"
             },
             "Avg": {
-                "score": "41.8%",
-                "accuracy": "20.9%",
-                "grounding": "71.4%"
+                "score": "18.9%",
+                "accuracy": "2.1%",
+                "grounding": "58.3%"
             }
         }
     },
@@ -498,29 +498,29 @@
                 "grounding": "70.4%"
             },
             "Embodied": {
-                "score": "31.4%",
-                "accuracy": "19.0%",
-                "grounding": "37.0%"
+                "score": "15.3%",
+                "accuracy": "7.5%",
+                "grounding": "22.0%"
             },
             "Game": {
-                "score": "27.3%",
-                "accuracy": "12.4%",
-                "grounding": "82.8%"
+                "score": "7.9%",
+                "accuracy": "0.8%",
+                "grounding": "63.7%"
             },
             "Web": {
-                "score": "46.5%",
-                "accuracy": "16.8%",
-                "grounding": "83.0%"
+                "score": "32.6%",
+                "accuracy": "8.2%",
+                "grounding": "76.4%"
             },
             "Tools": {
-                "score": "55.5%",
-                "accuracy": "26.0%",
-                "grounding": "90.1%"
+                "score": "43.5%",
+                "accuracy": "0.0%",
+                "grounding": "80.5%"
             },
             "Avg": {
-                "score": "39.2%",
-                "accuracy": "18.6%",
-                "grounding": "69.2%"
+                "score": "23.8%",
+                "accuracy": "4.5%",
+                "grounding": "56.4%"
             }
         }
     },
@@ -573,29 +573,29 @@
                 "grounding": "9.0%"
             },
             "Embodied": {
-                "score": "29.3%",
-                "accuracy": "17.5%",
-                "grounding": "34.9%"
+                "score": "15.1%",
+                "accuracy": "7.1%",
+                "grounding": "19.8%"
             },
             "Game": {
-                "score": "24.5%",
-                "accuracy": "10.9%",
-                "grounding": "79.8%"
+                "score": "4.7%",
+                "accuracy": "0.8%",
+                "grounding": "58.8%"
             },
             "Web": {
-                "score": "45.9%",
-                "accuracy": "16.6%",
-                "grounding": "82.6%"
+                "score": "41.6%",
+                "accuracy": "14.8%",
+                "grounding": "80.0%"
             },
             "Tools": {
-                "score": "54.4%",
-                "accuracy": "25.1%",
-                "grounding": "89.4%"
+                "score": "47.1%",
+                "accuracy": "18.8%",
+                "grounding": "84.8%"
             },
             "Avg": {
-                "score": "37.5%",
-                "accuracy": "17.5%",
-                "grounding": "67.6%"
+                "score": "25.8%",
+                "accuracy": "10.0%",
+                "grounding": "56.3%"
             }
         }
     },
@@ -648,29 +648,29 @@
                 "grounding": "0.4%"
             },
             "Embodied": {
-                "score": "27.4%",
-                "accuracy": "16.2%",
-                "grounding": "32.4%"
+                "score": "11.6%",
+                "accuracy": "5.5%",
+                "grounding": "12.3%"
             },
             "Game": {
-                "score": "23.7%",
-                "accuracy": "9.9%",
-                "grounding": "78.8%"
+                "score": "17.0%",
+                "accuracy": "1.6%",
+                "grounding": "70.5%"
             },
             "Web": {
-                "score": "46.0%",
-                "accuracy": "16.3%",
-                "grounding": "84.3%"
+                "score": "46.5%",
+                "accuracy": "13.8%",
+                "grounding": "97.5%"
             },
             "Tools": {
                 "score": "54.4%",
-                "accuracy": "23.5%",
-                "grounding": "89.5%"
+                "accuracy": "10.4%",
+                "grounding": "90.2%"
             },
             "Avg": {
-                "score": "36.7%",
-                "accuracy": "16.4%",
-                "grounding": "66.9%"
+                "score": "30.0%",
+                "accuracy": "7.6%",
+                "grounding": "61.5%"
             }
         }
     },
@@ -723,29 +723,29 @@
                 "grounding": "92.2%"
             },
             "Embodied": {
-                "score": "25.9%",
-                "accuracy": "14.8%",
-                "grounding": "33.0%"
+                "score": "13.1%",
+                "accuracy": "3.0%",
+                "grounding": "38.6%"
             },
             "Game": {
-                "score": "22.4%",
-                "accuracy": "9.0%",
-                "grounding": "78.9%"
+                "score": "11.2%",
+                "accuracy": "0.8%",
+                "grounding": "79.6%"
             },
             "Web": {
-                "score": "45.6%",
-                "accuracy": "15.9%",
-                "grounding": "83.5%"
+                "score": "42.3%",
+                "accuracy": "12.4%",
+                "grounding": "76.4%"
             },
             "Tools": {
-                "score": "52.1%",
-                "accuracy": "21.3%",
-                "grounding": "90.1%"
+                "score": "30.6%",
+                "accuracy": "1.6%",
+                "grounding": "95.1%"
             },
             "Avg": {
-                "score": "35.3%",
-                "accuracy": "15.2%",
-                "grounding": "67.1%"
+                "score": "23.1%",
+                "accuracy": "4.3%",
+                "grounding": "68.7%"
             }
         }
     },
@@ -798,29 +798,29 @@
                 "grounding": "88.4%"
             },
             "Embodied": {
-                "score": "25.5%",
-                "accuracy": "14.0%",
-                "grounding": "33.3%"
+                "score": "21.2%",
+                "accuracy": "5.4%",
+                "grounding": "36.0%"
             },
             "Game": {
-                "score": "21.3%",
-                "accuracy": "8.3%",
-                "grounding": "77.5%"
+                "score": "9.9%",
+                "accuracy": "1.6%",
+                "grounding": "64.3%"
             },
             "Web": {
-                "score": "45.3%",
-                "accuracy": "15.1%",
-                "grounding": "83.5%"
+                "score": "42.0%",
+                "accuracy": "7.4%",
+                "grounding": "83.4%"
             },
             "Tools": {
-                "score": "52.3%",
-                "accuracy": "21.2%",
-                "grounding": "90.3%"
+                "score": "54.9%",
+                "accuracy": "20.4%",
+                "grounding": "92.5%"
             },
             "Avg": {
-                "score": "34.9%",
-                "accuracy": "14.6%",
-                "grounding": "66.9%"
+                "score": "30.8%",
+                "accuracy": "8.3%",
+                "grounding": "65.4%"
             }
         }
     },
@@ -873,29 +873,29 @@
                 "grounding": "80.5%"
             },
             "Embodied": {
-                "score": "26.2%",
-                "accuracy": "14.3%",
-                "grounding": "33.9%"
+                "score": "34.1%",
+                "accuracy": "17.7%",
+                "grounding": "40.5%"
             },
             "Game": {
-                "score": "21.0%",
-                "accuracy": "7.9%",
-                "grounding": "77.9%"
+                "score": "17.9%",
+                "accuracy": "3.4%",
+                "grounding": "81.2%"
             },
             "Web": {
-                "score": "45.5%",
-                "accuracy": "15.4%",
-                "grounding": "82.8%"
+                "score": "48.3%",
+                "accuracy": "18.8%",
+                "grounding": "75.6%"
             },
             "Tools": {
-                "score": "52.6%",
-                "accuracy": "21.8%",
-                "grounding": "90.0%"
+                "score": "56.0%",
+                "accuracy": "28.8%",
+                "grounding": "86.8%"
             },
             "Avg": {
-                "score": "35.2%",
-                "accuracy": "14.8%",
-                "grounding": "67.0%"
+                "score": "38.5%",
+                "accuracy": "17.2%",
+                "grounding": "67.6%"
             }
         }
     },
@@ -948,29 +948,29 @@
                 "grounding": "96.2%"
             },
             "Embodied": {
-                "score": "25.4%",
-                "accuracy": "13.6%",
-                "grounding": "32.6%"
+                "score": "15.2%",
+                "accuracy": "5.5%",
+                "grounding": "18.0%"
             },
             "Game": {
-                "score": "20.0%",
-                "accuracy": "7.3%",
-                "grounding": "76.3%"
+                "score": "7.8%",
+                "accuracy": "0.0%",
+                "grounding": "57.2%"
             },
             "Web": {
-                "score": "45.2%",
-                "accuracy": "14.8%",
-                "grounding": "81.1%"
+                "score": "40.7%",
+                "accuracy": "7.6%",
+                "grounding": "60.5%"
             },
             "Tools": {
-                "score": "51.6%",
-                "accuracy": "20.3%",
-                "grounding": "87.1%"
+                "score": "39.1%",
+                "accuracy": "1.6%",
+                "grounding": "52.4%"
             },
             "Avg": {
-                "score": "34.4%",
-                "accuracy": "14.0%",
-                "grounding": "65.2%"
+                "score": "24.6%",
+                "accuracy": "3.9%",
+                "grounding": "43.8%"
             }
         }
     }
