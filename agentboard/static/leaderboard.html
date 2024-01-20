@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard | AgentBoard: An Analytical Evaluation Board of Multi-Turn LLM Agents</title>
+    <title>Result | AgentBoard: An Analytical Evaluation Board of Multi-Turn LLM Agents</title>
     <link rel="icon" href="img/icon/logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -35,7 +35,7 @@
 <div id="sidebar">
     <a href="#main-performance">Main Performance</a>
     <a href="#dimensional-analysis">Dimensional Analysis</a>
-    <a href="#reward-step-analysis">Step Analysis</a>
+    <a href="#reward-step-analysis">Long-range interaction</a>
     <a href="#difficulty-analysis">Difficulty Analysis</a>
 </div>
 
@@ -51,7 +51,7 @@
         <a class="nav-button" href="../index.html#home">
             <img src="img/icon/home_icon.png" alt="Home">Home</a>
         <a class="nav-button" href="leaderboard.html">
-            <img src="img/icon/leaderboard_icon.png" alt="Leaderboard">Leaderboard</a>
+            <img src="img/icon/leaderboard_icon.png" alt="Result">Result</a>
         <a class="nav-button" href="explore.html">
             <img src="img/icon/explore_icon.png" alt="Explore">Explore</a>
     </div>
@@ -63,7 +63,7 @@
     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>-->
     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>-->
     <div class="section">
-        <h1>Leaderboard</h1>
+        <h1>Result</h1>
         <p style="font-size: 17px">
             We conduct a comprehensive, multi-turn LLM agent evaluation of popular large language models, including both
             API-based proprietary models and open-weight models. This analytical evaluation is designed to deeply
@@ -171,27 +171,28 @@
         </p>
 
 
-        <h2 id="reward-step-analysis">Step Analysis</h2>
+        <h2 id="reward-step-analysis">Long-range Interaction</h2>
         <p>
+            One important characteristic of LLM agents is <span class="important">their ability to engage
+            in multi-round interactions</span>, allowing them to continuously gather information and make progress.
             Here shows how the models <span class="important">proceed across long-range interactions</span>.
             Specifically, we calculate the progress rate relative to the number of interaction steps.<br>
             We observe that <strong>proprietary models</strong>(i.e. GPT-4, Claude2 and GPT-3.5-Turbo) <strong>continue
             to gain
             rewards across 30 steps</strong> in tasks of <strong>Alfworld</strong> and <strong>PDDL</strong>. In
-            contrast, in <strong>Webshop</strong> and <strong>Tool</strong>,
+            contrast, in <strong>WebArena</strong> and <strong>Tool</strong>,
             they rapidly reach a peak reward value and then cease to gain further rewards. This trend may be due to the
-            fact that tasks in Embodied AI and Games generally <strong>require more steps to complete</strong>. However,
-            for categories
-            like <strong>Web</strong> and <strong>Tools</strong>, the tasks require fewer steps to complete, leading to
-            a quicker encounter with
-            sub-goals that these models are unable to solve.<br>
+            fact that tasks in Embodied AI and Games generally <strong>require more steps to complete</strong>.<br>
             For <strong>open-weight models</strong>, they quickly reach their peak progress rate. As the number of steps
             increases, they
-            fail to continue gaining rewards in all tasks and most of them stop making progresses after around 6 steps.
-            This may indicate their<strong> limited ability to handle
-            long-range interactions</strong>. This suggests that these models struggle with longer steps due to the
-            corresponding
-            increase in context length, hindering their ability to effectively complete sub-goals.
+            fail to continue gaining rewards in all tasks and most of them
+<!--            except <strong>DeepSeek-67b</strong> -->
+            stop making progresses after around 6 steps.
+            This phenomenon suggests that these models may be <strong>limited in handling long-range
+            interactions</strong>.
+            Longer interaction steps increase reasoning complexity and require extended context length, which can pose
+            challenges for these models.
+            As a result, their ability to solve complex tasks that involve long-range interactions may be limited.
 
         </p>
         <script src="javascript/main_results_show.js" type="module"></script>
@@ -226,7 +227,8 @@
             types</span> or the <span class="important">number of sub-goals</span>.
             <br>Notably, even with a minor difference in task complexity (for some tasks,
             easy samples consisting of fewer than 3 sub-goals, and hard samples predominantly comprising 4-6 sub-goals).
-            all models suffer from significant average performance drop on hard examples, with <strong>GPT4 success rate experiencing an
+            all models suffer from significant average performance drop on hard examples, with <strong>GPT4 success rate
+            experiencing an
             average drop of 31.2%</strong>, which indicated that even the most robust Language Learning Models (LLM)
             such as GPT-4 are <strong>limited in terms of task compositionality</strong>.
         </p>

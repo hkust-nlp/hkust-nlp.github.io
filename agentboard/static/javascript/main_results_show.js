@@ -199,13 +199,16 @@ function createMainResultChart() {
             scales: {
                 x: {
                     ticks: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 100,
                         font: {
                             size: 12,
                             family: "'Noto Sans', sans-serif",
                             weight: 'bold'
                         }
                     },
-                    grace: 15,
+                    grace: 10,
                     title: {
                         display: true,
                         text: 'Value (%)',
@@ -564,7 +567,7 @@ Object.values(sortby_options).forEach(sortby_option => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('/agentboard/data/To_Release/main_data_new.json').then(response => response.json()).then((loadedData) => {
+    fetch('agentboard/data/To_Release/main_data_new.json').then(response => response.json()).then((loadedData) => {
         rawData = loadedData;
         generateModelColorsAndStyles(rawData.map(data => data.model));
         createMainResultChart();

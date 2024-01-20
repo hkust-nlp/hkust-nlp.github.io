@@ -2,7 +2,7 @@
 document.getElementById('sidebar-toggle').addEventListener('mouseenter', function() {
     var sidebar = document.getElementById('sidebar');
     sidebar.style.left = '0px';
-    this.style.left = '136px';
+    this.style.left = '145px';
 });
 
 
@@ -11,7 +11,7 @@ document.addEventListener('mousemove', function(event) {
     var toggle = document.getElementById('sidebar-toggle');
 
     if (!sidebar.contains(event.target) && !toggle.contains(event.target)) {
-        sidebar.style.left = '-135px';
+        sidebar.style.left = '-144px';
         toggle.style.left = '0px';
     }
 });

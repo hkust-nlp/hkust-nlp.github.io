@@ -104,6 +104,18 @@ h3 {
     margin-left: 60px;
 }
 
+.task-filter-selector-index {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.metric-filter-selector-index {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-left: 40px;
+}
+
 .btn-switch .btn-container {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
